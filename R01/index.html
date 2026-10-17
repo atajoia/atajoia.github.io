@@ -1,48 +1,180 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>#R01 - PDF a Excel: extracción con revisión · Atajo IA</title>
+<title>PDF a Excel: extracción con revisión · Recurso gratis #R01 · Atajo IA</title>
+<meta name="description" content="Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta."><meta name="theme-color" content="#000000">
 <style>
-:root{--bg:#070b12;--fg:#e2e8f0;--mut:#94a3b8;--card:#0d1524}
-*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,'Segoe UI',sans-serif}
-body{background:var(--bg);color:var(--fg);min-height:100vh;display:flex;justify-content:center;padding:32px 16px}
-main{width:100%;max-width:520px}
-h1{font-size:28px;letter-spacing:1px} h1 span{color:#00e5ff}
-.sub{color:var(--mut);margin:8px 0 24px;line-height:1.4}
-h2{font-size:14px;letter-spacing:2px;color:var(--mut);margin:24px 0 10px;text-transform:uppercase}
-.card{display:block;background:var(--card);border:1px solid color-mix(in srgb,var(--a,#00e5ff) 45%,transparent);
- border-radius:16px;padding:16px 18px;margin-bottom:12px;color:var(--fg);text-decoration:none;transition:transform .15s}
-.card:hover{transform:translateY(-2px)} .card b{display:block;font-size:17px;margin:6px 0 4px}
-.card small{color:var(--mut)} .tag{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--a,#00e5ff)}
-.offer{--a:#34d399} .note,.foot{color:var(--mut);font-size:12px;margin-top:16px;line-height:1.4}
-article.card:hover{transform:none}
-.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--a,#00e5ff);color:#04121a;
- font-weight:700;font-size:14px;text-decoration:none;border:1px solid var(--a,#00e5ff)}
-.btn.ghost{background:transparent;color:var(--fg)} .btn.alt{background:transparent;color:#34d399;border-color:#34d399}
-.fine{color:var(--mut);font-size:12px;margin-top:10px;line-height:1.4}
-.back{color:var(--mut);font-size:14px;text-decoration:none}
-.files{list-style:none} .files li{padding:10px 0;border-top:1px solid #1e293b}
-.files a{color:var(--a,#00e5ff);font-weight:700;word-break:break-all} .files small{display:block;color:var(--mut)}
-.kind{font-size:11px;letter-spacing:1px;color:var(--mut);margin-left:6px;text-transform:uppercase}
-details{margin-top:12px} summary{cursor:pointer;font-weight:700}
-pre{white-space:pre-wrap;word-break:break-word;background:#0a1220;border-radius:12px;padding:14px;margin-top:10px;
- font:13px/1.5 ui-monospace,Consolas,monospace;color:var(--fg)}
-.legal{margin-top:24px;padding-top:12px;border-top:1px solid #1e293b}
-.legal ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 18px}
-.legal a{display:inline-block;padding:8px 0;color:var(--mut);font-size:13px;line-height:1.4;text-underline-offset:3px}
+:root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
+ --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
+ --cyan-soft:rgba(94,231,255,.12);--gold:#e8c46c;--a:#5ee7ff;--r:20px;--r-sm:12px;--field:#636366;
+ --font:-apple-system,"SF Pro Text","Segoe UI",Roboto,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased;min-height:100vh;
+ overflow-wrap:break-word}
+a{color:var(--cyan);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:40px 16px 48px}
+.wrap.wide{max-width:1080px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:700;overflow-wrap:anywhere}
+h2{font-size:19px;line-height:1.3;letter-spacing:-.01em;font-weight:600;overflow-wrap:anywhere}
+.brand{font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--fg)} .brand span{color:var(--cyan)}
+.hero{margin:28px 0 40px}
+.lede{color:var(--mut);font-size:clamp(17px,2.4vw,19px);line-height:1.5;margin-top:14px;max-width:48ch}
+.sec-title{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.sec{margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.res{position:relative;display:flex;flex-direction:column;gap:10px;min-width:0;background:var(--card);
+ border:1px solid var(--line);border-radius:var(--r);padding:22px;color:var(--fg);text-decoration:none;
+ transition:border-color .2s,background-color .2s}
+.res:hover{border-color:var(--line-hi);background:var(--card-hi)}
+.res h3{font-size:18px;line-height:1.3;font-weight:600;letter-spacing:-.01em;overflow-wrap:anywhere}
+.res-label{color:var(--mut);font-size:14px}
+.res .btn{margin-top:auto;align-self:flex-start}
+.res .btn::after{content:"";position:absolute;inset:0;border-radius:var(--r)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--dim)}
+.free{display:inline-block;padding:3px 9px;border-radius:999px;background:var(--cyan-soft);color:var(--cyan);
+ letter-spacing:.08em}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;
+ border-radius:999px;border:1px solid transparent;background:var(--cyan);color:var(--cyan-ink);
+ font:600 15px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.08)} .btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--line-hi)}
+.btn.big{width:100%;min-height:56px;font-size:17px;border-radius:16px;overflow-wrap:anywhere}
+.btn.gold{background:var(--gold);color:#1c1300}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.back{display:inline-flex;align-items:center;min-height:44px;color:var(--mut);font-size:15px;text-decoration:none}
+.back:hover{color:var(--fg)}
+.head{margin:18px 0 28px}
+.head h1{font-size:clamp(28px,5.5vw,40px);margin-top:14px}
+.incl{color:var(--dim);font-size:14px;margin-top:10px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;margin-bottom:16px}
+.panel-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;
+ margin-bottom:16px}
+.badge{font-size:13px;font-weight:600;color:var(--cyan)}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin-bottom:16px}
+.fields-note{grid-column:1/-1;color:var(--mut);font-size:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:13px;font-weight:600;color:var(--mut)}
+.field input,.field textarea{width:100%;min-height:44px;padding:10px 12px;border-radius:var(--r-sm);
+ border:1px solid var(--field);background:var(--soft);color:var(--fg);font:15px/1.4 var(--font);resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--dim)}
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:1px}
+.prompt{white-space:pre-wrap;overflow-wrap:anywhere;max-height:440px;overflow:auto;background:var(--soft);
+ border:1px solid var(--line);border-radius:var(--r-sm);padding:16px;font:14px/1.65 var(--mono);color:var(--fg)}
+.prompt mark{background:var(--cyan-soft);color:var(--cyan);border-radius:4px;padding:0 2px}
+.prompt .filled{background:rgba(255,255,255,.08);color:#fff;border-radius:4px}
+.copy-row{margin-top:14px}
+.status{min-height:1.5em;margin-top:8px;font-size:14px;color:var(--cyan)}
+.dl-list{list-style:none;display:grid;gap:10px}
+.dl{display:flex;align-items:center;gap:14px;min-height:56px;padding:12px 16px;border:1px solid var(--line);
+ border-radius:var(--r-sm);background:var(--soft);color:var(--fg);text-decoration:none;transition:border-color .2s}
+.dl:hover{border-color:var(--line-hi)}
+.dl-ico{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--cyan-soft);
+ color:var(--cyan);font-weight:700}
+.dl-txt{display:flex;flex-direction:column;min-width:0;overflow-wrap:anywhere}
+.dl-txt b{font-weight:600}
+.dl-txt small{color:var(--dim);font-size:13px;overflow-wrap:anywhere}
+.dl-desc{color:var(--mut);font-size:14px;margin:6px 4px 0}
+.lead{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.fine{color:var(--dim);font-size:13px;line-height:1.5;margin-top:12px}
+details.guide{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin:16px 0}
+details.guide summary{display:flex;align-items:center;min-height:52px;padding:14px 22px;font-weight:600;
+ cursor:pointer;list-style:none}
+details.guide summary::-webkit-details-marker{display:none}
+details.guide summary::after{content:"+";margin-left:auto;padding-left:12px;color:var(--dim);font-size:20px}
+details.guide[open] summary::after{content:"\2212"}
+details.guide pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:0 22px 22px;font:13px/1.6 var(--mono);
+ color:var(--mut)}
+.stack{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.stack h2{font-size:17px}
+.stack-sub{color:var(--mut);font-size:14px;margin:6px 0 16px}
+.tools{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.tool{display:flex;flex-direction:column;gap:8px;min-width:0;padding:18px;border:1px solid var(--line);
+ border-radius:var(--r-sm);background:var(--soft)}
+.tool-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 10px}
+.tool-name{font-weight:600}
+.tool-cat{font:12px/1.4 var(--mono);color:var(--dim)}
+.tool-why{color:var(--mut);font-size:14px}
+.tool-link{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-top:auto;font-size:14px;
+ font-weight:600;color:var(--cyan);text-decoration:none}
+.tool-link:hover{text-decoration:underline}
+.disclosure{color:var(--dim);font-size:13px;line-height:1.5;margin-top:12px}
+.vault{margin-top:40px;padding:1px;border-radius:var(--r);
+ background:linear-gradient(135deg,rgba(232,196,108,.55),rgba(94,231,255,.35))}
+.vault-in{border-radius:19px;background:linear-gradient(180deg,#121216,#0b0b0e);padding:24px}
+.vault-kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.vault h2{margin-top:8px;font-size:22px}
+.vault-tag{color:var(--mut);font-size:15px;margin-top:8px}
+.vault-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
+.vault-price{font-size:20px;font-weight:600}
+.vault-note{color:var(--dim);font-size:13px;margin-top:14px}
+.vault-bar{position:sticky;top:0;z-index:10;background:rgba(10,10,12,.86);
+ -webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);
+ border-bottom:1px solid rgba(232,196,108,.22)}
+html:has(.vault-bar){scroll-padding-top:60px}
+.vault-bar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1080px;min-height:44px;
+ margin:0 auto;padding:0 16px;font-size:14px}
+.vb-text{display:flex;align-items:center;gap:8px;min-width:0}
+.vb-dot{flex:none;width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--cyan))}
+.vb-text b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vb-tag{color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vb-link{flex:none;display:inline-flex;align-items:center;min-height:44px;color:var(--gold);font-weight:600;
+ text-decoration:none}
+.vb-link:hover{text-decoration:underline}
+.go{max-width:560px}
+.go h1{font-size:clamp(26px,5vw,36px);margin-top:14px}
+.go-cta{margin-top:24px}
+.foot{color:var(--dim);font-size:13px;margin-top:40px}
+.legal{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.legal ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 20px}
+.legal a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;color:var(--mut);font-size:13px;line-height:1.4;text-underline-offset:3px}
 .legal a:hover,.legal a:focus-visible{color:var(--fg)}
-.legal a:focus-visible{outline:2px solid #00e5ff;outline-offset:2px;border-radius:4px}
-</style></head><body><main style="--a:#f97316">
-<a class="back" href="../">← Todos los recursos</a>
-<p class="tag" style="margin-top:20px">GRATIS · PLANILLA</p>
-<h1 style="font-size:24px;margin-top:6px">#R01 - PDF a Excel: extracción con revisión</h1>
-<p class="sub">Prompt maestro + plantilla CSV + script de Python</p>
-<article class="card"><h2 style="margin-top:0">Archivos</h2>
-<ul class="files"><li><a href="README.md" download>README.md</a><span class="kind">Guía</span><small>Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</small></li><li><a href="PROMPT_MAESTRO.md" download>PROMPT_MAESTRO.md</a><span class="kind">Prompts</span><small>Prompts listos para copiar en tu asistente de IA.</small></li><li><a href="plantilla_planilla.csv" download>plantilla_planilla.csv</a><span class="kind">Plantilla</span><small>Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</small></li><li><a href="extraer_tablas_pdf.py" download>extraer_tablas_pdf.py</a><span class="kind">Código</span><small>Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.</small></li></ul></article>
-
+.legal a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:4px}
+@media (max-width:560px){.vb-tag{display:none}.panel{padding:18px}.wrap{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><main class="wrap" style="--a:#f97316">
+<nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
+<header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
+<span>#R01</span><span>PLANILLA</span></p>
+<h1>PDF a Excel: extracción con revisión</h1>
+<p class="lede">Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta.</p><p class="incl">Incluye: Prompt maestro + plantilla CSV + script de Python</p>
+</header>
+<section class="panel app" data-app aria-labelledby="R01-app-t"><div class="panel-head"><h2 id="R01-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R01-campo-1">Nombre de tabla o páginas</label><input id="R01-campo-1" type="text" data-marker="NOMBRE DE TABLA O PÁGINAS" autocomplete="off" placeholder="Opcional"></div></div><pre class="prompt" id="R01-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como asistente de extracción de datos. Analiza el archivo que adjunto y extrae únicamente las filas de la tabla indicada: <mark data-marker="NOMBRE DE TABLA O PÁGINAS">[NOMBRE DE TABLA O PÁGINAS]</mark>. Devuelve CSV con estas columnas y en este orden: CÓDIGO, CONCEPTO, TOTAL, ESTADO. Conserva los valores originales, marca como VACÍO cualquier dato que no aparezca y no calcules ni completes información. Al final enumera las páginas revisadas y las celdas dudosas. No incluyas comentarios dentro del CSV.</pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
+var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
+function setup(app){
+var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
+if(!pre||!btn||!out){return;}
+var parts=[],n,k,label=btn.textContent,timer=null;
+for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
+var inputs=box?box.querySelectorAll("[data-marker]"):[];
+function render(){var v=Object.create(null),j,p,el,x;
+for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
+while(pre.firstChild){pre.removeChild(pre.firstChild);}
+for(j=0;j<parts.length;j++){p=parts[j];
+if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
+else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
+else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
+for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
+function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
+function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
+function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
+ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
+function done(ok){if(ok){btn.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓");
+if(timer){window.clearTimeout(timer);}timer=window.setTimeout(function(){btn.textContent=label;},2000);}
+else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado, cópialo con Ctrl+C (⌘+C en Mac).");}}
+btn.addEventListener("click",function(){var text=pre.textContent;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
+else{done(legacy(text));}});
+if(box){box.hidden=false;}btn.hidden=false;}
+})();</script>
+<section class="panel" aria-labelledby="R01-dl-t"><div class="panel-head"><h2 id="R01-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_planilla.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_planilla.csv · 408 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.1 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 2.7 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="extraer_tablas_pdf.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>extraer_tablas_pdf.py · 3.8 KB</small></span></a><p class="dl-desc">Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details open><summary>Cómo usarlo</summary><pre># PDF a Excel: extracción con revisión
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># PDF a Excel: extracción con revisión
 
 Recurso gratuito de **Atajo IA** que acompaña al reel **R01 · Extractor Mágico de PDFs/Facturas a Excel** (palabra clave: PLANILLA).
 
@@ -103,5 +235,8 @@ Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este mate
 
 _Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
 </pre></details>
+
+
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
+<footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>
 </main></body></html>
