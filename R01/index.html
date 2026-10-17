@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
+<title>#R01 - PDF a Excel: extracción con revisión · Atajo IA</title>
+<style>
+:root{--bg:#070b12;--fg:#e2e8f0;--mut:#94a3b8;--card:#0d1524}
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,'Segoe UI',sans-serif}
+body{background:var(--bg);color:var(--fg);min-height:100vh;display:flex;justify-content:center;padding:32px 16px}
+main{width:100%;max-width:520px}
+h1{font-size:28px;letter-spacing:1px} h1 span{color:#00e5ff}
+.sub{color:var(--mut);margin:8px 0 24px;line-height:1.4}
+h2{font-size:14px;letter-spacing:2px;color:var(--mut);margin:24px 0 10px;text-transform:uppercase}
+.card{display:block;background:var(--card);border:1px solid color-mix(in srgb,var(--a,#00e5ff) 45%,transparent);
+ border-radius:16px;padding:16px 18px;margin-bottom:12px;color:var(--fg);text-decoration:none;transition:transform .15s}
+.card:hover{transform:translateY(-2px)} .card b{display:block;font-size:17px;margin:6px 0 4px}
+.card small{color:var(--mut)} .tag{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--a,#00e5ff)}
+.offer{--a:#34d399} .note,.foot{color:var(--mut);font-size:12px;margin-top:16px;line-height:1.4}
+article.card:hover{transform:none}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--a,#00e5ff);color:#04121a;
+ font-weight:700;font-size:14px;text-decoration:none;border:1px solid var(--a,#00e5ff)}
+.btn.ghost{background:transparent;color:var(--fg)} .btn.alt{background:transparent;color:#34d399;border-color:#34d399}
+.fine{color:var(--mut);font-size:12px;margin-top:10px;line-height:1.4}
+.back{color:var(--mut);font-size:14px;text-decoration:none}
+.files{list-style:none} .files li{padding:10px 0;border-top:1px solid #1e293b}
+.files a{color:var(--a,#00e5ff);font-weight:700;word-break:break-all} .files small{display:block;color:var(--mut)}
+.kind{font-size:11px;letter-spacing:1px;color:var(--mut);margin-left:6px;text-transform:uppercase}
+details{margin-top:12px} summary{cursor:pointer;font-weight:700}
+pre{white-space:pre-wrap;word-break:break-word;background:#0a1220;border-radius:12px;padding:14px;margin-top:10px;
+ font:13px/1.5 ui-monospace,Consolas,monospace;color:var(--fg)}
+</style></head><body><main style="--a:#f97316">
+<a class="back" href="../">← Todos los recursos</a>
+<p class="tag" style="margin-top:20px">GRATIS · PLANILLA</p>
+<h1 style="font-size:24px;margin-top:6px">#R01 - PDF a Excel: extracción con revisión</h1>
+<p class="sub">Prompt maestro + plantilla CSV + script de Python</p>
+<article class="card"><h2 style="margin-top:0">Archivos</h2>
+<ul class="files"><li><a href="README.md" download>README.md</a><span class="kind">Guía</span><small>Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</small></li><li><a href="PROMPT_MAESTRO.md" download>PROMPT_MAESTRO.md</a><span class="kind">Prompts</span><small>Prompts listos para copiar en tu asistente de IA.</small></li><li><a href="plantilla_planilla.csv" download>plantilla_planilla.csv</a><span class="kind">Plantilla</span><small>Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</small></li><li><a href="extraer_tablas_pdf.py" download>extraer_tablas_pdf.py</a><span class="kind">Código</span><small>Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.</small></li></ul></article>
+
+<p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
+confidenciales con herramientas de IA.</p>
+<details open><summary>Cómo usarlo</summary><pre># PDF a Excel: extracción con revisión
+
+Recurso gratuito de **Atajo IA** que acompaña al reel **R01 · Extractor Mágico de PDFs/Facturas a Excel** (palabra clave: PLANILLA).
+
+&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+
+## Qué es
+
+Este recurso ayuda a oficinistas y administradores a pasar tablas de facturas o reportes en PDF hacia una hoja de cálculo estructurada para su revisión. Es ideal para evitar la captura manual de renglones desde cero, pero no sustituye la validación contable ni garantiza exactitud automática: todo resultado es un borrador que una persona debe cotejar contra el documento original.
+
+**Para qué sirve:** Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta.
+
+## Qué incluye
+
+- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
+- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
+- `plantilla_planilla.csv`: Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
+- `extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
+
+## Requisitos
+
+- Un asistente de IA aprobado por tu organización que permita adjuntar documentos o imágenes.
+- Excel, Google Sheets o LibreOffice Calc para abrir y revisar la plantilla CSV.
+- Para el script (opcional): Python 3.10 o superior y los paquetes `openpyxl pandas pdfplumber`.
+
+## Cómo usarlo paso a paso
+
+1. Revisa el documento original y oculta o recorta datos sensibles (como RFC, cuentas bancarias o domicilios) si no estás usando una herramienta corporativa autorizada.
+2. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y reemplaza los corchetes con las páginas a procesar y las columnas: CÓDIGO, CONCEPTO, TOTAL, ESTADO.
+3. Adjunta tu PDF (o ejecuta el script local incluido si prefieres no subir archivos a la nube) y genera el bloque de texto en formato CSV.
+4. Copia el resultado obtenido y pégalo en la plantilla CSV usando la opción de &#x27;Texto en columnas&#x27; separando por comas.
+5. Usa los prompts complementarios para limpiar el formato numérico o pedir una lista de renglones dudosos.
+6. Compara una muestra de filas y la suma de la columna TOTAL directamente contra el PDF original antes de dar por bueno el archivo.
+
+## Script de Python (opcional)
+
+`extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
+
+```bash
+pip install openpyxl pandas pdfplumber
+python extraer_tablas_pdf.py --entrada Factura_Corporativa_Marzo.pdf --salida Facturas_Marzo_Limpio.xlsx
+```
+
+El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+
+## Privacidad y advertencias
+
+- Compara una muestra de filas con el PDF original.
+- Revisa fechas, separadores decimales, moneda y totales.
+- No cargues facturas o archivos con datos personales o confidenciales en servicios no aprobados.
+- No cargues facturas, estados de cuenta o archivos con RFC, nombres o datos confidenciales en servicios de IA públicos o no aprobados por tu organización.
+- Compara siempre una muestra de filas y el total general contra el PDF original antes de usar la tabla en reportes o contabilidad.
+- Revisa fechas, separadores decimales, tipo de moneda y totales; los modelos pueden confundir comas con puntos o saltar líneas en tablas largas.
+- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+
+## Licencia
+
+Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+
+_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+</pre></details>
+<p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
+</main></body></html>

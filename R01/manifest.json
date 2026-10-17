@@ -1,0 +1,32 @@
+{
+  "reel_id": "R01",
+  "title": "PDF a Excel: extracción con revisión",
+  "keyword": "PLANILLA",
+  "slug": "pdf-a-excel-extraccion-con-revision",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Prompts listos para copiar en tu asistente de IA."
+    },
+    {
+      "name": "plantilla_planilla.csv",
+      "kind": "template",
+      "description": "Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+    },
+    {
+      "name": "extraer_tablas_pdf.py",
+      "kind": "script",
+      "description": "Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión."
+    }
+  ],
+  "has_code": true,
+  "resource_label": "Prompt maestro + plantilla CSV + script de Python",
+  "created_at": "2026-10-16T11:59:51",
+  "model": "gemini:gemini-4-argon"
+}

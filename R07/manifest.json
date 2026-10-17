@@ -1,0 +1,27 @@
+{
+  "reel_id": "R07",
+  "title": "Presentación: convertir notas en una historia",
+  "keyword": "DIAPOS",
+  "slug": "presentacion-convertir-notas-en-una-historia",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Prompts listos para copiar en tu asistente de IA."
+    },
+    {
+      "name": "plantilla_diapos.csv",
+      "kind": "template",
+      "description": "Plantilla con las columnas de la demo (LÁMINA, SECCIÓN, PRESUPUESTO, DISEÑO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+    }
+  ],
+  "has_code": false,
+  "resource_label": "Prompt maestro + plantilla CSV",
+  "created_at": "2026-10-16T12:50:49",
+  "model": "gemini:gemini-4-argon"
+}
