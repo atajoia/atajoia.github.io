@@ -1,0 +1,27 @@
+{
+  "reel_id": "R08",
+  "title": "Guía de entrenamiento de voz comercial con estructura de 5 pasos",
+  "keyword": "ESTILO",
+  "slug": "guia-de-entrenamiento-de-voz-comercial-con-estructura-de-5-p",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Prompts listos para copiar en tu asistente de IA."
+    },
+    {
+      "name": "plantilla_estilo.csv",
+      "kind": "template",
+      "description": "Plantilla con las columnas de la demo (SECCIÓN, TONO APLICADO, INVERSIÓN, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+    }
+  ],
+  "has_code": false,
+  "resource_label": "Prompt maestro + plantilla CSV",
+  "created_at": "2026-10-17T16:49:44",
+  "model": "gemini:gemini-4-argon"
+}

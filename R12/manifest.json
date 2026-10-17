@@ -1,0 +1,32 @@
+{
+  "reel_id": "R12",
+  "title": "Generador de Manuales Paso a Paso y Control de Capturas",
+  "keyword": "MANUAL",
+  "slug": "generador-de-manuales-paso-a-paso-y-control-de-capturas",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Prompts listos para copiar en tu asistente de IA."
+    },
+    {
+      "name": "plantilla_manual.csv",
+      "kind": "template",
+      "description": "Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, CAPTURA, PRIVACIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+    },
+    {
+      "name": "armar_manual_word.py",
+      "kind": "script",
+      "description": "Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF."
+    }
+  ],
+  "has_code": true,
+  "resource_label": "Prompt maestro + plantilla CSV + script de Python",
+  "created_at": "2026-10-17T16:51:06",
+  "model": "gemini:gemini-4-argon"
+}
