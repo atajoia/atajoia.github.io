@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
+<title>Comparador de Cotizaciones y Matriz de Decisión de Compras · Recurso gratis #R18 · Atajo IA</title>
+<meta name="description" content="Este recurso ayuda a encargados de compras, administradores y dueños de negocio a organizar y homologar múltiples cotizaciones con distintos formatos y monedas en una sola tabla comparativa. Genera un borrador estructurado para facilitar…"><meta name="theme-color" content="#000000">
+<style>
+:root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
+ --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
+ --cyan-soft:rgba(94,231,255,.12);--gold:#e8c46c;--a:#5ee7ff;--r:20px;--r-sm:12px;--field:#636366;
+ --font:-apple-system,"SF Pro Text","Segoe UI",Roboto,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased;min-height:100vh;
+ overflow-wrap:break-word}
+a{color:var(--cyan);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:40px 16px 48px}
+.wrap.wide{max-width:1080px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.08;letter-spacing:-.02em;font-weight:700;overflow-wrap:anywhere}
+h2{font-size:19px;line-height:1.3;letter-spacing:-.01em;font-weight:600;overflow-wrap:anywhere}
+.brand{font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--fg)} .brand span{color:var(--cyan)}
+.hero{margin:28px 0 40px}
+.lede{color:var(--mut);font-size:clamp(17px,2.4vw,19px);line-height:1.5;margin-top:14px;max-width:48ch}
+.sec-title{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.sec{margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.res{position:relative;display:flex;flex-direction:column;gap:10px;min-width:0;background:var(--card);
+ border:1px solid var(--line);border-radius:var(--r);padding:22px;color:var(--fg);text-decoration:none;
+ transition:border-color .2s,background-color .2s}
+.res:hover{border-color:var(--line-hi);background:var(--card-hi)}
+.res h3{font-size:18px;line-height:1.3;font-weight:600;letter-spacing:-.01em;overflow-wrap:anywhere}
+.res-label{color:var(--mut);font-size:14px}
+.res .btn{margin-top:auto;align-self:flex-start}
+.res .btn::after{content:"";position:absolute;inset:0;border-radius:var(--r)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--dim)}
+.free{display:inline-block;padding:3px 9px;border-radius:999px;background:var(--cyan-soft);color:var(--cyan);
+ letter-spacing:.08em}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;
+ border-radius:999px;border:1px solid transparent;background:var(--cyan);color:var(--cyan-ink);
+ font:600 15px/1.2 var(--font);text-decoration:none;cursor:pointer;transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.08)} .btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--line-hi)}
+.btn.big{width:100%;min-height:56px;font-size:17px;border-radius:16px;overflow-wrap:anywhere}
+.btn.gold{background:var(--gold);color:#1c1300}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.back{display:inline-flex;align-items:center;min-height:44px;color:var(--mut);font-size:15px;text-decoration:none}
+.back:hover{color:var(--fg)}
+.head{margin:18px 0 28px}
+.head h1{font-size:clamp(28px,5.5vw,40px);margin-top:14px}
+.incl{color:var(--dim);font-size:14px;margin-top:10px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;margin-bottom:16px}
+.panel-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;
+ margin-bottom:16px}
+.badge{font-size:13px;font-weight:600;color:var(--cyan)}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin-bottom:16px}
+.fields-note{grid-column:1/-1;color:var(--mut);font-size:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:13px;font-weight:600;color:var(--mut)}
+.field input,.field textarea{width:100%;min-height:44px;padding:10px 12px;border-radius:var(--r-sm);
+ border:1px solid var(--field);background:var(--soft);color:var(--fg);font:15px/1.4 var(--font);resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--dim)}
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:1px}
+.prompt{white-space:pre-wrap;overflow-wrap:anywhere;max-height:440px;overflow:auto;background:var(--soft);
+ border:1px solid var(--line);border-radius:var(--r-sm);padding:16px;font:14px/1.65 var(--mono);color:var(--fg)}
+.prompt mark{background:var(--cyan-soft);color:var(--cyan);border-radius:4px;padding:0 2px}
+.prompt .filled{background:rgba(255,255,255,.08);color:#fff;border-radius:4px}
+.copy-row{margin-top:14px}
+.status{min-height:1.5em;margin-top:8px;font-size:14px;color:var(--cyan)}
+.dl-list{list-style:none;display:grid;gap:10px}
+.dl{display:flex;align-items:center;gap:14px;min-height:56px;padding:12px 16px;border:1px solid var(--line);
+ border-radius:var(--r-sm);background:var(--soft);color:var(--fg);text-decoration:none;transition:border-color .2s}
+.dl:hover{border-color:var(--line-hi)}
+.dl-ico{flex:none;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--cyan-soft);
+ color:var(--cyan);font-weight:700}
+.dl-txt{display:flex;flex-direction:column;min-width:0;overflow-wrap:anywhere}
+.dl-txt b{font-weight:600}
+.dl-txt small{color:var(--dim);font-size:13px;overflow-wrap:anywhere}
+.dl-desc{color:var(--mut);font-size:14px;margin:6px 4px 0}
+.lead{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.fine{color:var(--dim);font-size:13px;line-height:1.5;margin-top:12px}
+details.guide{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin:16px 0}
+details.guide summary{display:flex;align-items:center;min-height:52px;padding:14px 22px;font-weight:600;
+ cursor:pointer;list-style:none}
+details.guide summary::-webkit-details-marker{display:none}
+details.guide summary::after{content:"+";margin-left:auto;padding-left:12px;color:var(--dim);font-size:20px}
+details.guide[open] summary::after{content:"\2212"}
+details.guide pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:0 22px 22px;font:13px/1.6 var(--mono);
+ color:var(--mut)}
+.stack{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.stack h2{font-size:17px}
+.stack-sub{color:var(--mut);font-size:14px;margin:6px 0 16px}
+.tools{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.tool{display:flex;flex-direction:column;gap:8px;min-width:0;padding:18px;border:1px solid var(--line);
+ border-radius:var(--r-sm);background:var(--soft)}
+.tool-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 10px}
+.tool-name{font-weight:600}
+.tool-cat{font:12px/1.4 var(--mono);color:var(--dim)}
+.tool-why{color:var(--mut);font-size:14px}
+.tool-link{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-top:auto;font-size:14px;
+ font-weight:600;color:var(--cyan);text-decoration:none}
+.tool-link:hover{text-decoration:underline}
+.disclosure{color:var(--dim);font-size:13px;line-height:1.5;margin-top:12px}
+.vault{margin-top:40px;padding:1px;border-radius:var(--r);
+ background:linear-gradient(135deg,rgba(232,196,108,.55),rgba(94,231,255,.35))}
+.vault-in{border-radius:19px;background:linear-gradient(180deg,#121216,#0b0b0e);padding:24px}
+.vault-kicker{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.vault h2{margin-top:8px;font-size:22px}
+.vault-tag{color:var(--mut);font-size:15px;margin-top:8px}
+.vault-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
+.vault-price{font-size:20px;font-weight:600}
+.vault-note{color:var(--dim);font-size:13px;margin-top:14px}
+.vault-bar{position:sticky;top:0;z-index:10;background:rgba(10,10,12,.86);
+ -webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);
+ border-bottom:1px solid rgba(232,196,108,.22)}
+html:has(.vault-bar){scroll-padding-top:60px}
+.vault-bar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1080px;min-height:44px;
+ margin:0 auto;padding:0 16px;font-size:14px}
+.vb-text{display:flex;align-items:center;gap:8px;min-width:0}
+.vb-dot{flex:none;width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--cyan))}
+.vb-text b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vb-tag{color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vb-link{flex:none;display:inline-flex;align-items:center;min-height:44px;color:var(--gold);font-weight:600;
+ text-decoration:none}
+.vb-link:hover{text-decoration:underline}
+.go{max-width:560px}
+.go h1{font-size:clamp(26px,5vw,36px);margin-top:14px}
+.go-cta{margin-top:24px}
+.foot{color:var(--dim);font-size:13px;margin-top:40px}
+.legal{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.legal ul{list-style:none;display:flex;flex-wrap:wrap;gap:0 20px}
+.legal a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;color:var(--mut);font-size:13px;line-height:1.4;text-underline-offset:3px}
+.legal a:hover,.legal a:focus-visible{color:var(--fg)}
+.legal a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:4px}
+@media (max-width:560px){.vb-tag{display:none}.panel{padding:18px}.wrap{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><main class="wrap" style="--a:#f97316">
+<nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
+<header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
+<span>#R18</span><span>COTIZA</span></p>
+<h1>Comparador de Cotizaciones y Matriz de Decisión de Compras</h1>
+<p class="lede">Este recurso ayuda a encargados de compras, administradores y dueños de negocio a organizar y homologar múltiples cotizaciones con distintos formatos y monedas en una sola tabla comparativa. Genera un borrador estructurado para facilitar…</p><p class="incl">Incluye: Prompt maestro + plantilla CSV + script de Python</p>
+</header>
+<section class="panel app" data-app aria-labelledby="R18-app-t"><div class="panel-head"><h2 id="R18-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R18-campo-1">Producto o servicio requerido</label><input id="R18-campo-1" type="text" data-marker="PRODUCTO O SERVICIO REQUERIDO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R18-campo-2">Moneda destino, ej. mxn</label><input id="R18-campo-2" type="text" data-marker="MONEDA DESTINO, EJ. MXN" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R18-campo-3">Tipo de cambio, ej. 1 usd = x mxn</label><input id="R18-campo-3" type="text" data-marker="TIPO DE CAMBIO, EJ. 1 USD = X MXN" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R18-campo-4">Porcentaje de iva, ej. 16%</label><input id="R18-campo-4" type="text" data-marker="PORCENTAJE DE IVA, EJ. 16%" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R18-campo-5">Criterio principal, ej. menor costo neto con entrega menor a 10 días</label><input id="R18-campo-5" type="text" data-marker="CRITERIO PRINCIPAL, EJ. MENOR COSTO NETO CON ENTREGA MENOR A 10 DÍAS" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R18-campo-6">Pega aquí el texto de las cotizaciones o adjunta los archivos</label><textarea id="R18-campo-6" data-marker="PEGA AQUÍ EL TEXTO DE LAS COTIZACIONES O ADJUNTA LOS ARCHIVOS" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R18-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como analista de compras. Voy a compartirte la información de varias cotizaciones de distintos proveedores para adquirir <mark data-marker="PRODUCTO O SERVICIO REQUERIDO">[PRODUCTO O SERVICIO REQUERIDO]</mark>. Cada proveedor usa formatos, monedas y condiciones diferentes. Tu tarea es extraer la información, homologar los conceptos equivalentes y calcular el costo neto total puesto en nuestra ubicación en <mark data-marker="MONEDA DESTINO, EJ. MXN">[MONEDA DESTINO, EJ. MXN]</mark>. Reglas de cálculo que debes aplicar: 1. Usa un tipo de cambio de <mark data-marker="TIPO DE CAMBIO, EJ. 1 USD = X MXN">[TIPO DE CAMBIO, EJ. 1 USD = X MXN]</mark> para convertir otras monedas. 2. Si el precio no incluye IVA, suma el <mark data-marker="PORCENTAJE DE IVA, EJ. 16%">[PORCENTAJE DE IVA, EJ. 16%]</mark>. 3. Suma cualquier costo adicional mencionado de flete, envío o seguro al costo neto. 4. Evalúa la mejor opción considerando este criterio principal: <mark data-marker="CRITERIO PRINCIPAL, EJ. MENOR COSTO NETO CON ENTREGA MENOR A 10 DÍAS">[CRITERIO PRINCIPAL, EJ. MENOR COSTO NETO CON ENTREGA MENOR A 10 DÍAS]</mark>. Primero, muéstrame el desglose paso a paso de cómo calculaste el costo neto de cada proveedor e indica si algún documento tiene datos faltantes o ambiguos. Después, entrega una tabla resumen con estas 4 columnas exactas: PROVEEDOR | ENTREGA | COSTO NETO | DECISIÓN. En la columna DECISIÓN asigna una etiqueta breve (por ejemplo: MEJOR OPCIÓN, CON FLETE ALTO, DESCARTADO o FALTA INFORMACIÓN) según el criterio indicado. No inventes datos que no estén en los archivos. Aquí están las cotizaciones: <mark data-marker="PEGA AQUÍ EL TEXTO DE LAS COTIZACIONES O ADJUNTA LOS ARCHIVOS">[PEGA AQUÍ EL TEXTO DE LAS COTIZACIONES O ADJUNTA LOS ARCHIVOS]</mark></pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
+var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
+function setup(app){
+var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
+if(!pre||!btn||!out){return;}
+var parts=[],n,k,label=btn.textContent,timer=null;
+for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
+var inputs=box?box.querySelectorAll("[data-marker]"):[];
+function render(){var v=Object.create(null),j,p,el,x;
+for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
+while(pre.firstChild){pre.removeChild(pre.firstChild);}
+for(j=0;j<parts.length;j++){p=parts[j];
+if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
+else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
+else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
+for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
+function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
+function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
+function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
+ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
+function done(ok){if(ok){btn.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓");
+if(timer){window.clearTimeout(timer);}timer=window.setTimeout(function(){btn.textContent=label;},2000);}
+else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado, cópialo con Ctrl+C (⌘+C en Mac).");}}
+btn.addEventListener("click",function(){var text=pre.textContent;
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
+else{done(legacy(text));}});
+if(box){box.hidden=false;}btn.hidden=false;}
+})();</script>
+<section class="panel" aria-labelledby="R18-dl-t"><div class="panel-head"><h2 id="R18-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_cotiza.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_cotiza.csv · 447 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (PROVEEDOR, ENTREGA, COSTO NETO, DECISIÓN); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.7 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 3.6 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="extraer_cotizaciones_pdf.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>extraer_cotizaciones_pdf.py · 3.7 KB</small></span></a><p class="dl-desc">Extrae el texto y las tablas de todos los archivos PDF de cotizaciones en una carpeta local y los une en un archivo de texto o Excel para facilitar su revisión y comparación.</p></li></ul></section>
+<p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
+confidenciales con herramientas de IA.</p>
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Comparador de Cotizaciones y Matriz de Decisión de Compras
+
+Recurso gratuito de **Atajo IA** que acompaña al reel **R18 · Comparador de 5 Cotizaciones en 1 Tabla** (palabra clave: COTIZA).
+
+&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+
+## Qué es
+
+Este recurso ayuda a encargados de compras, administradores y dueños de negocio a organizar y homologar múltiples cotizaciones con distintos formatos y monedas en una sola tabla comparativa. Genera un borrador estructurado para facilitar la evaluación de proveedores. No sustituye el análisis financiero definitivo ni garantiza exactitud en cálculos o lecturas de documentos complejos, por lo que requiere validación humana antes de autorizar cualquier pago o pedido.
+
+## Qué incluye
+
+- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
+- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
+- `plantilla_cotiza.csv`: Plantilla con las columnas de la demo (PROVEEDOR, ENTREGA, COSTO NETO, DECISIÓN); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
+- `extraer_cotizaciones_pdf.py`: Extrae el texto y las tablas de todos los archivos PDF de cotizaciones en una carpeta local y los une en un archivo de texto o Excel para facilitar su revisión y comparación.
+
+## Requisitos
+
+- Acceso a un asistente de IA aprobado por tu organización que permita adjuntar documentos o imágenes
+- Excel, Google Sheets o LibreOffice Calc para abrir la plantilla CSV
+- Tus cotizaciones en PDF, hoja de cálculo, texto o imagen con datos confidenciales censurados
+- Tipo de cambio oficial del día y porcentaje de impuestos aplicable en tu operación
+- Para el script (opcional): Python 3.10 o superior y los paquetes `openpyxl pandas pdfplumber`.
+
+## Cómo usarlo paso a paso
+
+1. Reúne las cotizaciones que vas a comparar y oculta datos sensibles como cuentas bancarias, nombres de contactos o descuentos confidenciales.
+2. Si tienes tus cotizaciones en archivos PDF digitales, puedes usar el script opcional en Python incluido para extraer sus textos y tablas de forma local antes de usar la IA.
+3. Abre el archivo PROMPT_MAESTRO.md, copia el texto y pégalo en tu asistente de IA.
+4. Rellena los datos entre corchetes indicando la moneda destino, el tipo de cambio a utilizar, la tasa de IVA y tus criterios de decisión.
+5. Adjunta los archivos o pega el texto de las cotizaciones en el chat y envía el mensaje para generar la tabla homologada.
+6. Copia las filas generadas por la IA y pégalas dentro de tu plantilla CSV abierta en Excel o Google Sheets.
+7. Verifica manualmente cada cifra, tiempo de entrega, flete e impuesto contra los documentos originales de los proveedores antes de tomar una decisión o recabar firmas.
+
+## Script de Python (opcional)
+
+`extraer_cotizaciones_pdf.py`: Extrae el texto y las tablas de todos los archivos PDF de cotizaciones en una carpeta local y los une en un archivo de texto o Excel para facilitar su revisión y comparación.
+
+```bash
+pip install openpyxl pandas pdfplumber
+python extraer_cotizaciones_pdf.py --carpeta ./mis_cotizaciones --salida resumen_extraido.xlsx
+```
+
+El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+
+## Privacidad y advertencias
+
+- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
+- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
+- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
+- Antes de subir documentos a cualquier asistente de IA, borra o tacha datos bancarios (CLABE, número de cuenta), RFC, firmas autógrafas, teléfonos personales y domicilios particulares.
+- Revisa si tus acuerdos de confidencialidad con proveedores prohíben compartir sus listas de precios en herramientas externas; utiliza únicamente plataformas de IA autorizadas por tu empresa.
+- Los modelos de IA pueden cometer errores aritméticos o leer mal números en imágenes borrosas: recalcula siempre en tu hoja de cálculo el IVA, el tipo de cambio y las sumas totales antes de autorizar una compra.
+- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+
+## Licencia
+
+Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+
+_Borrador preparado con ayuda de IA el 2026-10-19. Revísalo antes de usarlo._
+</pre></details>
+
+
+<p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
+<footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>
+</main></body></html>
