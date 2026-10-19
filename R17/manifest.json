@@ -1,0 +1,27 @@
+{
+  "reel_id": "R17",
+  "title": "Parrilla de 30 días de contenido desde dudas de clientes",
+  "keyword": "CONTENIDO",
+  "slug": "parrilla-de-30-dias-de-contenido-desde-dudas-de-clientes",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Prompts listos para copiar en tu asistente de IA."
+    },
+    {
+      "name": "plantilla_contenido.csv",
+      "kind": "template",
+      "description": "Plantilla con las columnas de la demo (DÍA, DUDA DETECTADA, FORMATO, GANCHO SUGERIDO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+    }
+  ],
+  "has_code": false,
+  "resource_label": "Prompt maestro + plantilla CSV",
+  "created_at": "2026-10-19T00:13:26",
+  "model": "gemini:gemini-4-argon"
+}
