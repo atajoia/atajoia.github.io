@@ -1,0 +1,6 @@
+[00:12] Tarea: Ajustar cotización | Responsable: Ana | Fecha: 2026-10-26 16:00
+[00:30] Tarea: Enviar borrador del contrato | Responsable: Luis | Fecha: 2026-10-27
+[00:45] Hay que corregir las descripciones del catálogo.
+[01:00] Tarea: Agendar llamada | Responsable: Marcos | Fecha: 2026-10-30
+[01:15] Verificar si el depósito se refleja.
+[01:30] Gracias, eso es todo.

@@ -1,49 +1,75 @@
-# Plantilla de 5 Niveles de Cobranza Diplomática con IA
+# Recordatorios de pago sin amenazas
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R09 · Cobranza Firme sin Perder Clientes** (palabra clave: COBRANZA).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R09 · COBRANZA
 
 ## Qué es
 
-Este recurso ayuda a dueños de negocio, profesionistas independientes y equipos administrativos a redactar recordatorios de pago ajustados a los días de atraso de cada factura sin dañar la relación comercial. Incluye una estructura de tabla y prompts listos para generar borradores desde avisos cordiales hasta pausas de servicio. No sustituye la asesoría legal o contable, no envía correos en automático y todos los textos generados son borradores que requieren revisión humana antes de enviarse.
+Calcula días de atraso a una fecha de corte y prepara un mensaje revisable por factura, sin envíos automáticos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R09 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_cobranza.csv`: Plantilla con las columnas de la demo (CLIENTE, MONTO, ATRASO, TONO ASIGNADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Acceso a un asistente de inteligencia artificial aprobado por tu organización.
-- Hoja de cálculo (Excel, Google Sheets o LibreOffice) para llenar la plantilla CSV.
-- Lista actualizada de tus facturas pendientes con montos y días de vencimiento verificados.
-- Procesador de textos si deseas guardar los borradores finales en un documento.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_cobranza.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Abre la plantilla CSV incluida y registra tus facturas vencidas usando alias o códigos en lugar de nombres reales o razones sociales confidenciales.
-2. Verifica en tu sistema contable o estados de cuenta que ninguna de las facturas listadas haya sido pagada recientemente.
-3. Asigna en la cuarta columna el nivel de tono según la antigüedad del saldo o deja la celda en blanco para que el asistente lo sugiera con base en los días de atraso.
-4. Abre el archivo PROMPT_MAESTRO.md, copia las instrucciones y pégalas en tu asistente de IA junto con los datos de tu tabla.
-5. Si tienes un cliente con saldo vencido que solicita un nuevo pedido urgente, aplica el prompt complementario correspondiente para condicionar la entrega con diplomacia.
-6. Revisa cada borrador generado contra tu factura original: confirma montos, fechas y reemplaza los alias por los nombres reales ya fuera del chat de IA.
-7. Pega los textos revisados en tu correo o documento de seguimiento y realiza el envío desde tus canales oficiales.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R09/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Encabezados: factura,cliente,monto,vencimiento. Monto sin separador de miles; vencimiento AAAA-MM-DD. No incluyas datos bancarios. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Calcular atraso y preparar mensajes». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- No subas razones sociales reales, RFC, números de cuenta bancaria, CLABE ni datos personales de tus clientes a herramientas de IA públicas; usa alias en la columna de cliente y agrega los datos bancarios manualmente antes de enviar.
-- Utiliza únicamente asistentes de inteligencia artificial aprobados por las políticas de seguridad de tu empresa u organización.
-- Confirma siempre con tu área contable o estado de cuenta bancario del día que el pago no haya caído antes de enviar cualquier recordatorio para evitar reclamos innecesarios.
-- Recuerda que la IA puede cometer errores al cruzar filas o montos: revisa cada mensaje uno por uno antes de enviarlo al destinatario.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R09 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 6 columnas en este orden: Factura | Cliente | Saldo MXN | Días de atraso | Nivel | Borrador o revisión.
+- La primera fila de referencia es: F-101 | Cliente A | 18500.00 | 5 | 1 | Hola, Cliente A. Damos seguimiento a F-101 por 18500.00 MXN, con 5 días de atraso a la fecha de corte. ¿Nos confirmas si ya realizaste el pago o cuándo podrías revisarlo?.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Reglas locales: 1–7 días nivel 1; 8–20 nivel 2; 21–35 nivel 3; 36–50 nivel 4; más de 50 nivel 5.
+- Fecha calculada por días de calendario, sin efectos de horario de verano. Un valor negativo significa que aún faltan días para vencer.
+- Verifica pagos recientes y autoriza el mensaje antes de enviarlo. No se añaden recargos, amenazas, descuentos ni suspensión de servicios.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R09 de Atajo IA](https://atajoia.github.io/R09/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+- [Google: privacidad de Gemini](https://support.google.com/gemini/answer/13594961?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

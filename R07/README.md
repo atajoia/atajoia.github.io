@@ -1,49 +1,76 @@
-# Presentación: convertir notas en una historia
+# Organiza notas en quince láminas
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R07 · 15 Diapositivas en 2 Minutos con IA** (palabra clave: DIAPOS).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R07 · DIAPOS
 
 ## Qué es
 
-Esta guía y paquete de prompts transforma apuntes desordenados o documentos extensos en un guion estructurado de diapositivas listo para pasar a tu programa de presentaciones. Está pensado para profesionistas, oficinistas y dueños de negocio que necesitan preparar reportes ejecutivos sin empezar frente a una hoja en blanco. No genera el diseño gráfico final por sí solo ni garantiza exactitud en los datos: entrega un borrador que tú debes revisar y validar antes de proyectar.
+Distribuye tus notas en un guion descargable de texto sin inventar datos ni prometer un PPTX. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Diseñar un primer guion de diapositivas que conserve las fuentes y no invente cifras.
+## Herramienta y preparación
+
+Mini aplicación web R07 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_diapos.csv`: Plantilla con las columnas de la demo (LÁMINA, SECCIÓN, PRESUPUESTO, DISEÑO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Un documento de texto o apuntes con la información base ya anonimizada
-- Un asistente de IA o generador de presentaciones aprobado por tu organización
-- PowerPoint, Google Slides o un lector de hojas de cálculo para organizar la plantilla CSV
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_diapos.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Reúne tus notas o el documento del trimestre y elimina nombres propios, clientes, cuentas bancarias o datos confidenciales antes de copiar el texto.
-2. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y reemplaza los corchetes con el número de láminas, tu audiencia, el objetivo y tus notas limpias.
-3. Ejecuta el prompt en tu herramienta de IA aprobada para obtener la estructura inicial con títulos, ideas principales y sugerencias visuales.
-4. Usa el primer prompt complementario para auditar que ninguna cifra o afirmación haya sido inventada con respecto a tu documento original.
-5. Vacía la estructura aprobada en la plantilla CSV adjunta para controlar qué láminas llevan tablas de presupuesto, gráficas o textos pendientes.
-6. Lleva el guion validado a tu programa de presentaciones (o a la función de importar esquema en tu software de diapositivas) y aplica la plantilla oficial de tu empresa.
-7. Revisa cada lámina contra tu fuente original, completa los datos marcados como PENDIENTE y verifica que el contenido se ajuste al tiempo de tu reunión.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R07/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Usa Título: y encabezados #. Cada línea de contenido será un bloque; lo que falte queda por completar. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Crear guion de quince láminas». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 15 filas y 5 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Verifica cifras, fuentes, permisos de imágenes y afirmaciones.
-- Adapta el contenido a la audiencia y al tiempo disponible.
-- Elimina información confidencial antes de usar herramientas externas.
-- Elimina información confidencial, nombres de clientes y montos sensibles antes de pegar tus notas en herramientas externas.
-- Verifica manualmente todas las cifras, presupuestos, fuentes, permisos de imágenes y afirmaciones contra tu documento original.
-- Adapta el nivel de detalle y el tono del borrador a tu audiencia real y al tiempo disponible para presentar.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R07 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 15 filas y 5 columnas en este orden: Lámina | Título | Contenido | Disposición sugerida | Control.
+- La primera fila de referencia es: 01 | Revisión comercial · caso ficticio | Guion basado en los datos que proporcionaste. | Portada | Revisar título y audiencia.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- 14 bloque(s) de notas distribuidos en catorce láminas de contenido más portada.
+- Conserva el texto y las cifras que proporcionaste; no inventa conclusiones, porcentajes, causas, fechas o responsables.
+- Si faltan notas, deja láminas marcadas para completar. Revisa legibilidad y datos antes de presentar. Puedes descargar el guion Markdown; no se crea un PPTX ni se opera un editor externo.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R07 de Atajo IA](https://atajoia.github.io/R07/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [LibreOffice: crear una diapositiva nueva](https://help.libreoffice.org/latest/es/text/simpress/01/new_slide.html)
+- [LibreOffice: menú Diapositiva y disposiciones](https://help.libreoffice.org/latest/es/text/simpress/main_slide.html)
+- [LibreOffice: exportar a PDF](https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

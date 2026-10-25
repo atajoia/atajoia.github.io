@@ -1,0 +1,6 @@
+Opciones usadas para el resultado de referencia · R11
+Edición: 2026-10-25
+
+Esta miniaplicación no necesita opciones adicionales.
+
+Para reproducir RESULTADO_ESPERADO.csv usa exactamente DATOS_PRACTICA.txt y estas opciones. Si cambias la fecha de referencia, los umbrales o el catálogo, el resultado puede cambiar de forma válida.

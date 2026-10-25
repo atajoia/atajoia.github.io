@@ -1,48 +1,77 @@
-# De Audios Eternos a Tabla de Tareas Accionables
+# Tareas candidatas desde una transcripción
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R11 · De Audios Eternos a Tareas Claras en Segundos** (palabra clave: AUDIOS).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R11 · AUDIOS
 
 ## Qué es
 
-Este flujo convierte notas de voz largas o transcripciones desordenadas en una tabla clara con pendientes, responsables y fechas de entrega. Está diseñado para oficinistas, coordinadores y dueños de negocio que reciben instrucciones habladas con rodeos o cambios de tema. El resultado es un borrador de apoyo que no sustituye tu criterio ni garantiza exactitud total, por lo que requiere revisión humana antes de asignar el trabajo.
+Marca frases con verbos de tarea y conserva su evidencia literal. Reglas locales, sin IA, audio ni transcripción automática. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R11 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_audios.csv`: Plantilla con las columnas de la demo (TAREA CLAVE, RESPONSABLE, IMPACTO, ENTREGA); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Un asistente de IA aprobado por tu organización que acepte archivos de audio (.ogg, .mp3, .m4a) o texto transcrito
-- La transcripción del audio si tu herramienta de IA solo procesa texto
-- Excel, Google Sheets o tu gestor de tareas habitual para usar la plantilla CSV incluida
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_audios.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Descarga la nota de voz a tu computadora o genera su transcripción con una herramienta autorizada por tu empresa.
-2. Revisa que el audio no incluya contraseñas, cuentas bancarias ni datos personales sensibles antes de subirlo.
-3. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y pégalo en tu asistente de IA.
-4. Completa los datos entre corchetes como el contexto del proyecto y adjunta el archivo de audio o pega la transcripción.
-5. Solicita la salida y verifica que la tabla contenga las columnas: TAREA CLAVE, RESPONSABLE, IMPACTO y ENTREGA.
-6. Contrasta las cifras, montos y fechas generadas contra el audio original para corregir malentendidos por ruido de fondo.
-7. Copia las filas validadas y pégalas en la plantilla CSV incluida para llevar el seguimiento en Excel o Google Sheets.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R11/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Para extraer campos con precisión usa: Tarea: ... | Responsable: ... | Fecha: ... . En texto libre solo se marca una candidata; los campos no rotulados quedan Por confirmar. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Esta herramienta no requiere opciones adicionales.
+3. **Ejecuta la herramienta:** Pulsa «Marcar tareas y datos pendientes». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 5 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- No subas notas de voz a plataformas públicas de IA si contienen secretos industriales, datos médicos, contraseñas o información financiera confidencial.
-- Usa únicamente herramientas de transcripción y análisis aprobadas por el área de tecnología o seguridad de tu organización.
-- Reemplaza nombres reales de clientes o empresas por alias genéricos (ej. Cliente A) cuando pegues transcripciones en el asistente.
-- Verifica siempre de forma manual los montos económicos, plazos legales y compromisos antes de dar por buena la tabla.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R11 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 5 columnas en este orden: Tarea candidata | Responsable | Fecha literal | Evidencia literal | Revisión.
+- La primera fila de referencia es: Ajustar cotización | Ana | 2026-10-26 16:00 | [00:12] Tarea: Ajustar cotización | Responsable: Ana | Fecha: 2026-10-26 16:00 | Campos rotulados: cotejar con la fuente..
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Detector por patrones locales; no usa IA ni escucha archivos de audio.
+- Solo copia responsables y fechas con las etiquetas Responsable: y Fecha:. No interpreta fechas relativas, correcciones ni dependencias.
+- 1 líneas sin patrón de tarea omitidas. Las candidatas pueden incluir falsos positivos; revisa también el texto original.
+- Una negación, cambio de responsable o fecha ambigua requiere decisión humana antes de asignar trabajo.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R11 de Atajo IA](https://atajoia.github.io/R11/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+- [Google: privacidad de Gemini](https://support.google.com/gemini/answer/13594961?hl=es)
+- [Google: crear y editar hojas de cálculo](https://support.google.com/docs/answer/6000292?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

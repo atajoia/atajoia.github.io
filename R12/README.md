@@ -1,60 +1,76 @@
-# Generador de Manuales Paso a Paso y Control de Capturas
+# Manual desde pasos que tú defines
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R12 · Generador Automático de Manuales con IA** (palabra clave: MANUAL).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R12 · MANUAL
 
 ## Qué es
 
-Este recurso ayuda a encargados de operaciones, recursos humanos y líderes de equipo a estructurar guías operativas claras a partir de sus bitácoras de clics o grabadores de procesos (como la Grabadora de acciones de Windows, Scribe o Tango). Incluye la plantilla de control de capturas y un script local para armar el documento editable en Word. No reemplaza la revisión humana ni garantiza que el ocultamiento automático de datos sensibles sea infalible, por lo que cada imagen debe verificarse antes de compartir el manual.
+Convierte acciones y comprobaciones en un manual descargable e imprimible. Sin capturas inventadas ni grabación de pantalla. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R12 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_manual.csv`: Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, CAPTURA, PRIVACIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-- `armar_manual_word.py`: Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF.
-
-## Requisitos
-
-- Acceso a un asistente de IA aprobado por tu organización para limpiar y redactar las instrucciones.
-- Excel, Google Sheets o cualquier editor de hojas de cálculo para llenar la plantilla CSV.
-- Una herramienta de captura de pasos (por ejemplo, la Grabadora de acciones de usuario integrada en Windows o una extensión autorizada por tu área de TI).
-- Para el script (opcional): Python 3.10 o superior y los paquetes `pandas python-docx`.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_manual.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Prepara tu pantalla cerrando pestañas ajenas a la tarea y ejecuta el proceso una vez usando el grabador de acciones autorizado en tu trabajo (o tomando las capturas numeradas en una carpeta local).
-2. Abre la plantilla CSV incluida y registra la secuencia básica de tus acciones y el nombre de cada archivo de imagen.
-3. Copia el contenido de PROMPT_MAESTRO.md en tu asistente de IA y pega tu lista de acciones en bruto para estandarizar la redacción en una tabla limpia.
-4. Pasa el texto mejorado a tu plantilla CSV y verifica el estado de la columna PRIVACIDAD en cada fila.
-5. Compara la tabla final contra el sistema real para confirmar que no falte ningún clic intermedio, ventana emergente o validación obligatoria.
-6. Convierte tu tabla validada en el documento final usando el script local incluido o exportándola a PDF desde tu editor de textos.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R12/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Encabezados: título,acción,comprobación. Si una acción contiene comas, enciérrala entre comillas. Registra acciones reales o una práctica claramente identificada. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Crear manual paso a paso». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 4 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Script de Python (opcional)
+## Prompt completo
 
-`armar_manual_word.py`: Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF.
-
-```bash
-pip install pandas python-docx
-python armar_manual_word.py --csv plantilla_pasos.csv --imagenes ./capturas --titulo "Manual de Facturacion" --salida Manual_Facturacion_Borrador.docx
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R12 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-## Privacidad y advertencias
+## Cómo comprobar tu resultado
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- Ninguna función de difuminado automático es infalible: revisa visualmente el 100 % de las capturas antes de exportar o compartir el documento.
-- Cuando debas ocultar información privada (RFC, sueldos, cuentas, nombres o contraseñas), usa recuadros sólidos opacos y guarda la imagen como copia plana; algunos filtros de desenfoque ligero pueden revertirse o dejar texto legible.
-- Si el proceso incluye datos fiscales, bancarios o de nómina, no uses extensiones que suban las capturas a servidores externos sin autorización expresa de tu área de TI.
-- Elimina los archivos de grabación en bruto (.rec, .zip o carpetas temporales) una vez que hayas publicado la versión revisada y censurada del manual.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 4 columnas en este orden: Paso | Título | Acción | Comprobación.
+- La primera fila de referencia es: 1 | Crear hoja | Abre sheets.google.com/create y nombra la hoja Práctica R12 | Se ve una hoja nueva con ese título.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Manual armado en tu navegador con las acciones que escribiste; no controla otros programas.
+- Puedes descargar el texto o una versión HTML imprimible desde la interfaz. Esto no publica ni comparte el documento.
+- Una comprobación vacía queda Por confirmar. Ningún manual se marca probado automáticamente.
 
-## Licencia
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Si algo no funciona
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R12 de Atajo IA](https://atajoia.github.io/R12/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: empezar a usar Hojas de cálculo](https://support.google.com/docs/answer/6000292?hl=es)
+- [Google: crear y descargar archivos](https://support.google.com/docs/answer/49114?hl=es)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

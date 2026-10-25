@@ -1,0 +1,6 @@
+título,acción,comprobación
+Crear hoja,Abre sheets.google.com/create y nombra la hoja Práctica R12,Se ve una hoja nueva con ese título
+Encabezados,Escribe Folio en A1 y Total en B1,Hay dos encabezados en columnas distintas
+Dato de práctica,Escribe DEMO-001 en A2 y 1160 en B2,La fila contiene el folio y el número indicados
+Revisión,Compara la fila con los datos de práctica y corrige diferencias,El folio aparece una vez y el total es 1160
+Repetición,Repite los pasos en otra hoja vacía usando solo el manual,Anota qué paso faltó o fue ambiguo

@@ -1,32 +1,103 @@
 {
   "reel_id": "R12",
-  "title": "Generador de Manuales Paso a Paso y Control de Capturas",
+  "title": "Manual desde pasos que tú defines",
   "keyword": "MANUAL",
-  "slug": "generador-de-manuales-paso-a-paso-y-control-de-capturas",
+  "slug": "r12",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "2ce790a573f8b894e77bd5b4c7721131c00c7dea7f86f1838ce353f97ec73dba",
+      "bytes": 6308
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "8f71cf2748c91726a0a0c1e634f2e1ed50bb920f1dac9818dce741e901241158",
+      "bytes": 563
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "82770047c8fc93f0c5cbd93b2c22d64787e900c0d080896d7f98dcac81544a60",
+      "bytes": 827
     },
     {
       "name": "plantilla_manual.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, CAPTURA, PRIVACIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "cd1bdd94766e71e369d7556c129a5d3539d9af3675a6428f2c4d25f5bdb701e0",
+      "bytes": 39
     },
     {
-      "name": "armar_manual_word.py",
-      "kind": "script",
-      "description": "Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF."
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "2771a306910dda0f2129d1e55dd8faefd1a4b5ce7b8dfc0fe66253c34efc7d32",
+      "bytes": 581
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "6a06a3e1987110ddf3737eb8f19f4c62081a7456c9702e67513b9ac5836e0621",
+      "bytes": 369
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "7c4934431481179b85c51d37bc2a5a92716fa9c1fae6d7cd4f9e5d22d56cb6b5",
+      "bytes": 1157
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "e667e1662b7d120771fc88f4bc9687c39e217e3096e757474e87359608f74744",
+      "bytes": 917
     }
   ],
-  "has_code": true,
-  "resource_label": "Prompt maestro + plantilla CSV + script de Python",
-  "created_at": "2026-10-17T16:51:06",
-  "model": "gemini:gemini-4-argon"
+  "has_code": false,
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "f76e0a6c949e581133361bc97b41b23bc22d692594abdd40e261d3ec37abcce7",
+  "resource_source_hash": "efd55ee0cba0d67a91902d6a9855a91ca5534194",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R12 de Atajo IA",
+      "url": "https://atajoia.github.io/R12/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: empezar a usar Hojas de cálculo",
+      "url": "https://support.google.com/docs/answer/6000292?hl=es"
+    },
+    {
+      "title": "Google: crear y descargar archivos",
+      "url": "https://support.google.com/docs/answer/49114?hl=es"
+    },
+    {
+      "title": "Google: acceso a Gemini web",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    }
+  ],
+  "expected_rows": 5,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r12.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

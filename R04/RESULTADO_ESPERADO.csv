@@ -1,0 +1,6 @@
+﻿Competidor,Unidad,Precio,Evidencia,Comparabilidad,Revisión
+Ejemplo Norte,Latte 300 ml,50.00,Ficha ficticia F1,Comparable según unidad declarada,Fuente no verificada por esta app
+Ejemplo Centro,Latte 300 ml,65.00,Ficha ficticia F2,Comparable según unidad declarada,Fuente no verificada por esta app
+Ejemplo Sur,Latte 300 ml,Por confirmar,Ficha ficticia F3,Precio por revisar; excluido,Fuente no verificada por esta app
+Ejemplo Este,Latte 300 ml,58.00,Ficha ficticia F4,Comparable según unidad declarada,Fuente no verificada por esta app
+Ejemplo Oeste,Latte 300 ml,70.00,Ficha ficticia F5,Comparable según unidad declarada,Fuente no verificada por esta app

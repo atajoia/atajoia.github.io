@@ -1,46 +1,75 @@
-# Guía de entrenamiento de voz comercial con estructura de 5 pasos
+# Propuesta comercial con datos controlados
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R08 · Clona tu voz para crear propuestas de venta** (palabra clave: ESTILO).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R08 · ESTILO
 
 ## Qué es
 
-Este recurso te ayuda a entrenar a un asistente de IA con tus propuestas ganadoras previas para redactar borradores de cotizaciones que imiten tu forma de escribir y negociar. Está diseñado para vendedores, consultores y dueños de negocio que quieren ahorrar tiempo de redacción sin sonar como un robot.
+Construye un borrador con tus condiciones y un tono elegido. Plantilla local: no clona voz ni aprende de documentos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R08 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_estilo.csv`: Plantilla con las columnas de la demo (SECCIÓN, TONO APLICADO, INVERSIÓN, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Acceso a un asistente de IA aprobado por tu organización que permita pegar textos largos o subir documentos.
-- Tres propuestas o cotizaciones reales que ya hayan cerrado ventas, con datos sensibles eliminados.
-- Un procesador de textos (Word o Google Docs) y una hoja de cálculo para abrir la plantilla CSV de control.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_estilo.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Reúne 3 propuestas reales que ya te hayan funcionado y borra nombres de clientes, marcas, correos y datos confidenciales.
-2. Abre el archivo PROMPT_MAESTRO.md, copia el texto y pégalo junto con tus 3 propuestas anonimizadas en tu asistente de IA.
-3. Revisa las reglas de estilo que detectó la IA (muletillas, estructura y forma de presentar precios) y corrige cualquier interpretación errónea.
-4. Pega tus notas de la reunión con el nuevo prospecto y tu lista de precios autorizada para que la IA redacte el borrador de la propuesta.
-5. Registra el avance y los montos de cada apartado en la plantilla CSV para llevar el control del armado.
-6. Compara el borrador generado contra tus notas originales y tu tabulador oficial para verificar que los alcances, tiempos y precios sean exactos antes de exportar tu documento final.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R08/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Usa cliente:, alcance:, precio:, entrega:, exclusiones: y pago:, o CSV con esos encabezados. El precio se conserva como texto, sin calcular impuestos. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Crear borrador de propuesta». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 4 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- Antes de subir tus propuestas históricas a cualquier herramienta de IA, reemplaza los nombres de empresas, contactos, montos confidenciales y datos fiscales por etiquetas genéricas como [CLIENTE A] o [PROYECTO 1].
-- Utiliza únicamente asistentes de IA autorizados por tu organización y verifica que la configuración no entrene modelos públicos con la información que compartes.
-- La IA puede inventar condiciones comerciales o alterar números al redactar; revisa siempre cada monto, alcance y cláusula legal antes de enviar la cotización al cliente.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R08 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 4 columnas en este orden: Cliente | Sección | Contenido | Revisión.
+- La primera fila de referencia es: Taller Horizonte | Alcance | Una hoja de registro de solicitudes, una guía de dos páginas y una revisión de 30 minutos. | Verificar que describe todos los entregables..
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Borrador generado por plantilla y reglas locales; no usa IA ni se envía a nadie.
+- Los valores escritos se conservan; revisa precios, fechas y compromisos. Lo no aportado queda Por confirmar.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R08 de Atajo IA](https://atajoia.github.io/R08/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+- [Google: crear y descargar documentos](https://support.google.com/docs/answer/49114?hl=es)
+- [Google: privacidad de Gemini](https://support.google.com/gemini/answer/13594961?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

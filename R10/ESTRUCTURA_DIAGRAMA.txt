@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "S1",
+      "label": "S1 · Registrar solicitud\nOperaciones"
+    },
+    {
+      "id": "S2",
+      "label": "S2 · ¿Hay presupuesto?\nFinanzas"
+    },
+    {
+      "id": "S3",
+      "label": "S3 · ¿Proveedor registrado?\nAdministración"
+    },
+    {
+      "id": "S4",
+      "label": "S4 · ¿Monto mayor a 5000 MXN?\nFinanzas"
+    },
+    {
+      "id": "DIR",
+      "label": "DIR · ¿Dirección aprueba?\nDirección"
+    },
+    {
+      "id": "AUT",
+      "label": "AUT · Autorizar monto menor o igual a 5000\nFinanzas"
+    },
+    {
+      "id": "PAGO",
+      "label": "PAGO · Registrar pago\nTesorería"
+    },
+    {
+      "id": "POST",
+      "label": "POST · Postpuesto\nFinanzas"
+    },
+    {
+      "id": "PEND",
+      "label": "PEND · Pendiente de datos\nAdministración"
+    },
+    {
+      "id": "RECH",
+      "label": "RECH · Rechazado\nDirección"
+    },
+    {
+      "id": "FIN",
+      "label": "FIN · Pago registrado\nTesorería"
+    }
+  ],
+  "edges": [
+    {
+      "from": "S1",
+      "to": "S2",
+      "label": "Siguiente"
+    },
+    {
+      "from": "S2",
+      "to": "S3",
+      "label": "Sí"
+    },
+    {
+      "from": "S2",
+      "to": "POST",
+      "label": "No"
+    },
+    {
+      "from": "S3",
+      "to": "S4",
+      "label": "Sí"
+    },
+    {
+      "from": "S3",
+      "to": "PEND",
+      "label": "No"
+    },
+    {
+      "from": "S4",
+      "to": "DIR",
+      "label": "Sí"
+    },
+    {
+      "from": "S4",
+      "to": "AUT",
+      "label": "No"
+    },
+    {
+      "from": "DIR",
+      "to": "PAGO",
+      "label": "Sí"
+    },
+    {
+      "from": "DIR",
+      "to": "RECH",
+      "label": "No"
+    },
+    {
+      "from": "AUT",
+      "to": "PAGO",
+      "label": "Siguiente"
+    },
+    {
+      "from": "PAGO",
+      "to": "FIN",
+      "label": "Siguiente"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+frase,responsable,fecha
+Enviar catálogo final,Ana,2026-05-19
+Revisar servidor,Carlos,2026-05-20
+Confirmar soporte adicional,,

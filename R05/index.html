@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>Excel: entender y corregir una fórmula · Recurso gratis #R05 · Atajo IA</title>
-<meta name="description" content="Obtener una fórmula explicada y probarla con un caso controlado."><meta name="theme-color" content="#000000">
+<title>Cruza ventas y catálogo por SKU · Recurso gratis #R05 · Atajo IA</title>
+<meta name="description" content="Calcula ventas, costos y margen por línea con tus dos tablas. Los costos faltantes quedan pendientes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,110 +169,95 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R05</span><span>EXCEL</span></p>
-<h1>Excel: entender y corregir una fórmula</h1>
-<p class="lede">Obtener una fórmula explicada y probarla con un caso controlado.</p><p class="incl">Incluye: Prompt maestro + plantilla CSV + script de Python</p>
+<h1>Cruza ventas y catálogo por SKU</h1>
+<p class="lede">Calcula ventas, costos y margen por línea con tus dos tablas. Los costos faltantes quedan pendientes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R05-start-t"><h2 id="R05-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R05-inicio">Ir al prompt</a><a href="#R05-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R05-inicio" class="panel app" data-app aria-labelledby="R05-app-t"><div class="panel-head"><h2 id="R05-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R05-campo-1">Idioma y versión</label><input id="R05-campo-1" type="text" data-marker="IDIOMA Y VERSIÓN" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R05-campo-2">Resultado</label><input id="R05-campo-2" type="text" data-marker="RESULTADO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R05-campo-3">Descripción sin datos reales</label><textarea id="R05-campo-3" data-marker="DESCRIPCIÓN SIN DATOS REALES" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R05-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Ayúdame con una fórmula de Excel. Uso Excel en <mark data-marker="IDIOMA Y VERSIÓN">[IDIOMA Y VERSIÓN]</mark>. Quiero <mark data-marker="RESULTADO">[RESULTADO]</mark>. Las columnas relevantes son <mark data-marker="DESCRIPCIÓN SIN DATOS REALES">[DESCRIPCIÓN SIN DATOS REALES]</mark>. Devuelve: 1) fórmula compatible, 2) explicación breve de cada parte, 3) un ejemplo pequeño para probar y 4) posibles causas de error. Si faltan datos, pregúntame antes de elegir una fórmula. No supongas que el resultado es correcto sin validarlo.</pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r05.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
 
-<section id="R05-descargas" class="panel" aria-labelledby="R05-dl-t"><div class="panel-head"><h2 id="R05-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_excel.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_excel.csv · 452 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (SKU, VENTA, MARGEN, ALERTA); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.2 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 2.7 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="cruzar_ventas_catalogo.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>cruzar_ventas_catalogo.py · 4.6 KB</small></span></a><p class="dl-desc">Cruza un archivo Excel de ventas con una hoja de catálogo por SKU, calcula el margen y marca alertas en un archivo nuevo sin modificar el original.</p></li></ul></section>
+
+<section class="panel" id="R05-resultado" aria-labelledby="R05-result-t"><h2 id="R05-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">SKU</th><th scope="col">Cantidad</th><th scope="col">Venta total</th><th scope="col">Costo total</th><th scope="col">Margen</th><th scope="col">Alerta</th></tr></thead><tbody><tr><td>A100</td><td>2</td><td>300.00</td><td>160.00</td><td>140.00</td><td>OK</td></tr><tr><td>A200</td><td>1</td><td>200.00</td><td>120.00</td><td>80.00</td><td>REVISAR MARGEN</td></tr><tr><td>B100</td><td>3</td><td>210.00</td><td>135.00</td><td>75.00</td><td>REVISAR MARGEN</td></tr><tr><td>X999</td><td>1</td><td>90.00</td><td>Por confirmar</td><td>Por confirmar</td><td>REVISAR SKU</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R05-descargas" class="panel" aria-labelledby="R05-dl-t"><div class="panel-head"><h2 id="R05-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_excel.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_excel.csv · 55 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 6.2 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 825 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 76 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 227 B</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 434 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 1012 B</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Excel: entender y corregir una fórmula
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Cruza ventas y catálogo por SKU
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R05 · Fórmulas Imposibles y Macros en Excel sin Saber Código** (palabra clave: EXCEL).
-
-&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R05 · EXCEL
 
 ## Qué es
 
-Esta guía te ayuda a crear, entender y corregir fórmulas de cruce de datos y alertas en Excel sin saber programar. Está pensada para oficinistas, analistas y dueños de negocio que trabajan con inventarios, catálogos o reportes de ventas. No reemplaza la validación contable ni garantiza exactitud automática: toda fórmula o script produce un borrador que debes verificar con tus datos reales.
+Calcula ventas, costos y margen por línea con tus dos tablas. Los costos faltantes quedan pendientes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Obtener una fórmula explicada y probarla con un caso controlado.
+## Herramienta y preparación
+
+Mini aplicación web R05 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_excel.csv`: Plantilla con las columnas de la demo (SKU, VENTA, MARGEN, ALERTA); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-- `cruzar_ventas_catalogo.py`: Cruza un archivo Excel de ventas con una hoja de catálogo por SKU, calcula el margen y marca alertas en un archivo nuevo sin modificar el original.
-
-## Requisitos
-
-- Microsoft Excel (2016, 2021, 365) o Google Sheets
-- Acceso a un asistente de IA aprobado por tu organización
-- Una copia de prueba de tu archivo con datos ficticios o anonimizados
-- Para el script (opcional): Python 3.10 o superior y los paquetes `openpyxl pandas`.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_excel.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Crea una copia de tu archivo de trabajo y deja solo unas 10 filas con datos ficticios para hacer pruebas seguras.
-2. Identifica qué idioma, versión de Excel y separador de argumentos (coma o punto y coma) usa tu computadora.
-3. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y completa los corchetes describiendo tus columnas como en la plantilla CSV.
-4. Si ya tienes una fórmula que devuelve #N/D u otro error, usa el primer prompt complementario para que la IA diagnostique la falla.
-5. Pega la fórmula sugerida en tu tabla de prueba y confirma que calcule bien tanto los cruces encontrados como los casos con margen bajo.
-6. Compara manualmente una muestra de filas contra tu catálogo original para verificar que los montos, márgenes y alertas coincidan antes de aplicarla a todo el libro.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R05/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** sku,cantidad,precio_unitario. También debes pegar tu catálogo en el campo inferior. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Cruzar y calcular». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 4 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Script de Python (opcional)
+## Prompt completo
 
-`cruzar_ventas_catalogo.py`: Cruza un archivo Excel de ventas con una hoja de catálogo por SKU, calcula el margen y marca alertas en un archivo nuevo sin modificar el original.
-
-```bash
-pip install openpyxl pandas
-python cruzar_ventas_catalogo.py --entrada Ventas_vs_Catalogo.xlsx --salida Ventas_Corregidas.xlsx --minimo 100
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R05 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-## Privacidad y advertencias
+## Cómo comprobar tu resultado
 
-- Prueba primero con una copia y pocas filas.
-- Confirma nombres de funciones, separadores y versión.
-- No compartas libros con información de clientes, nómina o finanzas.
-- No subas libros completos ni capturas con nombres de clientes, precios confidenciales, costos reales o nómina a asistentes de IA externos.
-- Reemplaza códigos, montos y descripciones por valores ficticios antes de pedir ayuda con una fórmula.
-- Prueba siempre las fórmulas o macros primero en una copia del archivo, nunca sobre el documento maestro de la empresa.
-- Verifica manualmente una muestra de resultados contra tu catálogo original: un espacio oculto o un código duplicado puede alterar el cálculo sin mostrar error.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 4 filas y 6 columnas en este orden: SKU | Cantidad | Venta total | Costo total | Margen | Alerta.
+- La primera fila de referencia es: A100 | 2 | 300.00 | 160.00 | 140.00 | OK.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Ventas de líneas con cantidad/precio válidos: 800.00.
+- Solo 3 línea(s) con costo válido y SKU único: ventas 710.00, costos 415.00, margen 295.00.
+- Umbral: 100.00 por línea. Los costos ausentes o duplicados no se convierten en cero.
+- No calcula utilidad neta, impuestos, descuentos ni cargos adicionales. Cantidades o precios negativos requieren revisar el movimiento y se excluyen del cálculo.
 
-## Licencia
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Si algo no funciona
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R05 de Atajo IA](https://atajoia.github.io/R05/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [LibreOffice: BUSCARV y coincidencia exacta](https://help.libreoffice.org/latest/es/text/scalc/01/04060109.html)
+- [LibreOffice: SI.ERROR y funciones lógicas](https://help.libreoffice.org/latest/es/text/scalc/01/04060105.html)
+- [LibreOffice: ESNUMERO y funciones de información](https://help.libreoffice.org/latest/es/text/scalc/01/04060104.html)
+- [LibreOffice: abrir y guardar CSV](https://help.libreoffice.org/latest/es/text/scalc/guide/csv_files.html)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
-<section class="stack" aria-labelledby="R05-stack-t"><h2 id="R05-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">Microsoft Excel</span><code class="tool-cat">Hojas de cálculo</code></div><p class="tool-why">Para aplicar las fórmulas corregidas, hacer los cruces de datos y ejecutar tus macros sobre la plantilla.</p><a class="tool-link" href="https://www.microsoft.com/microsoft-365/excel" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Claude</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Para correr el prompt maestro que explica errores, genera fórmulas complejas y adapta el código sin saber programar.</p><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

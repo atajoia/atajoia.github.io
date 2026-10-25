@@ -1,60 +1,75 @@
-# PDF a Excel: extracción con revisión
+# Revisa importes de comprobantes en texto
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R01 · Extractor Mágico de PDFs/Facturas a Excel** (palabra clave: PLANILLA).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R01 · PLANILLA
 
 ## Qué es
 
-Este recurso ayuda a oficinistas y administradores a pasar tablas de facturas o reportes en PDF hacia una hoja de cálculo estructurada para su revisión. Es ideal para evitar la captura manual de renglones desde cero, pero no sustituye la validación contable ni garantiza exactitud automática: todo resultado es un borrador que una persona debe cotejar contra el documento original.
+Extrae etiquetas y compara subtotal, impuesto y total. Sin OCR ni validación fiscal. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta.
+## Herramienta y preparación
+
+Mini aplicación web R01 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_planilla.csv`: Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-- `extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
-
-## Requisitos
-
-- Un asistente de IA aprobado por tu organización que permita adjuntar documentos o imágenes.
-- Excel, Google Sheets o LibreOffice Calc para abrir y revisar la plantilla CSV.
-- Para el script (opcional): Python 3.10 o superior y los paquetes `openpyxl pandas pdfplumber`.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_planilla.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Revisa el documento original y oculta o recorta datos sensibles (como RFC, cuentas bancarias o domicilios) si no estás usando una herramienta corporativa autorizada.
-2. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y reemplaza los corchetes con las páginas a procesar y las columnas: CÓDIGO, CONCEPTO, TOTAL, ESTADO.
-3. Adjunta tu PDF (o ejecuta el script local incluido si prefieres no subir archivos a la nube) y genera el bloque de texto en formato CSV.
-4. Copia el resultado obtenido y pégalo en la plantilla CSV usando la opción de 'Texto en columnas' separando por comas.
-5. Usa los prompts complementarios para limpiar el formato numérico o pedir una lista de renglones dudosos.
-6. Compara una muestra de filas y la suma de la columna TOTAL directamente contra el PDF original antes de dar por bueno el archivo.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R01/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Una etiqueta por línea; separa documentos con --- o inicia otro Folio:. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Esta herramienta no requiere opciones adicionales.
+3. **Ejecuta la herramienta:** Pulsa «Extraer y revisar». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 2 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Script de Python (opcional)
+## Prompt completo
 
-`extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
-
-```bash
-pip install openpyxl pandas pdfplumber
-python extraer_tablas_pdf.py --entrada Factura_Corporativa_Marzo.pdf --salida Facturas_Marzo_Limpio.xlsx
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R01 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-## Privacidad y advertencias
+## Cómo comprobar tu resultado
 
-- Compara una muestra de filas con el PDF original.
-- Revisa fechas, separadores decimales, moneda y totales.
-- No cargues facturas o archivos con datos personales o confidenciales en servicios no aprobados.
-- No cargues facturas, estados de cuenta o archivos con RFC, nombres o datos confidenciales en servicios de IA públicos o no aprobados por tu organización.
-- Compara siempre una muestra de filas y el total general contra el PDF original antes de usar la tabla en reportes o contabilidad.
-- Revisa fechas, separadores decimales, tipo de moneda y totales; los modelos pueden confundir comas con puntos o saltar líneas en tablas largas.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 2 filas y 6 columnas en este orden: Folio | Concepto | Subtotal | Impuesto | Total reportado | Revisión.
+- La primera fila de referencia es: EJ-101 | Soporte | 850.00 | 136.00 | 986.00 | Cuadra aritméticamente.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- 2 comprobante(s) con etiquetas reconocidas. Se conserva el total reportado.
+- Solo compara subtotal más impuesto. No hace OCR, no lee PDF, no consulta el SAT ni valida RFC, CFDI o tratamiento fiscal.
+- Importes ambiguos o ausentes requieren revisión de la fuente; no se sustituyen por cero.
 
-## Licencia
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Si algo no funciona
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R01 de Atajo IA](https://atajoia.github.io/R01/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: subir y analizar archivos en Gemini](https://support.google.com/gemini/answer/14903178?hl=es)
+- [LibreOffice: abrir y guardar CSV](https://help.libreoffice.org/latest/es/text/scalc/guide/csv_files.html)
+- [LibreOffice: exportar a PDF](https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

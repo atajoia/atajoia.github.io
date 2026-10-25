@@ -1,0 +1,20 @@
+Título: Revisión comercial · caso ficticio
+# Resultados
+Ventas enero: 120000 MXN
+Ventas febrero: 135000 MXN
+Ventas marzo: 150000 MXN
+Meta trimestral: 420000 MXN
+# Comparación
+Trimestre anterior: 360000 MXN
+Costos reportados: 260000 MXN; faltan otros gastos
+# Embudo
+Prospectos: 500
+Demostraciones: 120
+Cierres: 40
+# Seguimiento
+Pendientes abiertos: 6; urgentes: 2
+Responsables de urgentes: por confirmar
+# Propuesta
+Capacitación: 5000 MXN; aprobación pendiente
+Seguimiento: 8000 MXN; aprobación pendiente
+Documentación: 7000 MXN; aprobación pendiente

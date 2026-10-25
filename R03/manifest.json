@@ -1,38 +1,113 @@
 {
   "reel_id": "R03",
-  "title": "Minuta en Gemini sin inventar responsables",
+  "title": "Organiza acuerdos sin inventar asignaciones",
   "keyword": "MINUTA",
   "slug": "r03",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Pasos completos, requisitos, fuente y comprobación del video."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "948dcdae29aa67a1ad8c5b8a04b1783cf97979d8ad7cd6d9338192c021d76ead",
+      "bytes": 6398
     },
     {
       "name": "DATOS_PRACTICA.txt",
       "kind": "example",
-      "description": "Entrada del video: datos ficticios para repetir el ejercicio."
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "798eae62c091159966ebfc82eb4f04de5faae0dccc4fd955a006b6306ccc89c6",
+      "bytes": 118
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Texto completo del prompt mostrado en la guía."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "fcdbb1660fa1731e9c0a1747fe7c2d56e5fb59fd42e053deb3e9708bf4e72d66",
+      "bytes": 836
     },
     {
       "name": "plantilla_minuta.csv",
       "kind": "template",
-      "description": "Plantilla vacía con los encabezados del video."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "2c210e15147a3cda4d0021f370b982595f2719df894db0d902955265e5677789",
+      "bytes": 35
     },
     {
       "name": "RESULTADO_ESPERADO.csv",
       "kind": "example",
-      "description": "Referencia ilustrativa para comparar; no acredita ejecución de la herramienta."
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "2e524acbe4b3aa5661995c5974b3a19149bf93079c4dacea12ca5bd2b139a0cb",
+      "bytes": 246
+    },
+    {
+      "name": "PROMPT_VIDEO_R03.txt",
+      "kind": "prompt",
+      "description": "Opcional: instrucción original del video, separada de la miniapp.",
+      "sha256": "a82ceda64f0ee670d61fce9a97bb139b2308d4c2630d7e4aced51909473bdc6b",
+      "bytes": 407
+    },
+    {
+      "name": "NOTAS_VIDEO_R03.txt",
+      "kind": "example",
+      "description": "Opcional: las tres notas originales del video, sin año inventado.",
+      "sha256": "84d57e7847aa7ec4a8f9aea75e0709ca9ca5eac2b13e939eb3c8645cd4a5d753",
+      "bytes": 391
+    },
+    {
+      "name": "REFERENCIA_VIDEO_R03.md",
+      "kind": "example",
+      "description": "Opcional: referencia del ejercicio original, distinta de la entrada de la miniapp.",
+      "sha256": "4ced458114c971e3ceb633ca78d7838ffd01f302e560c920be2b11ecdbb4687c",
+      "bytes": 452
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "eba8cacb513ac3d6ee56c7b312fa50efdbcf18b85faa1a8d12ae65bfe6ef32b0",
+      "bytes": 358
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "a2f179cb3fc05a1aa878aeec3c4f7bee45bc9bb29056b783598a5dd0c18f6f64",
+      "bytes": 869
     }
   ],
   "has_code": false,
-  "resource_label": "Guía + prompt + archivos de práctica",
-  "created_at": "2026-10-25T00:40:39",
-  "model": "tutorial:sin-llm",
-  "tutorial_hash": "ad19b7529fbb5b30676e1b3dc51e01a44f42f3f2"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "a30018761f76d31c13e072b5791eb1bcfc67df9d4f612d322185a77a32342d86",
+  "resource_source_hash": "ad19b7529fbb5b30676e1b3dc51e01a44f42f3f2",
+  "relation_to_video": "mini aplicación y ejercicio independiente sobre el mismo tema",
+  "sources": [
+    {
+      "title": "Mini aplicación web R03 de Atajo IA",
+      "url": "https://atajoia.github.io/R03/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: usar las aplicaciones de Gemini",
+      "url": "https://support.google.com/gemini/answer/13275745?hl=es"
+    },
+    {
+      "title": "Google Docs: crear y descargar archivos",
+      "url": "https://support.google.com/docs/answer/49114?hl=es"
+    }
+  ],
+  "expected_rows": 3,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r03.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

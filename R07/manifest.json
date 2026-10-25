@@ -1,27 +1,103 @@
 {
   "reel_id": "R07",
-  "title": "Presentación: convertir notas en una historia",
+  "title": "Organiza notas en quince láminas",
   "keyword": "DIAPOS",
-  "slug": "presentacion-convertir-notas-en-una-historia",
+  "slug": "r07",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "55f8051aab39cb73eaba79fb20ffb7a4defcff97312eb1bc2432e203dbd47720",
+      "bytes": 6407
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "46d5a6c3aecef62577603df1ada98a99753cd8320dabd1349ec52c86bc89808a",
+      "bytes": 580
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "4dfdc654fd2ce8df1f4523234905d6564723810498b31e3891a5a6de9fbab7e7",
+      "bytes": 826
     },
     {
       "name": "plantilla_diapos.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (LÁMINA, SECCIÓN, PRESUPUESTO, DISEÑO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "514d713e4a9c9231a1da15091dfe09e7390426b03aaaf2d0955f71f600861536",
+      "bytes": 60
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "f909e7e7990153c487faf259ab0978ca6a75dc4db0a44f7e22902923f7a9bcd5",
+      "bytes": 2039
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "3d88e3b00266369a45123b4e689b37c5217389f255608f7a6ea2adf0734b2aeb",
+      "bytes": 358
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "585c37987a59f8d29fce30bee63e8b52cacd4df25b19c1222242ff4bd46b1f51",
+      "bytes": 1699
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "ef9c157abe75ef5f6d8205b3623efa6d7d93bba650cd30462d16f31f547dbe8a",
+      "bytes": 1003
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T12:50:49",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "6816d0f9d6935157bc8cf5a5b3bc32e7b31249ffe593bab09ec1821b2f675481",
+  "resource_source_hash": "8711db302c9d7eb86ccfaef1c8b19675dce814ee",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R07 de Atajo IA",
+      "url": "https://atajoia.github.io/R07/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "LibreOffice: crear una diapositiva nueva",
+      "url": "https://help.libreoffice.org/latest/es/text/simpress/01/new_slide.html"
+    },
+    {
+      "title": "LibreOffice: menú Diapositiva y disposiciones",
+      "url": "https://help.libreoffice.org/latest/es/text/simpress/main_slide.html"
+    },
+    {
+      "title": "LibreOffice: exportar a PDF",
+      "url": "https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html"
+    }
+  ],
+  "expected_rows": 15,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r07.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

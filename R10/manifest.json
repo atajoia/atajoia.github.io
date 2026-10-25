@@ -1,27 +1,110 @@
 {
   "reel_id": "R10",
-  "title": "Guía de Estructura de Texto para Diagramas de Flujo Automáticos",
+  "title": "Diagrama de proceso desde pasos explícitos",
   "keyword": "PROCESO",
-  "slug": "guia-de-estructura-de-texto-para-diagramas-de-flujo-automati",
+  "slug": "r10",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "7ffb34811c8fafa471dd29952acb23d26e7cef735604f77bd1cf5f291daf3e00",
+      "bytes": 6248
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "8f4ce2996e934b8dbc554fdffcb40638e42b4839f4814ecb1319c2e72e9c3a87",
+      "bytes": 486
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "6499cd708f4bd1b2da53777ce4dd9264ff63d818190a38b037b872c7bfc2e013",
+      "bytes": 836
     },
     {
       "name": "plantilla_proceso.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, ÁREA, NODO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "56a344f597ac72b51cd9655c9684af859c4a430ad95e578673a68e6a9e932e38",
+      "bytes": 46
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "04b255e4c893a3a3d11d7a4e9fa1ce885f2de26a4acc4ae8ba8299b1523dabac",
+      "bytes": 534
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "9be22f318dfa0285d7f7b0aaca698768336c29598450768c40e7aa44586fe1e2",
+      "bytes": 340
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "00fd989d666b7eb7d5ef760473c3b0a237b0f05e0bc275ac05894c64f909d879",
+      "bytes": 734
+    },
+    {
+      "name": "ESTRUCTURA_DIAGRAMA.txt",
+      "kind": "example",
+      "description": "Nodos y conexiones producidos por la miniaplicación con el ejemplo actual.",
+      "sha256": "890ad190c9be1fda598925f15809c26bef13fb1baf651d59ebaa76bd76d1ef6c",
+      "bytes": 1936
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "a82cda054c2eef07275ca17205ade10d4b35a0732ea074424a6b7e244f8da7f8",
+      "bytes": 919
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T23:33:45",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "03867976bdc596c90478bace1b8511a7cff27efd68a2c5ec0259cf90a4764a03",
+  "resource_source_hash": "d3b87a1095d4ddc422a76998e65256c0d74040d1",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R10 de Atajo IA",
+      "url": "https://atajoia.github.io/R10/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Mermaid: sintaxis oficial de diagramas de flujo",
+      "url": "https://mermaid.js.org/syntax/flowchart.html"
+    },
+    {
+      "title": "Mermaid Live Editor",
+      "url": "https://mermaid.live/"
+    },
+    {
+      "title": "Google: acceso a Gemini web",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    }
+  ],
+  "expected_rows": 11,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r10.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

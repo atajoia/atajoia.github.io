@@ -1,0 +1,6 @@
+﻿Proveedor,Cantidad,Moneda,Total con flete,Entrega declarada,Revisión
+Taller Alfa,10,MXN,12180.00,5,"Coincide en campos evaluados; revisar garantía, vigencia y demás condiciones"
+Mesa Beta,10,MXN,11600.00,7,"Coincide en campos evaluados; revisar garantía, vigencia y demás condiciones"
+Lumen Gamma,10,USD,605.00,6,Moneda distinta; no comparar con MXN
+Oficina Delta,10,MXN,12470.00,4,"Coincide en campos evaluados; revisar garantía, vigencia y demás condiciones"
+Equipo Epsilon,10,MXN,11600.00,15,Entrega supera 7 días

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>Guía de Estructura de Texto para Diagramas de Flujo Automáticos · Recurso gratis #R10 · Atajo IA</title>
-<meta name="description" content="Transforma apuntes sueltos o procedimientos en bloque de texto en una tabla estructurada y código visual para generar diagramas de flujo sin dibujar a mano. Está diseñado para profesionistas, encargados de operaciones y dueños de negocio…"><meta name="theme-color" content="#000000">
+<title>Diagrama de proceso desde pasos explícitos · Recurso gratis #R10 · Atajo IA</title>
+<meta name="description" content="Dibuja los nodos y conexiones de tu CSV y detecta destinos inexistentes. No interpreta notas libres ni inventa reglas. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,105 +169,96 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R10</span><span>PROCESO</span></p>
-<h1>Guía de Estructura de Texto para Diagramas de Flujo Automáticos</h1>
-<p class="lede">Transforma apuntes sueltos o procedimientos en bloque de texto en una tabla estructurada y código visual para generar diagramas de flujo sin dibujar a mano. Está diseñado para profesionistas, encargados de operaciones y dueños de negocio…</p><p class="incl">Incluye: Prompt maestro + plantilla CSV</p>
+<h1>Diagrama de proceso desde pasos explícitos</h1>
+<p class="lede">Dibuja los nodos y conexiones de tu CSV y detecta destinos inexistentes. No interpreta notas libres ni inventa reglas. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R10-start-t"><h2 id="R10-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R10-inicio">Ir al prompt</a><a href="#R10-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R10-inicio" class="panel app" data-app aria-labelledby="R10-app-t"><div class="panel-head"><h2 id="R10-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R10-campo-1">Texto del proceso</label><textarea id="R10-campo-1" data-marker="TEXTO_DEL_PROCESO" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R10-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como analista de procesos operativos. Lee las siguientes notas y conviértelas en una secuencia lógica para un diagrama de flujo.
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r10.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
 
-Instrucciones:
-1. Identifica cada acción, filtro de decisión, inicio y cierre del procedimiento.
-2. Asigna el departamento o rol responsable según el contexto.
-3. Clasifica cada paso usando únicamente uno de estos tipos de nodo: INICIO, PROCESO, DECISIÓN, FIN.
-4. Entrega el resultado exclusivamente en una tabla con las columnas exactas: PASO | ACCIÓN DETECTADA | ÁREA | NODO.
-5. Si algún paso es ambiguo o falta información sobre qué pasa cuando se rechaza una condición, indícalo al final bajo el título &#x27;Puntos por aclarar&#x27;.
 
-Notas del proceso:
-<mark data-marker="TEXTO_DEL_PROCESO">[TEXTO_DEL_PROCESO]</mark></pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
-
-<section id="R10-descargas" class="panel" aria-labelledby="R10-dl-t"><div class="panel-head"><h2 id="R10-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_proceso.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_proceso.csv · 462 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, ÁREA, NODO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 3.5 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 3.0 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li></ul></section>
+<section class="panel" id="R10-resultado" aria-labelledby="R10-result-t"><h2 id="R10-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">ID</th><th scope="col">Acción</th><th scope="col">Responsable</th><th scope="col">Sí / siguiente</th><th scope="col">No</th></tr></thead><tbody><tr><td>S1</td><td>Registrar solicitud</td><td>Operaciones</td><td>S2</td><td>—</td></tr><tr><td>S2</td><td>¿Hay presupuesto?</td><td>Finanzas</td><td>S3</td><td>POST</td></tr><tr><td>S3</td><td>¿Proveedor registrado?</td><td>Administración</td><td>S4</td><td>PEND</td></tr><tr><td>S4</td><td>¿Monto mayor a 5000 MXN?</td><td>Finanzas</td><td>DIR</td><td>AUT</td></tr><tr><td>DIR</td><td>¿Dirección aprueba?</td><td>Dirección</td><td>PAGO</td><td>RECH</td></tr></tbody></table><p class="result-note">Vista previa: 5 de 11 filas. Descarga el archivo para ver la referencia completa.</p><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R10-descargas" class="panel" aria-labelledby="R10-dl-t"><div class="panel-head"><h2 id="R10-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_proceso.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_proceso.csv · 46 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 6.1 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 836 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 486 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 534 B</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 340 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="RESULTADO_EJEMPLO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar RESULTADO_EJEMPLO.md</b><small>RESULTADO_EJEMPLO.md · 734 B</small></span></a><p class="dl-desc">Documento calculado por la miniaplicación con su muestra y opciones actuales.</p></li><li><a class="dl" href="ESTRUCTURA_DIAGRAMA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar ESTRUCTURA_DIAGRAMA.txt</b><small>ESTRUCTURA_DIAGRAMA.txt · 1.9 KB</small></span></a><p class="dl-desc">Nodos y conexiones producidos por la miniaplicación con el ejemplo actual.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 919 B</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Guía de Estructura de Texto para Diagramas de Flujo Automáticos
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Diagrama de proceso desde pasos explícitos
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R10 · De Nota de Texto a Diagrama de Flujo en Segundos** (palabra clave: PROCESO).
-
-&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R10 · PROCESO
 
 ## Qué es
 
-Transforma apuntes sueltos o procedimientos en bloque de texto en una tabla estructurada y código visual para generar diagramas de flujo sin dibujar a mano. Está diseñado para profesionistas, encargados de operaciones y dueños de negocio que documentan procesos internos. No reemplaza el criterio operativo ni valida reglas de negocio: entrega un borrador que siempre debes revisar antes de oficializar.
+Dibuja los nodos y conexiones de tu CSV y detecta destinos inexistentes. No interpreta notas libres ni inventa reglas. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R10 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_proceso.csv`: Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, ÁREA, NODO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Tus apuntes o descripción del procedimiento en texto plano
-- Acceso a un asistente de IA aprobado por tu organización
-- Excel o Google Sheets para abrir la plantilla CSV
-- Un visor o editor compatible con código Mermaid o tablas de procesos para exportar tu PDF
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_proceso.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `ESTRUCTURA_DIAGRAMA.txt`: Nodos y conexiones producidos por la miniaplicación con el ejemplo actual.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Reúne tus notas del procedimiento en un documento de texto y reemplaza nombres reales, montos sensibles o datos privados por etiquetas genéricas.
-2. Abre el archivo PROMPT_MAESTRO.md incluido en esta descarga, copia el prompt principal y pégalo en tu asistente de IA.
-3. Inserta tus notas limpias en el espacio [TEXTO_DEL_PROCESO] y ejecuta la instrucción para obtener la tabla estructurada.
-4. Copia las filas generadas por el asistente y pégalas en la plantilla CSV usando Excel o Google Sheets para revisar el orden de los pasos.
-5. Compara cada fila contra tus apuntes originales para confirmar que ninguna condición, área responsable o ruta de rechazo se haya omitido o malinterpretado.
-6. Usa los prompts complementarios para generar el código de diagrama en carriles y llévalo a tu herramienta de diagramación para exportar el archivo PDF final.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R10/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Encabezados: id,acción,responsable,sí,no. Escribe el ID del siguiente paso; deja los destinos vacíos al terminar. Cada destino debe tener su propia fila. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Esta herramienta no requiere opciones adicionales.
+3. **Ejecuta la herramienta:** Pulsa «Validar y dibujar el flujo». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 11 filas y 5 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- Anonimiza nombres de empleados, proveedores reales, cuentas bancarias y montos confidenciales antes de pegar tus notas en cualquier asistente de IA.
-- Utiliza únicamente herramientas de IA y visores de diagramas autorizados por las políticas de seguridad de tu empresa.
-- Recuerda que la IA puede interpretar mal una regla de negocio compleja: el diagrama generado es un borrador que debe ser validado por el responsable del área antes de aplicarse.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R10 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 11 filas y 5 columnas en este orden: ID | Acción | Responsable | Sí / siguiente | No.
+- La primera fila de referencia es: S1 | Registrar solicitud | Operaciones | S2 | —.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- El dibujo representa literalmente tus filas y conexiones; no certifica una política ni ejecuta acciones.
+- Inicios sin conexiones entrantes: S1.
+- Finales sin destinos: POST, PEND, RECH, FIN.
+- Las etiquetas Sí/No proceden de tus columnas. Recorre ejemplos de ambas rutas antes de usarlo como procedimiento.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R10 de Atajo IA](https://atajoia.github.io/R10/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Mermaid: sintaxis oficial de diagramas de flujo](https://mermaid.js.org/syntax/flowchart.html)
+- [Mermaid Live Editor](https://mermaid.live/)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
-<section class="stack" aria-labelledby="R10-stack-t"><h2 id="R10-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">Claude</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Aplica el prompt maestro a tus notas de texto y visualiza el diagrama de flujo directamente en su ventana interactiva.</p><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Notion</span><code class="tool-cat">Documentos y bases de conocimiento</code></div><p class="tool-why">Inserta el código del diagrama generado para documentar el proceso en el manual operativo de tu equipo.</p><a class="tool-link" href="https://www.notion.com/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

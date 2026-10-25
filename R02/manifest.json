@@ -1,27 +1,92 @@
 {
   "reel_id": "R02",
-  "title": "Correo: priorizar hilos y redactar respuestas",
+  "title": "Ordena correos y prepara borradores",
   "keyword": "CORREO",
-  "slug": "correo-priorizar-hilos-y-redactar-respuestas",
+  "slug": "r02",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "18329d48605cea76ec9b6b0f4cb144c83265ac1447d920c906cb12fc9732821a",
+      "bytes": 6188
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "daf7bfca4f08bec45761acdacef99f5d8789f47fe455e871e937bb94b61877c0",
+      "bytes": 279
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "5f7306a3c5dada06e3d03b1bbf5eb39b8dac5cd76500a5d53d1afa6139d3b568",
+      "bytes": 828
     },
     {
       "name": "plantilla_correo.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (REMITENTE, QUÉ PIDE, PRIORIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "06ce98758ef1bd329b7684dd77049c9e14e64b311bad42a26330abce2a307b33",
+      "bytes": 71
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "f3d81a391a6e5afa261e85db63bd78ab1c082f4c9cc32e822cd4d1664d1e5f59",
+      "bytes": 893
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "097339c2660f728b079a01ee4f1b02830e528a89b8cfa6fe56b506b49268b31c",
+      "bytes": 340
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "f120cadf973c33769e4709e07e9a3d813d0f1b2f8f62d3addd080c690b0e3751",
+      "bytes": 908
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T12:49:01",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "cf5db3945d53b40db7f3323ad7f79addbb94b7eeac9c13d5aeef5d69d6eceac0",
+  "resource_source_hash": "557bf390b22f1d0b683e00e3ca3fc02196f95bbb",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R02 de Atajo IA",
+      "url": "https://atajoia.github.io/R02/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: usar aplicaciones de Gemini",
+      "url": "https://support.google.com/gemini/answer/13275745?hl=es"
+    },
+    {
+      "title": "Google: redactar correos y guardar borradores en Gmail",
+      "url": "https://support.google.com/mail/answer/9259768?hl=es"
+    }
+  ],
+  "expected_rows": 4,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r02.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

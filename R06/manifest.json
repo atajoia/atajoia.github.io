@@ -1,27 +1,92 @@
 {
   "reel_id": "R06",
-  "title": "Reseñas: responder con empatía",
+  "title": "Prepara respuestas a reseñas",
   "keyword": "RESPONDE",
-  "slug": "resenas-responder-con-empatia",
+  "slug": "r06",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "b64a37757a4422985af83bf0ae6c29bbf2b5449c99ebc2f0caedc142f0f23215",
+      "bytes": 6274
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "f8ab7f77022bdb0af4f340ba066f26a89373a7f6b67207160adbd88aff0963d1",
+      "bytes": 171
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "08a84b3a515cfd38b7d001bb3926f460d9ab4232b0e18e2aea497c607e2b6018",
+      "bytes": 822
     },
     {
       "name": "plantilla_responde.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (CLIENTE, RESEÑA, RESPUESTA, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "ef18eece76d85047fcaa04ecf67613526430344a252287be640716f3346da57f",
+      "bytes": 49
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "866be49da3bffd4cc207ed14229de1b396b7e27661f067669b9b03810e957656",
+      "bytes": 802
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "c2ff908be95f7b98d4e75d83adc6ef83b4ed9d4ae142e733f1d1f771e92a66a0",
+      "bytes": 408
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "42330c797fd02557df54af2a4a00f71ae149e22e1738e6aa30a2ceb7592e02bd",
+      "bytes": 1114
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T12:50:30",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "b22ec75b6a119613da071678e4505a9df336bd51399f1df84f1d95a6c8d87027",
+  "resource_source_hash": "b456b8562dd871c3373f9b9b2df14930dfa30e7d",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R06 de Atajo IA",
+      "url": "https://atajoia.github.io/R06/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: leer y responder reseñas de un Perfil de Empresa",
+      "url": "https://support.google.com/business/answer/3474050?hl=es-es"
+    },
+    {
+      "title": "Google: buenas prácticas y prohibición de incentivos por reseñas",
+      "url": "https://support.google.com/business/answer/3474122?hl=es"
+    }
+  ],
+  "expected_rows": 4,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r06.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

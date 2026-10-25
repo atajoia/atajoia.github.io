@@ -1,27 +1,92 @@
 {
   "reel_id": "R04",
-  "title": "Reporte: investigar y citar fuentes",
+  "title": "Compara precios con evidencia declarada",
   "keyword": "REPORTE",
-  "slug": "reporte-investigar-y-citar-fuentes",
+  "slug": "r04",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "315c2fa6885ce6d589f9da004a07ac9ef3356e8eaa5e3336f0d12505395fc8ff",
+      "bytes": 6176
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "22a47574779c3fa6b8f9c8a60ebbe4dac4ddba66e97b7430297416a19095804d",
+      "bytes": 277
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "d79f404cca9291cae3fe7ba8e282a4eeccb7288178679cf13b13518f8f4e2a87",
+      "bytes": 832
     },
     {
       "name": "plantilla_reporte.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (MARCA, PRECIO, QUEJA #1, VEREDICTO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "d277a8fdef4c67b92dc7b10a13876ac3b31c63092c3fca71bea93b4afdc488e3",
+      "bytes": 64
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "c632d882bb5d818ff57e03f9d53ac005a7d836e2d02b877c35941816bd6e8816",
+      "bytes": 669
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "4b7e81bd1fdcff5bc9b3a6fb38ecc241a15ba1927f410d58d93f929d3fd9176c",
+      "bytes": 380
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "a1e61751b553bb43116aeaecf4528f2b6ea89a7b337b18a9752bf293d5ed2ebe",
+      "bytes": 1005
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T12:49:34",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "06822ff67f446ba6c7434260d29ad0cf95c36d60758e2b91eefdaf45c177d831",
+  "resource_source_hash": "f2725c52993b38be72c56c5fa9f2d635f6c25149",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R04 de Atajo IA",
+      "url": "https://atajoia.github.io/R04/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: usar Deep Research en Gemini y sus límites",
+      "url": "https://support.google.com/gemini/answer/15719111?hl=es-ES"
+    },
+    {
+      "title": "LibreOffice: exportar a PDF",
+      "url": "https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html"
+    }
+  ],
+  "expected_rows": 5,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r04.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

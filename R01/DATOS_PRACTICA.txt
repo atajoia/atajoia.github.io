@@ -1,0 +1,11 @@
+Folio: EJ-101
+Concepto: Soporte
+Subtotal: 850.00
+Impuesto: 136.00
+Total: 986.00
+---
+Folio: EJ-102
+Concepto: Consumibles
+Subtotal: 100.00
+Impuesto: 16.00
+Total: 115.00

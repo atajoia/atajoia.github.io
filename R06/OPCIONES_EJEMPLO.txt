@@ -1,0 +1,10 @@
+Opciones usadas para el resultado de referencia · R06
+Edición: 2026-10-25
+
+Canal de contacto confirmado (opcional) (contact):
+(vacío: no proporcionado)
+
+Idioma de los borradores (language):
+es
+
+Para reproducir RESULTADO_ESPERADO.csv usa exactamente DATOS_PRACTICA.txt y estas opciones. Si cambias la fecha de referencia, los umbrales o el catálogo, el resultado puede cambiar de forma válida.

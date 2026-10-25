@@ -1,0 +1,6 @@
+proveedor,cantidad,precio_unitario,flete,moneda,entrega,especificacion
+Taller Alfa,10,1160.00,580.00,MXN,5,L-10
+Mesa Beta,10,1160.00,0.00,MXN,7,L-10
+Lumen Gamma,10,58.00,25.00,USD,6,L-10
+Oficina Delta,10,1218.00,290.00,MXN,4,L-10
+Equipo Epsilon,10,1136.80,232.00,MXN,15,L-10

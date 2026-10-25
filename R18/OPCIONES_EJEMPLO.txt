@@ -1,0 +1,16 @@
+Opciones usadas para el resultado de referencia · R18
+Edición: 2026-10-25
+
+Moneda que deseas comparar (sin conversión) (currency):
+MXN
+
+Cantidad requerida, en unidades enteras (quantity):
+10
+
+Especificación requerida (specification):
+L-10
+
+Máximo de días de entrega (vacío: no evaluar) (maxDelivery):
+7
+
+Para reproducir RESULTADO_ESPERADO.csv usa exactamente DATOS_PRACTICA.txt y estas opciones. Si cambias la fecha de referencia, los umbrales o el catálogo, el resultado puede cambiar de forma válida.

@@ -1,32 +1,96 @@
 {
   "reel_id": "R01",
-  "title": "PDF a Excel: extracción con revisión",
+  "title": "Revisa importes de comprobantes en texto",
   "keyword": "PLANILLA",
-  "slug": "pdf-a-excel-extraccion-con-revision",
+  "slug": "r01",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "0abdf0ecb0f5b9b245c4838e9482ff89bdfa1ccc86c76d888834a3b830902fbf",
+      "bytes": 6015
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "1653b1c7ffc000303ae5373bae8c234aac0d4f9015da6795ee0f533c13826392",
+      "bytes": 178
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "0bb1625f06b94e329b3ddc18930dd9a316a0b96186e7bfd45ffa9001e6e19ad1",
+      "bytes": 833
     },
     {
       "name": "plantilla_planilla.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "c2009963ae2d6b848ec7a4a08eaaf2eca2f52c917ab9692ee15b7b68188516ce",
+      "bytes": 63
     },
     {
-      "name": "extraer_tablas_pdf.py",
-      "kind": "script",
-      "description": "Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión."
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "9f15da0424ae336a937930f804f1b3b4d374fe13ba053234c98be604b2e20af9",
+      "bytes": 198
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "d2c98076cead9317022116dbd5f955b1bcd3c4c3560f7c72fb3a5a54261fc2ea",
+      "bytes": 340
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "e44124cf8f905bbd1b8b8bf44f85e0c1caf7a352442fbf51052d6d01d852fa1a",
+      "bytes": 900
     }
   ],
-  "has_code": true,
-  "resource_label": "Prompt maestro + plantilla CSV + script de Python",
-  "created_at": "2026-10-16T11:59:51",
-  "model": "gemini:gemini-4-argon"
+  "has_code": false,
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "d5f65357d244de80962b503b498185989a0b335a1952f22e28d52959f81c251c",
+  "resource_source_hash": "7cf1af9483dc66100d5a10f5a35ba04f0fc53b89",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R01 de Atajo IA",
+      "url": "https://atajoia.github.io/R01/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: subir y analizar archivos en Gemini",
+      "url": "https://support.google.com/gemini/answer/14903178?hl=es"
+    },
+    {
+      "title": "LibreOffice: abrir y guardar CSV",
+      "url": "https://help.libreoffice.org/latest/es/text/scalc/guide/csv_files.html"
+    },
+    {
+      "title": "LibreOffice: exportar a PDF",
+      "url": "https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html"
+    }
+  ],
+  "expected_rows": 2,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r01.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

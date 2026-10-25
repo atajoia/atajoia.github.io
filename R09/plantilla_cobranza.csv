@@ -1,3 +1,1 @@
-﻿CLIENTE,MONTO,ATRASO,TONO ASIGNADO
-EJEMPLO 1 - Alias o identificador del cliente,EJEMPLO 1 - Importe pendiente con moneda,EJEMPLO 1 - Cantidad de días desde el vencimiento,EJEMPLO 1 - Nivel de escalamiento o tono deseado
-EJEMPLO 2 - Alias o identificador del cliente,EJEMPLO 2 - Importe pendiente con moneda,EJEMPLO 2 - Cantidad de días desde el vencimiento,EJEMPLO 2 - Nivel de escalamiento o tono deseado
+﻿Factura,Cliente,Saldo MXN,Días de atraso,Nivel,Borrador o revisión

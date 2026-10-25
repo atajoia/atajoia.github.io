@@ -1,3 +1,4 @@
-Laura: cotización, 27 de octubre.
-Carlos: demo, 28 de octubre.
-Inventario pendiente; sin responsable ni fecha.
+Tarea|Responsable|Fecha
+Preparar cotización|Laura|2026-10-27
+Revisar demo|Carlos|2026-10-28
+Revisar inventario||

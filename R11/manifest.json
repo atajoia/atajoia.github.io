@@ -1,27 +1,103 @@
 {
   "reel_id": "R11",
-  "title": "De Audios Eternos a Tabla de Tareas Accionables",
+  "title": "Tareas candidatas desde una transcripción",
   "keyword": "AUDIOS",
-  "slug": "de-audios-eternos-a-tabla-de-tareas-accionables",
+  "slug": "r11",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "489d67be3cab8e9780f55faaf7311179ffe07cc57778fdfcfd818389ee38e26d",
+      "bytes": 6493
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "1c9455e45ae8290ccd44b5945e3ff286b991336735e03afeebef7cfd86237a29",
+      "bytes": 377
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "b30ac9f18c0db11cfd92fd275e80ac877b0edd8d12836f3a21fd1cb5bef4fa11",
+      "bytes": 835
     },
     {
       "name": "plantilla_audios.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (TAREA CLAVE, RESPONSABLE, IMPACTO, ENTREGA); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "e5347ef9a9a71c489e90fd43af3a084fd0b0390511ef9b4249355f0e1adcf73c",
+      "bytes": 74
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "06e315ec9e1c31c423a3598bad0a2c45b120cfa710377e14a1e14b3af2566b4a",
+      "bytes": 947
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "fc67b2d92e2f98643fcd7edcfd3a63e226144ae72b95e1acd2255487f127c173",
+      "bytes": 340
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "ccfad3848b684b7ab1b352fccd4c849ab5008a8e5516844e404d2a8980c881dc",
+      "bytes": 1101
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "3079f57a0c4e6e6b6af646951cd0b7b70f48f63a3b8c4145233f896ddaa012e0",
+      "bytes": 1050
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-17T16:50:19",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "5e3e293a92f9703dc760aec8d8a4756766d1bd9dc1e34879a4cf5e39a527e483",
+  "resource_source_hash": "a3f01f3a32ce4bba1cdf7490995cc7bdd27fda10",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R11 de Atajo IA",
+      "url": "https://atajoia.github.io/R11/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: acceso a Gemini web",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    },
+    {
+      "title": "Google: privacidad de Gemini",
+      "url": "https://support.google.com/gemini/answer/13594961?hl=es"
+    },
+    {
+      "title": "Google: crear y editar hojas de cálculo",
+      "url": "https://support.google.com/docs/answer/6000292?hl=es"
+    }
+  ],
+  "expected_rows": 5,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r11.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

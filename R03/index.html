@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>Minuta en Gemini sin inventar responsables · Recurso gratis #R03 · Atajo IA</title>
-<meta name="description" content="Guía + prompt + archivos de práctica"><meta name="theme-color" content="#000000">
+<title>Organiza acuerdos sin inventar asignaciones · Recurso gratis #R03 · Atajo IA</title>
+<meta name="description" content="Convierte tareas estructuradas en una minuta y marca los datos faltantes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,90 +169,94 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R03</span><span>MINUTA</span></p>
-<h1>Minuta en Gemini sin inventar responsables</h1>
-<p class="incl">Incluye: Guía + prompt + archivos de práctica</p>
+<h1>Organiza acuerdos sin inventar asignaciones</h1>
+<p class="lede">Convierte tareas estructuradas en una minuta y marca los datos faltantes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R03-start-t"><h2 id="R03-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt + ejemplo para probar con los datos del video.</li><li>Pégalo en la herramienta de la guía: Gemini web gratuito + Documentos de Google.</li><li>Compara la respuesta con la referencia de abajo y revisa los datos.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R03-inicio">Ir al prompt</a><a href="#R03-descargas">Descargar archivos</a><a href="#R03-resultado">Ver resultado de referencia</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R03-inicio" class="panel app has-practice" data-app aria-labelledby="R03-app-t"><div class="panel-head"><h2 id="R03-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><p class="copy-note">Para probar el video, copia el prompt junto con los datos ficticios. Para tu propio caso, copia solo el prompt.</p><pre data-practice-source hidden>Laura: cotización, 27 de octubre.
-Carlos: demo, 28 de octubre.
-Inventario pendiente; sin responsable ni fecha.</pre><pre class="prompt" id="R03-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Convierte estas notas en una tabla: tarea, responsable y fecha. Usa solo datos explícitos. Si falta algo, escribe Por confirmar.</pre><div class="copy-row"><button type="button" class="btn big" data-copy-practice hidden>Copiar prompt + ejemplo</button><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
-<section class="panel" id="R03-resultado" aria-labelledby="R03-result-t"><h2 id="R03-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios del video. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">TAREA</th><th scope="col">RESPONSABLE</th><th scope="col">FECHA</th></tr></thead><tbody><tr><td>Cotización</td><td>Laura</td><td>27 de octubre</td></tr><tr><td>Demo</td><td>Carlos</td><td>28 de octubre</td></tr><tr><td>Inventario</td><td>Por confirmar</td><td>Por confirmar</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
-<section id="R03-descargas" class="panel" aria-labelledby="R03-dl-t"><div class="panel-head"><h2 id="R03-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_minuta.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_minuta.csv · 28 B</small></span></a><p class="dl-desc">Plantilla vacía con los encabezados del video.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 1.6 KB</small></span></a><p class="dl-desc">Pasos completos, requisitos, fuente y comprobación del video.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 258 B</small></span></a><p class="dl-desc">Texto completo del prompt mostrado en la guía.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 115 B</small></span></a><p class="dl-desc">Entrada del video: datos ficticios para repetir el ejercicio.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 128 B</small></span></a><p class="dl-desc">Referencia ilustrativa para comparar; no acredita ejecución de la herramienta.</p></li></ul></section>
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r03.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
+
+
+<section class="panel" id="R03-resultado" aria-labelledby="R03-result-t"><h2 id="R03-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">Tarea</th><th scope="col">Responsable</th><th scope="col">Fecha</th><th scope="col">Estado</th></tr></thead><tbody><tr><td>Preparar cotización</td><td>Laura</td><td>2026-10-27</td><td>Asignación registrada; no completada</td></tr><tr><td>Revisar demo</td><td>Carlos</td><td>2026-10-28</td><td>Asignación registrada; no completada</td></tr><tr><td>Revisar inventario</td><td>Por confirmar</td><td>Por confirmar</td><td>Confirmar datos</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R03-descargas" class="panel" aria-labelledby="R03-dl-t"><div class="panel-head"><h2 id="R03-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_minuta.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_minuta.csv · 35 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 6.2 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 836 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="PROMPT_VIDEO_R03.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_VIDEO_R03.txt · 407 B</small></span></a><p class="dl-desc">Opcional: instrucción original del video, separada de la miniapp.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 118 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 246 B</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="NOTAS_VIDEO_R03.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar NOTAS_VIDEO_R03.txt</b><small>NOTAS_VIDEO_R03.txt · 391 B</small></span></a><p class="dl-desc">Opcional: las tres notas originales del video, sin año inventado.</p></li><li><a class="dl" href="REFERENCIA_VIDEO_R03.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar REFERENCIA_VIDEO_R03.md</b><small>REFERENCIA_VIDEO_R03.md · 452 B</small></span></a><p class="dl-desc">Opcional: referencia del ejercicio original, distinta de la entrada de la miniapp.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 358 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 869 B</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Minuta en Gemini sin inventar responsables
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Organiza acuerdos sin inventar asignaciones
 
 Recurso gratuito de Atajo IA · R03 · MINUTA
 
+## Qué es
+
+Convierte tareas estructuradas en una minuta y marca los datos faltantes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
 ## Herramienta y preparación
 
-Gemini web gratuito + Documentos de Google
+Mini aplicación web R03 de Atajo IA, en tu navegador
 
-- Cuenta personal de Google para Gemini y Documentos de Google.
-- Usa las tres notas ficticias de pantalla.
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
 
-Usa DATOS_PRACTICA.txt como entrada. Son datos ficticios, no una transcripción real.
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
-## Pasos del video
+## Qué incluye
 
-1. **Abre Gemini:** Abre gemini.google.com e inicia sesión con tu cuenta personal de Google.
-2. **Pega y envía:** Pega el prompt completo y debajo las tres notas de práctica. Pulsa Enviar.
-3. **Revisa y guarda:** Compara las filas con las notas. En Google Docs, crea un documento llamado Minuta y pega la tabla. Archivo &gt; Descargar &gt; Documento PDF.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_minuta.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `PROMPT_VIDEO_R03.txt`: Opcional: instrucción original del video, separada de la miniapp.
+- `NOTAS_VIDEO_R03.txt`: Opcional: las tres notas originales del video, sin año inventado.
+- `REFERENCIA_VIDEO_R03.md`: Opcional: referencia del ejercicio original, distinta de la entrada de la miniapp.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
+
+## Cómo usarlo paso a paso
+
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R03/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Tarea|Responsable|Fecha o Laura: cotización, 27 de octubre. Una tarea por línea. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Organizar minuta». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 3 filas y 4 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
 ## Prompt completo
 
 ```text
-Convierte estas notas en una tabla: tarea, responsable y fecha. Usa solo datos explícitos. Si falta algo, escribe Por confirmar.
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R03 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-## Comprobación
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Cotización: Laura, 27 de octubre. Demo: Carlos, 28 de octubre. Inventario: Por confirmar en responsable y fecha.
+## Cómo comprobar tu resultado
 
-RESULTADO_ESPERADO.csv es una referencia ilustrativa; compara cada dato con la entrada. La respuesta de una IA puede variar y requiere revisión.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 3 filas y 4 columnas en este orden: Tarea | Responsable | Fecha | Estado.
+- La primera fila de referencia es: Preparar cotización | Laura | 2026-10-27 | Asignación registrada; no completada.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Convierte líneas estructuradas en acuerdos. No deduce responsables, años, horas ni fechas de expresiones como mañana.
+- El año opcional solo se aplica si lo indicas expresamente. Las asignaciones no se marcan terminadas.
+- 1 fila(s) necesitan confirmación.
+- La muestra de esta miniapp es distinta de las tres notas del video anterior: es una guía ampliada, no una acreditación del mismo tutorial. El ejercicio anterior permanece como complemento opcional.
 
-## Fuente oficial
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-https://support.google.com/gemini/answer/13275745?hl=es
+## Si algo no funciona
 
-La fuente documenta el uso de la herramienta; esta guía no es una grabación de su ejecución.
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R03 de Atajo IA](https://atajoia.github.io/R03/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: usar las aplicaciones de Gemini](https://support.google.com/gemini/answer/13275745?hl=es)
+- [Google Docs: crear y descargar archivos](https://support.google.com/docs/answer/49114?hl=es)
 
 ## Uso responsable
 
-Trabaja con copias y datos ficticios. No pegues información personal o confidencial de tu trabajo en servicios que tu organización no haya aprobado.
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
 
 Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
 
 

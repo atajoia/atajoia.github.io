@@ -1,0 +1,6 @@
+competidor,precio,unidad,evidencia
+Ejemplo Norte,50,Latte 300 ml,Ficha ficticia F1
+Ejemplo Centro,65,Latte 300 ml,Ficha ficticia F2
+Ejemplo Sur,,Latte 300 ml,Ficha ficticia F3
+Ejemplo Este,58,Latte 300 ml,Ficha ficticia F4
+Ejemplo Oeste,70,Latte 300 ml,Ficha ficticia F5

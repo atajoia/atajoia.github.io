@@ -1,0 +1,5 @@
+remitente,asunto,mensaje,fecha_limite
+Dirección,Reporte,Confirma cifras conciliadas,2026-10-26
+Cliente,Entrega,Falta confirmar direccion,
+Proveedor,Estado de cuenta,Confirma recepcion sin reconocer adeudo,2026-10-27
+Boletin,Resumen,Solo informativo; no requiere respuesta,

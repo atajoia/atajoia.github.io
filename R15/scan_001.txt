@@ -1,0 +1,6 @@
+EJERCICIO FICTICIO A01
+Documento: recibo interno de oficina
+Fecha: 2026-03-04
+Proveedor ficticio: Luz Taller
+Importe MXN: 3420.00
+Este texto no es un comprobante fiscal ni un recibo de una empresa real.

@@ -1,0 +1,5 @@
+sku,cantidad,precio_unitario
+A100,2,150
+A200,1,200
+B100,3,70
+X999,1,90

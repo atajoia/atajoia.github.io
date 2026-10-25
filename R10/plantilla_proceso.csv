@@ -1,3 +1,1 @@
-﻿PASO,ACCIÓN DETECTADA,ÁREA,NODO
-EJEMPLO 1 - Número consecutivo del paso en el flujo,EJEMPLO 1 - Tarea o regla evaluada en este punto,EJEMPLO 1 - Departamento o rol responsable del paso,"EJEMPLO 1 - Tipo de bloque: INICIO, PROCESO, DECISIÓN"
-EJEMPLO 2 - Número consecutivo del paso en el flujo,EJEMPLO 2 - Tarea o regla evaluada en este punto,EJEMPLO 2 - Departamento o rol responsable del paso,"EJEMPLO 2 - Tipo de bloque: INICIO, PROCESO, DECISIÓN"
+﻿ID,Acción,Responsable,Sí / siguiente,No

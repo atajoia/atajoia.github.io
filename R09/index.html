@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>Plantilla de 5 Niveles de Cobranza Diplomática con IA · Recurso gratis #R09 · Atajo IA</title>
-<meta name="description" content="Este recurso ayuda a dueños de negocio, profesionistas independientes y equipos administrativos a redactar recordatorios de pago ajustados a los días de atraso de cada factura sin dañar la relación comercial. Incluye una estructura de…"><meta name="theme-color" content="#000000">
+<title>Recordatorios de pago sin amenazas · Recurso gratis #R09 · Atajo IA</title>
+<meta name="description" content="Calcula días de atraso a una fecha de corte y prepara un mensaje revisable por factura, sin envíos automáticos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,97 +169,93 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R09</span><span>COBRANZA</span></p>
-<h1>Plantilla de 5 Niveles de Cobranza Diplomática con IA</h1>
-<p class="lede">Este recurso ayuda a dueños de negocio, profesionistas independientes y equipos administrativos a redactar recordatorios de pago ajustados a los días de atraso de cada factura sin dañar la relación comercial. Incluye una estructura de…</p><p class="incl">Incluye: Prompt maestro + plantilla CSV</p>
+<h1>Recordatorios de pago sin amenazas</h1>
+<p class="lede">Calcula días de atraso a una fecha de corte y prepara un mensaje revisable por factura, sin envíos automáticos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R09-start-t"><h2 id="R09-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R09-inicio">Ir al prompt</a><a href="#R09-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R09-inicio" class="panel app" data-app aria-labelledby="R09-app-t"><div class="panel-head"><h2 id="R09-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R09-campo-1">Giro o servicio</label><input id="R09-campo-1" type="text" data-marker="GIRO O SERVICIO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R09-campo-2">Pega aquí tu tabla csv</label><textarea id="R09-campo-2" data-marker="PEGA AQUÍ TU TABLA CSV" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R09-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como un especialista en comunicación comercial y cuentas por cobrar en México. Te voy a compartir una tabla con facturas vencidas que incluye las columnas: CLIENTE, MONTO, ATRASO y TONO ASIGNADO. Tu tarea es redactar un borrador de mensaje de cobro individual para cada fila, aplicando estas 5 reglas de escalamiento según los días de atraso o el tono indicado: Nivel 1 (1 a 7 días - Aviso Amable): recordatorio breve y cordial asumiendo que fue un olvido administrativo. Nivel 2 (8 a 15 días - Seguimiento Firme): solicita confirmación de la fecha de programación de pago y adjunta datos de referencia. Nivel 3 (16 a 30 días - Solicitud de Fecha Compromiso): tono serio pidiendo una fecha exacta de liquidación para actualizar el estatus de la cuenta. Nivel 4 (31 a 60 días - Pausa de Servicio): informa con diplomacia que las nuevas entregas o servicios quedarán en pausa temporal hasta regularizar el saldo. Nivel 5 (Más de 60 días - Último Aviso Administrativo): mensaje formal previo a pasar el caso al área correspondiente, manteniendo un trato respetuoso. Reglas obligatorias: usa español de México formal y respetuoso; no inventes recargos, intereses ni amenazas legales; deja marcadores como [NÚMERO DE FACTURA] y [DATOS BANCARIOS] para que yo los llene después. Mi giro o servicio es: <mark data-marker="GIRO O SERVICIO">[GIRO O SERVICIO]</mark>. Aquí está la tabla de datos: <mark data-marker="PEGA AQUÍ TU TABLA CSV">[PEGA AQUÍ TU TABLA CSV]</mark></pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r09.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
 
-<section id="R09-descargas" class="panel" aria-labelledby="R09-dl-t"><div class="panel-head"><h2 id="R09-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_cobranza.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_cobranza.csv · 415 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (CLIENTE, MONTO, ATRASO, TONO ASIGNADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.1 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 4.1 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li></ul></section>
+
+<section class="panel" id="R09-resultado" aria-labelledby="R09-result-t"><h2 id="R09-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">Factura</th><th scope="col">Cliente</th><th scope="col">Saldo MXN</th><th scope="col">Días de atraso</th><th scope="col">Nivel</th><th scope="col">Borrador o revisión</th></tr></thead><tbody><tr><td>F-101</td><td>Cliente A</td><td>18500.00</td><td>5</td><td>1</td><td>Hola, Cliente A. Damos seguimiento a F-101 por 18500.00 MXN, con 5 días de atraso a la fecha de corte. ¿Nos confirmas si ya realizaste el pago o cuándo podrías revisarlo?</td></tr><tr><td>F-102</td><td>Cliente B</td><td>42000.00</td><td>15</td><td>2</td><td>Hola, Cliente B. Damos seguimiento a F-102 por 42000.00 MXN, con 15 días de atraso a la fecha de corte. ¿Qué fecha estimada de pago puedes proponernos?</td></tr><tr><td>F-103</td><td>Cliente C</td><td>65800.00</td><td>32</td><td>3</td><td>Hola, Cliente C. Damos seguimiento a F-103 por 65800.00 MXN, con 32 días de atraso a la fecha de corte. ¿Puedes confirmar el saldo y proponer una fecha de pago?</td></tr><tr><td>F-104</td><td>Cliente D</td><td>8400.00</td><td>45</td><td>4</td><td>Hola, Cliente D. Damos seguimiento a F-104 por 8400.00 MXN, con 45 días de atraso a la fecha de corte. ¿Con quién podemos revisar el saldo pendiente y acordar el siguiente paso?</td></tr><tr><td>F-105</td><td>Cliente E</td><td>7600.00</td><td>60</td><td>5</td><td>Hola, Cliente E. Damos seguimiento a F-105 por 7600.00 MXN, con 60 días de atraso a la fecha de corte. ¿Puedes confirmar el estado del saldo y proponer una fecha? El seguimiento quedará en revisión interna.</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R09-descargas" class="panel" aria-labelledby="R09-dl-t"><div class="panel-head"><h2 id="R09-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_cobranza.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_cobranza.csv · 73 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 6.2 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 827 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 218 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 1.1 KB</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 350 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="RESULTADO_EJEMPLO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar RESULTADO_EJEMPLO.md</b><small>RESULTADO_EJEMPLO.md · 1.2 KB</small></span></a><p class="dl-desc">Documento calculado por la miniaplicación con su muestra y opciones actuales.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 996 B</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Plantilla de 5 Niveles de Cobranza Diplomática con IA
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Recordatorios de pago sin amenazas
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R09 · Cobranza Firme sin Perder Clientes** (palabra clave: COBRANZA).
-
-&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R09 · COBRANZA
 
 ## Qué es
 
-Este recurso ayuda a dueños de negocio, profesionistas independientes y equipos administrativos a redactar recordatorios de pago ajustados a los días de atraso de cada factura sin dañar la relación comercial. Incluye una estructura de tabla y prompts listos para generar borradores desde avisos cordiales hasta pausas de servicio. No sustituye la asesoría legal o contable, no envía correos en automático y todos los textos generados son borradores que requieren revisión humana antes de enviarse.
+Calcula días de atraso a una fecha de corte y prepara un mensaje revisable por factura, sin envíos automáticos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R09 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_cobranza.csv`: Plantilla con las columnas de la demo (CLIENTE, MONTO, ATRASO, TONO ASIGNADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Acceso a un asistente de inteligencia artificial aprobado por tu organización.
-- Hoja de cálculo (Excel, Google Sheets o LibreOffice) para llenar la plantilla CSV.
-- Lista actualizada de tus facturas pendientes con montos y días de vencimiento verificados.
-- Procesador de textos si deseas guardar los borradores finales en un documento.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_cobranza.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Abre la plantilla CSV incluida y registra tus facturas vencidas usando alias o códigos en lugar de nombres reales o razones sociales confidenciales.
-2. Verifica en tu sistema contable o estados de cuenta que ninguna de las facturas listadas haya sido pagada recientemente.
-3. Asigna en la cuarta columna el nivel de tono según la antigüedad del saldo o deja la celda en blanco para que el asistente lo sugiera con base en los días de atraso.
-4. Abre el archivo PROMPT_MAESTRO.md, copia las instrucciones y pégalas en tu asistente de IA junto con los datos de tu tabla.
-5. Si tienes un cliente con saldo vencido que solicita un nuevo pedido urgente, aplica el prompt complementario correspondiente para condicionar la entrega con diplomacia.
-6. Revisa cada borrador generado contra tu factura original: confirma montos, fechas y reemplaza los alias por los nombres reales ya fuera del chat de IA.
-7. Pega los textos revisados en tu correo o documento de seguimiento y realiza el envío desde tus canales oficiales.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R09/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Encabezados: factura,cliente,monto,vencimiento. Monto sin separador de miles; vencimiento AAAA-MM-DD. No incluyas datos bancarios. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Calcular atraso y preparar mensajes». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- No subas razones sociales reales, RFC, números de cuenta bancaria, CLABE ni datos personales de tus clientes a herramientas de IA públicas; usa alias en la columna de cliente y agrega los datos bancarios manualmente antes de enviar.
-- Utiliza únicamente asistentes de inteligencia artificial aprobados por las políticas de seguridad de tu empresa u organización.
-- Confirma siempre con tu área contable o estado de cuenta bancario del día que el pago no haya caído antes de enviar cualquier recordatorio para evitar reclamos innecesarios.
-- Recuerda que la IA puede cometer errores al cruzar filas o montos: revisa cada mensaje uno por uno antes de enviarlo al destinatario.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R09 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 6 columnas en este orden: Factura | Cliente | Saldo MXN | Días de atraso | Nivel | Borrador o revisión.
+- La primera fila de referencia es: F-101 | Cliente A | 18500.00 | 5 | 1 | Hola, Cliente A. Damos seguimiento a F-101 por 18500.00 MXN, con 5 días de atraso a la fecha de corte. ¿Nos confirmas si ya realizaste el pago o cuándo podrías revisarlo?.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Reglas locales: 1–7 días nivel 1; 8–20 nivel 2; 21–35 nivel 3; 36–50 nivel 4; más de 50 nivel 5.
+- Fecha calculada por días de calendario, sin efectos de horario de verano. Un valor negativo significa que aún faltan días para vencer.
+- Verifica pagos recientes y autoriza el mensaje antes de enviarlo. No se añaden recargos, amenazas, descuentos ni suspensión de servicios.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R09 de Atajo IA](https://atajoia.github.io/R09/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: acceso a Gemini web](https://support.google.com/gemini/answer/13278668?hl=es)
+- [Google: privacidad de Gemini](https://support.google.com/gemini/answer/13594961?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
-<section class="stack" aria-labelledby="R09-stack-t"><h2 id="R09-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">Microsoft Excel</span><code class="tool-cat">Hojas de cálculo</code></div><p class="tool-why">Para organizar la tabla de facturas vencidas con fechas y montos antes de procesarla con el prompt maestro.</p><a class="tool-link" href="https://www.microsoft.com/microsoft-365/excel" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Claude</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Para cargar tu archivo de facturas y redactar recordatorios de pago con el tono diplomático exacto de cada nivel.</p><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

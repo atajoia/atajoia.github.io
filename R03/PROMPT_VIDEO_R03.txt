@@ -1,0 +1,5 @@
+[Atajo IA · complemento opcional]
+
+Ejercicio original del video R03. Es distinto de la muestra de la miniaplicación; su uso es opcional. No requiere ejecutar Gemini para utilizar la app web ni acredita una ejecución externa. No se añade año a las fechas originales.
+
+Convierte estas notas en una tabla: tarea, responsable y fecha. Usa solo datos explícitos. Si falta algo, escribe Por confirmar.

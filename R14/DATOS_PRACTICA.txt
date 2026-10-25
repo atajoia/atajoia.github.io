@@ -1,0 +1,8 @@
+id_cliente,nombre,telefono,saldo
+C001, ana  lopez ,55 1000 1001,1200.00
+C002,bruno diaz,+52 55 1000 1002,800.00
+C001,Ana Lopez,5510001001,1200.00
+C003,ANA LOPEZ,5510001003,500.00
+C004,carla neri,551000100,350.00
+C002,Bruno Diaz,5510001002,950.00
+,Bruno Diaz,5510001002,800.00

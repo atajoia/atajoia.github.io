@@ -1,0 +1,9 @@
+# Seguimiento de facturas
+
+| Factura | Cliente | Saldo MXN | Días de atraso | Nivel | Borrador o revisión |
+| --- | --- | --- | --- | --- | --- |
+| F-101 | Cliente A | 18500.00 | 5 | 1 | Hola, Cliente A. Damos seguimiento a F-101 por 18500.00 MXN, con 5 días de atraso a la fecha de corte. ¿Nos confirmas si ya realizaste el pago o cuándo podrías revisarlo? |
+| F-102 | Cliente B | 42000.00 | 15 | 2 | Hola, Cliente B. Damos seguimiento a F-102 por 42000.00 MXN, con 15 días de atraso a la fecha de corte. ¿Qué fecha estimada de pago puedes proponernos? |
+| F-103 | Cliente C | 65800.00 | 32 | 3 | Hola, Cliente C. Damos seguimiento a F-103 por 65800.00 MXN, con 32 días de atraso a la fecha de corte. ¿Puedes confirmar el saldo y proponer una fecha de pago? |
+| F-104 | Cliente D | 8400.00 | 45 | 4 | Hola, Cliente D. Damos seguimiento a F-104 por 8400.00 MXN, con 45 días de atraso a la fecha de corte. ¿Con quién podemos revisar el saldo pendiente y acordar el siguiente paso? |
+| F-105 | Cliente E | 7600.00 | 60 | 5 | Hola, Cliente E. Damos seguimiento a F-105 por 7600.00 MXN, con 60 días de atraso a la fecha de corte. ¿Puedes confirmar el estado del saldo y proponer una fecha? El seguimiento quedará en revisión interna. |

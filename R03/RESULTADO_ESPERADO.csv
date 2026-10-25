@@ -1,4 +1,4 @@
-﻿TAREA,RESPONSABLE,FECHA
-Cotización,Laura,27 de octubre
-Demo,Carlos,28 de octubre
-Inventario,Por confirmar,Por confirmar
+﻿Tarea,Responsable,Fecha,Estado
+Preparar cotización,Laura,2026-10-27,Asignación registrada; no completada
+Revisar demo,Carlos,2026-10-28,Asignación registrada; no completada
+Revisar inventario,Por confirmar,Por confirmar,Confirmar datos

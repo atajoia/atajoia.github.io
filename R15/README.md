@@ -1,57 +1,82 @@
-# Organizador y Renombrador de Archivos por Lote
+# Prepara nombres de archivos sin colisiones
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R15 · Renombra Decenas de Archivos en un Clic** (palabra clave: CARPETA).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R15 · CARPETA
 
 ## Qué es
 
-Este recurso ayuda a profesionistas y dueños de negocio a renombrar decenas de comprobantes o documentos con nombres genéricos usando un formato estándar. Incluye el prompt para asistentes de IA con análisis de archivos y un script local en Python para aplicar cambios desde tu computadora. Todo resultado es un borrador que no garantiza exactitud total y requiere revisión humana antes de archivar.
+Genera una vista previa con fechas y conceptos explícitos. Mantiene extensiones y evita reemplazar nombres existentes. Esta función no toca tus archivos. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R15 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_carpeta.csv`: Plantilla con las columnas de la demo (ARCHIVO ORIGINAL, NUEVO NOMBRE, MONTO, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-- `renombrar_lote.py`: Lee el archivo CSV de control validado y crea copias de tus archivos con los nuevos nombres en una carpeta nueva, sin borrar ni modificar tus originales.
-
-## Requisitos
-
-- Carpeta con los documentos a ordenar (PDFs o imágenes).
-- Excel o Google Sheets para abrir y validar la plantilla CSV de control.
-- Para el script (opcional): Python 3.10 o superior.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_carpeta.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `scan_001.txt`: Archivo ficticio original scan_001.txt para probar la copia renombrada; conserva su contenido.
+- `doc_002.csv`: Archivo ficticio original doc_002.csv para probar la copia renombrada; conserva su contenido.
+- `nota_003.md`: Archivo ficticio original nota_003.md para probar la copia renombrada; conserva su contenido.
+- `nota_004.md`: Archivo ficticio original nota_004.md para probar la copia renombrada; conserva su contenido.
+- `2026-03-05_Red-Oficina_899-00.csv`: Archivo ficticio original 2026-03-05_Red-Oficina_899-00.csv para probar la copia renombrada; conserva su contenido.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Reúne en una carpeta los archivos con nombres genéricos y verifica que no contengan datos sensibles prohibidos por las políticas de tu organización.
-2. Comprime la carpeta en un archivo .zip si vas a utilizar el asistente de IA.
-3. Abre el archivo PROMPT_MAESTRO.md, copia el texto y pégalo en tu asistente de IA junto con tu archivo .zip adjunto.
-4. Solicita a la IA que genere primero la tabla de control con las columnas de la plantilla CSV para revisar las propuestas de nombres.
-5. Descarga o copia la tabla en la plantilla CSV y revisa manualmente que las fechas, proveedores y montos coincidan con los documentos originales, prestando especial atención a los marcados con duda.
-6. Descarga el archivo .zip con los documentos renombrados desde el asistente, o bien, usa el script local de Python incluido para generar copias con los nuevos nombres en tu computadora a partir del CSV validado.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R15/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Una línea por archivo con encabezado original|fecha|concepto. Fecha AAAA-MM-DD; concepto puede incluir proveedor e importe. No uses la fecha de modificación como fecha del documento. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Esta herramienta no requiere opciones adicionales.
+3. **Ejecuta la herramienta:** Pulsa «Crear vista previa de nombres». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 5 filas y 3 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Script de Python (opcional)
+## Prompt completo
 
-`renombrar_lote.py`: Lee el archivo CSV de control validado y crea copias de tus archivos con los nuevos nombres en una carpeta nueva, sin borrar ni modificar tus originales.
-
-```bash
-python renombrar_lote.py --carpeta ./descargas_marzo --csv plantilla_control.csv --salida ./archivos_ordenados
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R15 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-## Privacidad y advertencias
+## Cómo comprobar tu resultado
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- No subas estados de cuenta completos, contratos confidenciales ni identificaciones oficiales a herramientas de IA públicas; usa solo plataformas aprobadas por tu empresa o procesa los archivos localmente.
-- El reconocimiento de texto en fotos o escaneos chuecos puede confundir números o fechas; revisa siempre la tabla de control contra los comprobantes originales antes de usar los montos para contabilidad.
-- Mantén siempre una copia de respaldo de tu carpeta original intacta antes de ejecutar cualquier cambio de nombres en lote.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 5 filas y 3 columnas en este orden: Original | Nuevo | Estado.
+- La primera fila de referencia es: scan_001.txt | 2026-03-04_Luz-Taller_3420-00.txt | Listo: propuesta para revisar.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Los nombres nuevos son una propuesta. Los originales no se renombran ni se sobrescriben.
+- Se preservan extensiones y se comparan colisiones sin distinguir mayúsculas, como precaución para Windows.
+- Las filas con Revisar conservan el nombre original. No inventamos fechas a partir de la modificación del archivo.
+- Antes de aplicar o descargar una copia renombrada, compara nombre, contenido y número de archivos.
 
-## Licencia
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Si algo no funciona
 
-_Borrador preparado con ayuda de IA el 2026-10-19. Revísalo antes de usarlo._
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R15 de Atajo IA](https://atajoia.github.io/R15/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: usar Gemini Apps mediante preguntas de texto](https://support.google.com/gemini/answer/13275745?hl=es)
+- [Microsoft: cambiar el nombre de un archivo desde Explorador con F2](https://support.microsoft.com/es-es/office/collab-files/rename-a-file)
+- [Microsoft: mostrar extensiones y por qué renombrarlas no convierte formatos](https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

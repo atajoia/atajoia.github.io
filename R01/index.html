@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>PDF a Excel: extracción con revisión · Recurso gratis #R01 · Atajo IA</title>
-<meta name="description" content="Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta."><meta name="theme-color" content="#000000">
+<title>Revisa importes de comprobantes en texto · Recurso gratis #R01 · Atajo IA</title>
+<meta name="description" content="Extrae etiquetas y compara subtotal, impuesto y total. Sin OCR ni validación fiscal. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,108 +169,93 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R01</span><span>PLANILLA</span></p>
-<h1>PDF a Excel: extracción con revisión</h1>
-<p class="lede">Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta.</p><p class="incl">Incluye: Prompt maestro + plantilla CSV + script de Python</p>
+<h1>Revisa importes de comprobantes en texto</h1>
+<p class="lede">Extrae etiquetas y compara subtotal, impuesto y total. Sin OCR ni validación fiscal. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R01-start-t"><h2 id="R01-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R01-inicio">Ir al prompt</a><a href="#R01-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R01-inicio" class="panel app" data-app aria-labelledby="R01-app-t"><div class="panel-head"><h2 id="R01-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R01-campo-1">Nombre de tabla o páginas</label><input id="R01-campo-1" type="text" data-marker="NOMBRE DE TABLA O PÁGINAS" autocomplete="off" placeholder="Opcional"></div></div><pre class="prompt" id="R01-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como asistente de extracción de datos. Analiza el archivo que adjunto y extrae únicamente las filas de la tabla indicada: <mark data-marker="NOMBRE DE TABLA O PÁGINAS">[NOMBRE DE TABLA O PÁGINAS]</mark>. Devuelve CSV con estas columnas y en este orden: CÓDIGO, CONCEPTO, TOTAL, ESTADO. Conserva los valores originales, marca como VACÍO cualquier dato que no aparezca y no calcules ni completes información. Al final enumera las páginas revisadas y las celdas dudosas. No incluyas comentarios dentro del CSV.</pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r01.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
 
-<section id="R01-descargas" class="panel" aria-labelledby="R01-dl-t"><div class="panel-head"><h2 id="R01-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_planilla.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_planilla.csv · 408 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.1 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 2.7 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="extraer_tablas_pdf.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>extraer_tablas_pdf.py · 3.8 KB</small></span></a><p class="dl-desc">Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.</p></li></ul></section>
+
+<section class="panel" id="R01-resultado" aria-labelledby="R01-result-t"><h2 id="R01-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">Folio</th><th scope="col">Concepto</th><th scope="col">Subtotal</th><th scope="col">Impuesto</th><th scope="col">Total reportado</th><th scope="col">Revisión</th></tr></thead><tbody><tr><td>EJ-101</td><td>Soporte</td><td>850.00</td><td>136.00</td><td>986.00</td><td>Cuadra aritméticamente</td></tr><tr><td>EJ-102</td><td>Consumibles</td><td>100.00</td><td>16.00</td><td>115.00</td><td>Diferencia -1.00; esperado 116.00</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R01-descargas" class="panel" aria-labelledby="R01-dl-t"><div class="panel-head"><h2 id="R01-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_planilla.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_planilla.csv · 63 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 5.9 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 833 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 178 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 198 B</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 340 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 900 B</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># PDF a Excel: extracción con revisión
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Revisa importes de comprobantes en texto
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R01 · Extractor Mágico de PDFs/Facturas a Excel** (palabra clave: PLANILLA).
-
-&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R01 · PLANILLA
 
 ## Qué es
 
-Este recurso ayuda a oficinistas y administradores a pasar tablas de facturas o reportes en PDF hacia una hoja de cálculo estructurada para su revisión. Es ideal para evitar la captura manual de renglones desde cero, pero no sustituye la validación contable ni garantiza exactitud automática: todo resultado es un borrador que una persona debe cotejar contra el documento original.
+Extrae etiquetas y compara subtotal, impuesto y total. Sin OCR ni validación fiscal. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Convertir tablas de un documento en filas revisables, sin asumir que la extracción quedó correcta.
+## Herramienta y preparación
+
+Mini aplicación web R01 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_planilla.csv`: Plantilla con las columnas de la demo (CÓDIGO, CONCEPTO, TOTAL, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-- `extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
-
-## Requisitos
-
-- Un asistente de IA aprobado por tu organización que permita adjuntar documentos o imágenes.
-- Excel, Google Sheets o LibreOffice Calc para abrir y revisar la plantilla CSV.
-- Para el script (opcional): Python 3.10 o superior y los paquetes `openpyxl pandas pdfplumber`.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_planilla.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Revisa el documento original y oculta o recorta datos sensibles (como RFC, cuentas bancarias o domicilios) si no estás usando una herramienta corporativa autorizada.
-2. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y reemplaza los corchetes con las páginas a procesar y las columnas: CÓDIGO, CONCEPTO, TOTAL, ESTADO.
-3. Adjunta tu PDF (o ejecuta el script local incluido si prefieres no subir archivos a la nube) y genera el bloque de texto en formato CSV.
-4. Copia el resultado obtenido y pégalo en la plantilla CSV usando la opción de &#x27;Texto en columnas&#x27; separando por comas.
-5. Usa los prompts complementarios para limpiar el formato numérico o pedir una lista de renglones dudosos.
-6. Compara una muestra de filas y la suma de la columna TOTAL directamente contra el PDF original antes de dar por bueno el archivo.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R01/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Una etiqueta por línea; separa documentos con --- o inicia otro Folio:. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Esta herramienta no requiere opciones adicionales.
+3. **Ejecuta la herramienta:** Pulsa «Extraer y revisar». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 2 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Script de Python (opcional)
+## Prompt completo
 
-`extraer_tablas_pdf.py`: Extrae tablas de un PDF con texto seleccionable de forma local y las guarda en un archivo Excel para su revisión.
-
-```bash
-pip install openpyxl pandas pdfplumber
-python extraer_tablas_pdf.py --entrada Factura_Corporativa_Marzo.pdf --salida Facturas_Marzo_Limpio.xlsx
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R01 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
 ```
 
-El script se ejecuta en tu computadora, no se conecta a internet y no borra archivos. Pruébalo primero con una copia de tus archivos y revisa el resultado.
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-## Privacidad y advertencias
+## Cómo comprobar tu resultado
 
-- Compara una muestra de filas con el PDF original.
-- Revisa fechas, separadores decimales, moneda y totales.
-- No cargues facturas o archivos con datos personales o confidenciales en servicios no aprobados.
-- No cargues facturas, estados de cuenta o archivos con RFC, nombres o datos confidenciales en servicios de IA públicos o no aprobados por tu organización.
-- Compara siempre una muestra de filas y el total general contra el PDF original antes de usar la tabla en reportes o contabilidad.
-- Revisa fechas, separadores decimales, tipo de moneda y totales; los modelos pueden confundir comas con puntos o saltar líneas en tablas largas.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 2 filas y 6 columnas en este orden: Folio | Concepto | Subtotal | Impuesto | Total reportado | Revisión.
+- La primera fila de referencia es: EJ-101 | Soporte | 850.00 | 136.00 | 986.00 | Cuadra aritméticamente.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- 2 comprobante(s) con etiquetas reconocidas. Se conserva el total reportado.
+- Solo compara subtotal más impuesto. No hace OCR, no lee PDF, no consulta el SAT ni valida RFC, CFDI o tratamiento fiscal.
+- Importes ambiguos o ausentes requieren revisión de la fuente; no se sustituyen por cero.
 
-## Licencia
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Si algo no funciona
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R01 de Atajo IA](https://atajoia.github.io/R01/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: subir y analizar archivos en Gemini](https://support.google.com/gemini/answer/14903178?hl=es)
+- [LibreOffice: abrir y guardar CSV](https://help.libreoffice.org/latest/es/text/scalc/guide/csv_files.html)
+- [LibreOffice: exportar a PDF](https://help.libreoffice.org/latest/es/text/shared/01/ref_pdf_export.html)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
-<section class="stack" aria-labelledby="R01-stack-t"><h2 id="R01-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">Claude</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Para ejecutar el prompt maestro subiendo el PDF y extraer las tablas limpias listas para exportar.</p><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Microsoft Excel</span><code class="tool-cat">Hojas de cálculo</code></div><p class="tool-why">Para abrir la plantilla CSV generada, cruzar los montos extraídos y auditar tus facturas.</p><a class="tool-link" href="https://www.microsoft.com/microsoft-365/excel" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

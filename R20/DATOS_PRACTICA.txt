@@ -1,0 +1,4 @@
+proyecto,accion,evidencia,impacto
+Reportes,Preparé una plantilla de reporte,Registro E01 y mediciones M01 a M05,Promedio observado 22 a 14 minutos en cinco pruebas comparables
+Soporte,Coordiné diagnóstico y seguimiento; Carlos aplicó la corrección,Ticket T-42 y confirmación E04,Un ticket confirmado como resuelto; sin impacto monetario medido
+Guía de ingreso,Redacté una guía de ocho pasos,Documento G01 revisado por tres personas,

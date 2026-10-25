@@ -1,0 +1,5 @@
+Registro: Anotar el ID y la fecha de la solicitud.
+Prioridad Normal: Una persona afectada que tiene una alternativa de trabajo.
+Primera respuesta: Reconocer el ID y pedir datos faltantes sin prometer una fecha no confirmada.
+Estado En seguimiento: Se solicitó un dato y se espera respuesta.
+Responsable no identificado: Escribir Por confirmar en lugar de asignar por intuición.

@@ -1,0 +1,5 @@
+﻿SKU,Cantidad,Venta total,Costo total,Margen,Alerta
+A100,2,300.00,160.00,140.00,OK
+A200,1,200.00,120.00,80.00,REVISAR MARGEN
+B100,3,210.00,135.00,75.00,REVISAR MARGEN
+X999,1,90.00,Por confirmar,Por confirmar,REVISAR SKU

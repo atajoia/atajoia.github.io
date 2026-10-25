@@ -1,49 +1,74 @@
-# Correo: priorizar hilos y redactar respuestas
+# Ordena correos y prepara borradores
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R02 · Vacía tu Bandeja de Correo en 3 Minutos** (palabra clave: CORREO).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R02 · CORREO
 
 ## Qué es
 
-Este recurso ayuda a oficinistas, profesionistas y dueños de negocio a resumir cadenas largas de correo, clasificar qué es urgente y preparar borradores de respuesta claros. No envía correos por su cuenta ni garantiza exactitud total, por lo que cada borrador debe ser revisado por una persona antes de enviarse.
+Clasifica fechas explícitas y propone respuestas revisables. No entra al buzón ni envía mensajes. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Ordenar un hilo y preparar una respuesta para revisión humana.
+## Herramienta y preparación
+
+Mini aplicación web R02 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_correo.csv`: Plantilla con las columnas de la demo (REMITENTE, QUÉ PIDE, PRIORIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Acceso a un asistente de IA aprobado por tu organización.
-- Tu cliente de correo habitual (como Outlook o Gmail) para copiar el texto del hilo.
-- Un editor de hojas de cálculo (Excel o Google Sheets) para abrir la plantilla CSV de control.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_correo.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Copia el texto del hilo de correo que necesitas resolver en un bloc de notas temporal.
-2. Reemplaza nombres propios, direcciones de correo, teléfonos, montos y datos confidenciales por etiquetas genéricas como [CLIENTE A] o [PROVEEDOR].
-3. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y completa los campos entre corchetes con tu objetivo y el tono deseado.
-4. Pega el prompt junto con el hilo anonimizado en tu asistente de IA para obtener el resumen de 3 puntos y el borrador de respuesta.
-5. Registra las solicitudes detectadas en la plantilla CSV usando las columnas REMITENTE, QUÉ PIDE y PRIORIDAD para organizar tus pendientes del día.
-6. Compara el resumen y el borrador contra el correo original para verificar que no se hayan omitido detalles ni inventado acuerdos.
-7. Pega la respuesta revisada en tu cliente de correo, restaura los nombres reales, confirma los destinatarios en copia y envía manualmente.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R02/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Encabezados: remitente,asunto,mensaje,fecha_limite. Fechas AAAA-MM-DD; usa comillas si el texto contiene comas. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Clasificar y preparar». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 4 filas y 6 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Confirma destinatarios, compromisos y fechas antes de enviar.
-- Elimina nombres, correos, teléfonos y datos internos antes de pegar el hilo.
-- La herramienta redacta; tú decides si la respuesta es correcta.
-- Elimina nombres reales, correos electrónicos, números telefónicos, montos financieros y datos internos antes de pegar el hilo en cualquier asistente.
-- Utiliza únicamente herramientas de inteligencia artificial autorizadas por las políticas de seguridad de tu empresa.
-- Confirma siempre destinatarios, archivos adjuntos, fechas y compromisos directamente en tu bandeja de correo antes de enviar; la herramienta solo genera un borrador.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R02 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 4 filas y 6 columnas en este orden: Remitente | Asunto | Prioridad | Fecha límite | Borrador revisable | Estado.
+- La primera fila de referencia es: Dirección | Reporte | Después | 2026-10-26 | Gracias por el mensaje. Revisaré la solicitud; por favor confirma los datos necesarios y el plazo esperado. Cualquier compromiso queda pendiente de revisión. | Borrador; no enviado.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Clasificación por fecha explícita respecto a 2026-10-25.
+- Clasificación por reglas, no lectura de buzón ni comprensión por IA. Revisa intención, destinatario, adjuntos y compromisos antes de enviar.
+- No acepta plazos, reconoce deudas ni envía correos. Las fechas deben escribirse AAAA-MM-DD.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R02 de Atajo IA](https://atajoia.github.io/R02/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: usar aplicaciones de Gemini](https://support.google.com/gemini/answer/13275745?hl=es)
+- [Google: redactar correos y guardar borradores en Gmail](https://support.google.com/mail/answer/9259768?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.

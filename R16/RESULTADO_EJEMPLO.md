@@ -1,0 +1,9 @@
+# Control de acuerdos R16
+
+| Fila | Acuerdo o posible compromiso | Responsable | Fecha | Revisión | Evidencia |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Enviar catálogo final | Ana | 2026-05-19 | Datos declarados; verificar contra fuente | Fila de datos 1: Enviar catálogo final \| Ana \| 2026-05-19 |
+| 2 | Revisar servidor | Carlos | 2026-05-20 | Datos declarados; verificar contra fuente | Fila de datos 2: Revisar servidor \| Carlos \| 2026-05-20 |
+| 3 | Confirmar soporte adicional | Por confirmar | Por confirmar | Datos declarados; verificar contra fuente; Responsable por confirmar; Fecha por confirmar | Fila de datos 3: Confirmar soporte adicional \|  \|  |
+
+Revisión humana pendiente. Una fecha límite no acredita que una entrega o un pago ya ocurrió.

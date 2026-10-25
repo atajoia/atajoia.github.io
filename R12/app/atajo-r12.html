@@ -1,0 +1,1550 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-webtools-v1">
+<meta name="description" content="Herramienta gratuita de Atajo IA: procesa tus datos en tu navegador y descarga el resultado.">
+<meta name="theme-color" content="#f4f3ef"><title>Manual desde pasos que tú defines · Atajo IA</title><style>:root{font:16px/1.5 Inter,system-ui,sans-serif;color:#1c2432;background:#f4f3ef;--accent:#e84e45;--line:#dcdedb;--muted:#657069}*{box-sizing:border-box}body{margin:0}a{color:inherit}button,input,textarea,select{font:inherit}button,a.button{cursor:pointer;border:1px solid var(--line);border-radius:10px;padding:11px 16px;background:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:650}button:hover,a.button:hover{border-color:#1c2432}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[contenteditable]:focus-visible{outline:3px solid #2761d1;outline-offset:3px}button.primary,a.primary{background:var(--accent);color:white;border-color:var(--accent)}button:disabled{opacity:.45;cursor:not-allowed}.shell{max-width:1440px;margin:auto;padding:24px 36px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:0 0 20px}.brand{font-size:23px;font-weight:850;text-decoration:none;letter-spacing:-1px}.brand span{color:var(--accent)}nav{display:flex;gap:20px;align-items:center;font-size:14px}.pill{border:1px solid #b7cfbc;border-radius:100px;background:#e9f2e9;padding:5px 10px;font-size:12px;font-weight:700;white-space:nowrap}.hero{max-width:900px;margin:44px 0 30px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(32px,4vw,53px);line-height:1.09;letter-spacing:-1.7px;margin:12px 0 18px}h2{font-size:22px;margin:0 0 12px;letter-spacing:-.5px}p{margin:8px 0 16px}.summary{font-size:19px;color:#58605d;max-width:790px}.steps{display:flex;gap:22px;margin-top:25px;flex-wrap:wrap;font-size:14px;font-weight:600}.steps b{background:#222d3a;color:#fff;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;margin-right:7px}.workspace{display:grid;grid-template-columns:minmax(330px,.85fr) minmax(0,1.35fr);gap:22px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0}.panel-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:14px}.subtle{color:var(--muted);font-size:14px}.data-label{display:block;font-size:14px;font-weight:700;margin:15px 0 6px}textarea,input,select{border:1px solid #bfc7c2;border-radius:8px;padding:11px;width:100%;background:#fff;color:inherit}textarea{font:14px/1.65 ui-monospace,monospace;min-height:260px;resize:vertical}textarea.option{min-height:100px}input[type=file]{font-size:13px;padding:9px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.privacy{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:20px}.empty{min-height:270px;display:grid;align-content:center;text-align:center;color:var(--muted);padding:35px 20px;border:1px dashed #cbd1cc;border-radius:12px;background:#fafbf8}.empty strong{font-size:20px;color:#46564e;margin-bottom:8px}.notice{background:#fff3df;color:#70511d;border-radius:8px;padding:12px 14px;font-size:14px;margin:12px 0}.error{color:#a92727;background:#fff0ec}.scroll{overflow:auto;max-height:570px;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}th{background:#eef2ed;position:sticky;top:0;z-index:1;font-size:12px;font-weight:750}th,td{padding:12px;vertical-align:top;border-bottom:1px solid var(--line);min-width:100px;max-width:410px;overflow-wrap:anywhere}td[contenteditable]{cursor:text}td[contenteditable]:hover{background:#fff8e5}.document{white-space:pre-wrap;overflow-wrap:anywhere;background:#f8f9f5;border-radius:10px;padding:18px;font:15px/1.6 system-ui}.result-actions{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.result-actions button{font-size:13px}details{border-top:1px solid var(--line);margin-top:18px;padding-top:15px}summary{cursor:pointer;font-weight:700}.quiz-question{padding:16px 0;border-bottom:1px solid var(--line)}.quiz-question label{display:flex;gap:9px;padding:7px 0}.quiz-question input{width:auto}.quiz-question p{font-weight:700}.diagram{overflow:auto;background:#f8faf6;border:1px solid var(--line);border-radius:12px;margin-top:15px}.diagram svg{display:block;margin:auto}.source{font-size:13px;margin-top:22px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:36px;padding:22px 0;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:24px}.tool-card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;text-decoration:none;display:flex;flex-direction:column}.tool-card h2{font-size:20px}.tool-card p{color:var(--muted);font-size:14px}.tool-card .go{margin-top:auto;font-weight:700;color:var(--accent)}.search{max-width:650px}#status{min-height:22px;font-size:14px}.hidden,[hidden]{display:none!important}@media(max-width:900px){.shell{padding:18px}.workspace{grid-template-columns:1fr}.hero{margin:30px 0 24px}h1{letter-spacing:-1px}nav{gap:10px}.panel{padding:19px}.steps{gap:12px}.scroll{max-height:480px}}@media(max-width:480px){nav a.source-link{display:none}header{gap:10px}.pill{font-size:11px}.summary{font-size:17px}.steps{display:grid;gap:8px}.actions button{flex:1}.result-actions button{flex:1}footer{display:block}footer a{display:inline-block;margin:5px 12px 5px 0}}
+</style></head>
+<body data-tool="R12" data-base="../../" data-offline="true">
+<div id="app"></div><noscript><main class="shell"><h1>Activa JavaScript para usar esta herramienta</h1>
+<p>Los cálculos se realizan en tu navegador. No necesitas instalar programas ni contratar una API.</p>
+<a href="../">Volver a la guía y descargar archivos</a></main></noscript>
+<script id="file-examples" type="application/json">[]</script><script type="module">const Core=(()=>{// Utilidades locales de Atajo IA. Sin dependencias, almacenamiento ni red.
+function csvText(columns, rows) {
+  const cell = value => {
+    let text = String(value ?? '');
+    if (/^\s*[=+@-]/u.test(text) && !/^-?\d+(?:[.,]\d+)?$/u.test(text.trim())) text = "'" + text;
+    return /[",\n\r]/u.test(text) ? '"' + text.replaceAll('"', '""') + '"' : text;
+  };
+  return '\ufeff' + [columns, ...rows].map(row => row.map(cell).join(',')).join('\r\n') + '\r\n';
+}
+function markdownText(result, title) {
+  if (result.markdown) return result.markdown;
+  const cell = value => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ');
+  return '# ' + title + '\n\n| ' + result.columns.map(cell).join(' | ') + ' |\n| ' + result.columns.map(() => '---').join(' | ') + ' |\n' + result.rows.map(row => '| ' + row.map(cell).join(' | ') + ' |').join('\n');
+}
+function escapeHTML(value) {
+  return String(value ?? '').replace(/[&<>"']/gu, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function printableHTML(result, title) {
+  const e = escapeHTML;
+  const text = result.markdown ? '<pre>' + e(result.markdown) + '</pre>' : '<table><thead><tr>' + result.columns.map(c => '<th>' + e(c) + '</th>').join('') + '</tr></thead><tbody>' + result.rows.map(row => '<tr>' + row.map(c => '<td>' + e(c) + '</td>').join('') + '</tr>').join('') + '</tbody></table>';
+  return '<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + e(title) + '</title><style>body{font:16px/1.6 system-ui;margin:40px;color:#182029}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd;padding:10px;text-align:left}pre{white-space:pre-wrap;font:inherit}@media print{body{margin:0}}</style><h1>' + e(title) + '</h1><p>Atajo IA · Resultado revisable</p>' + text + '</html>';
+}
+function validResult(result) {
+  if (!result || !Array.isArray(result.columns) || !result.columns.length || !Array.isArray(result.rows)) throw new Error('La herramienta no produjo una tabla válida.');
+  if (result.rows.length > 2000 || result.columns.length > 20) throw new Error('Usa un lote de hasta 2000 filas y 20 columnas.');
+  if (result.rows.some(row => !Array.isArray(row) || row.length !== result.columns.length)) throw new Error('Revisa las columnas de la entrada: algunas filas no coinciden.');
+  return result;
+}
+function safeFilename(name) {
+  const clean = String(name).replace(/[<>:"/\\|?*\x00-\x1f]/gu, '-').replace(/[. ]+$/gu, '').slice(0,150);
+  if (!clean || /^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/iu.test(clean)) throw new Error('El nombre de un archivo no es válido.');
+  return clean;
+}
+// ZIP sin compresión: los bytes originales se conservan; las rutas no salen del ZIP.
+async function makeZIP(entries) {
+  if (!entries.length || entries.length > 100) throw new Error('Selecciona de 1 a 100 archivos.');
+  let offset = 0, total = 0;
+  const local = [], central = [], names = new Set(), encoder = new TextEncoder();
+  const crcTable = Array.from({length:256}, (_, n) => { for(let k=0;k<8;k++) n=(n&1)?0xedb88320^(n>>>1):n>>>1; return n>>>0; });
+  for (const entry of entries) {
+    const name = safeFilename(entry.name), key = name.toLowerCase();
+    if (names.has(key)) throw new Error('Hay nombres de destino repetidos: ' + name);
+    names.add(key);
+    const bytes = entry.bytes instanceof Uint8Array ? entry.bytes : new Uint8Array(await entry.file.arrayBuffer());
+    total += bytes.length;
+    if (total > 25*1024*1024) throw new Error('El lote supera 25 MB. Usa un lote más pequeño.');
+    const encoded = encoder.encode(name);
+    let crc=0xffffffff; for(const b of bytes) crc=crcTable[(crc^b)&255]^(crc>>>8); crc=(crc^0xffffffff)>>>0;
+    const header = new Uint8Array(30+encoded.length), h = new DataView(header.buffer);
+    h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint32(14,crc,true);h.setUint32(18,bytes.length,true);h.setUint32(22,bytes.length,true);h.setUint16(26,encoded.length,true);header.set(encoded,30);
+    const directory = new Uint8Array(46+encoded.length), d = new DataView(directory.buffer);
+    d.setUint32(0,0x02014b50,true);d.setUint16(4,20,true);d.setUint16(6,20,true);d.setUint16(8,0x0800,true);d.setUint32(16,crc,true);d.setUint32(20,bytes.length,true);d.setUint32(24,bytes.length,true);d.setUint16(28,encoded.length,true);d.setUint32(42,offset,true);directory.set(encoded,46);
+    local.push(header,bytes);central.push(directory);offset+=header.length+bytes.length;
+  }
+  const length=central.reduce((n,b)=>n+b.length,0), end=new Uint8Array(22), e=new DataView(end.buffer);
+  e.setUint32(0,0x06054b50,true);e.setUint16(8,entries.length,true);e.setUint16(10,entries.length,true);e.setUint32(12,length,true);e.setUint32(16,offset,true);
+  return new Blob([...local,...central,end],{type:'application/zip'});
+}
+;return {csvText,markdownText,escapeHTML,printableHTML,validResult,safeFilename,makeZIP};})();
+const {csvText,markdownText,escapeHTML,printableHTML,validResult,safeFilename,makeZIP}=Core;
+const toolsA=(()=>{/* Herramientas locales R01–R07. Funciones puras: sin DOM, red, cuentas ni IA. */
+const UNKNOWN = 'Por confirmar';
+const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const text = value => String(value ?? '').trim();
+const money = value => {
+  let s = text(value).replace(/MXN/gi, '').replace(/[$\s]/g, '');
+  if (!s || /[^0-9.,+\-]/.test(s)) return null;
+  if (s.includes(',') && s.includes('.')) {
+    const decimal = s.lastIndexOf(',') > s.lastIndexOf('.') ? ',' : '.';
+    s = decimal === ',' ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
+  } else if (s.includes(',')) {
+    s = /^[+-]?\d{1,3}(,\d{3})+$/.test(s) ? s.replace(/,/g, '') : s.replace(',', '.');
+  }
+  if (!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(s)) return null;
+  const n = Number(s);
+  return Number.isFinite(n) ? n : null;
+};
+const fmt = n => n === null ? UNKNOWN : n.toFixed(2);
+function inputText(value) {
+  const s = text(value).replace(/^\uFEFF/, '');
+  if (!s) throw new Error('Pega primero tus datos o carga el ejemplo.');
+  if (s.length > 100000) throw new Error('Divide la entrada en bloques menores de 100,000 caracteres.');
+  return s;
+}
+function table(input) {
+  const source = inputText(input);
+  let quoted = false;
+  const counts = {',': 0, ';': 0, '\t': 0};
+  for (const ch of source.split(/\r?\n/)[0]) {
+    if (ch === '"') quoted = !quoted;
+    else if (!quoted && ch in counts) counts[ch]++;
+  }
+  const sep = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+  let rows = [], row = [], cell = '';
+  quoted = false;
+  for (let i = 0; i < source.length; i++) {
+    const ch = source[i];
+    if (ch === '"') {
+      if (quoted && source[i + 1] === '"') { cell += '"'; i++; }
+      else quoted = !quoted;
+    } else if (!quoted && ch === sep) { row.push(cell.trim()); cell = ''; }
+    else if (!quoted && (ch === '\n' || ch === '\r')) {
+      if (ch === '\r' && source[i + 1] === '\n') i++;
+      row.push(cell.trim()); if (row.some(Boolean)) rows.push(row); row = []; cell = '';
+    } else cell += ch;
+  }
+  if (quoted) throw new Error('Hay comillas CSV sin cerrar. Revisa la última fila.');
+  row.push(cell.trim()); if (row.some(Boolean)) rows.push(row);
+  if (rows.length < 2) throw new Error('Incluye encabezados CSV y al menos una fila de datos.');
+  if (rows.length > 1001) throw new Error('Usa como máximo 1,000 filas por bloque.');
+  const headers = rows.shift().map(norm);
+  if (new Set(headers).size !== headers.length) throw new Error('Hay encabezados duplicados en el CSV.');
+  return rows.map((r, index) => {
+    if (r.length > headers.length) throw new Error(`La fila ${index + 2} tiene más campos que el encabezado; encierra las comas del texto entre comillas.`);
+    return Object.fromEntries(headers.map((h, i) => [h, r[i] ?? '']));
+  });
+}
+function field(row, ...names) {
+  for (const name of names) if (norm(name) in row) return row[norm(name)];
+  return '';
+}
+function requireFields(rows, fields) {
+  const missing = fields.filter(names => !names.some(name => norm(name) in rows[0]));
+  if (missing.length) throw new Error('Faltan columnas: ' + missing.map(names => names[0]).join(', ') + '. Usa el ejemplo como estructura.');
+}
+function isoDate(value) {
+  const s = text(value);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
+  const d = new Date(s + 'T00:00:00Z');
+  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s ? s : null;
+}
+function today() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+const mdText = s => text(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function receipt(input) {
+  let current = {}, records = [];
+  const push = () => { if (Object.keys(current).length) records.push(current); current = {}; };
+  for (const line of inputText(input).split(/\r?\n/)) {
+    if (/^\s*-{3,}\s*$/.test(line)) { push(); continue; }
+    const m = line.match(/^\s*(folio|factura|concepto|subtotal|impuesto|iva(?:\s+\d+(?:[.,]\d+)?\s*%)?|total)\s*[:=]\s*(.*?)\s*$/i);
+    if (!m) continue;
+    let key = norm(m[1]);
+    if (key === 'factura') key = 'folio';
+    if (key.startsWith('iva')) key = 'impuesto';
+    if (key === 'folio' && 'folio' in current) push();
+    if (key in current) { current[key] = ''; current.duplicated = true; }
+    else current[key] = m[2];
+  }
+  push();
+  if (!records.length) throw new Error('Usa una línea por etiqueta: Folio:, Concepto:, Subtotal:, Impuesto: y Total:.');
+  const rows = records.map(r => {
+    const values = ['subtotal', 'impuesto', 'total'].map(k => money(r[k]));
+    let review = 'Faltan importes legibles; no se puede comprobar';
+    if (values.every(v => v !== null)) {
+      const [sub, tax, total] = values;
+      const delta = Math.round((total - sub - tax) * 100) / 100;
+      review = Math.abs(delta) <= 0.01 ? 'Cuadra aritméticamente' : `Diferencia ${fmt(delta)}; esperado ${fmt(sub + tax)}`;
+    }
+    if (r.duplicated) review = 'Hay etiquetas duplicadas: revisar la fuente';
+    return [r.folio || UNKNOWN, r.concepto || UNKNOWN, ...values.map(fmt), review];
+  });
+  return {columns: ['Folio', 'Concepto', 'Subtotal', 'Impuesto', 'Total reportado', 'Revisión'], rows,
+    notes: [`${rows.length} comprobante(s) con etiquetas reconocidas. Se conserva el total reportado.`, 'Solo compara subtotal más impuesto. No hace OCR, no lee PDF, no consulta el SAT ni valida RFC, CFDI o tratamiento fiscal.', 'Importes ambiguos o ausentes requieren revisión de la fuente; no se sustituyen por cero.']};
+}
+function inbox(input, opts) {
+  const data = table(input);
+  requireFields(data, [['remitente'], ['asunto'], ['mensaje']]);
+  const reference = isoDate(opts.date || '');
+  const rows = data.map(r => {
+    const sender = field(r, 'remitente'), subject = field(r, 'asunto'), message = field(r, 'mensaje');
+    const rawDue = field(r, 'fecha_limite', 'fecha'), due = isoDate(rawDue);
+    let priority = 'Aclarar';
+    if (rawDue && !due) priority = 'Revisar fecha';
+    else if (due && reference) priority = due < reference ? 'Vencido' : due === reference ? 'Hoy' : 'Después';
+    else if (/solo informativ|no requiere respuesta|bolet[ií]n/i.test(subject + ' ' + message)) priority = 'Informativo';
+    else if (due) priority = 'Fecha registrada';
+    let draft = 'Gracias por el mensaje. Revisaré la solicitud; por favor confirma los datos necesarios y el plazo esperado. Cualquier compromiso queda pendiente de revisión.';
+    if (/pago|factura|saldo|cobro|cargo|estado de cuenta/i.test(subject + ' ' + message)) draft = 'Gracias por el mensaje. Para revisar la solicitud, confirma importe, referencia y vencimiento por el canal privado habitual. Este acuse no valida el saldo ni confirma un pago.';
+    if (priority === 'Informativo') draft = 'No se propone respuesta automática: revisar si hace falta contestar.';
+    if (!message) draft = 'Falta el texto del mensaje; no se puede preparar una respuesta contextual.';
+    return [sender || UNKNOWN, subject || UNKNOWN, priority, due || (rawDue ? `Revisar: ${rawDue}` : UNKNOWN), draft, 'Borrador; no enviado'];
+  });
+  return {columns: ['Remitente', 'Asunto', 'Prioridad', 'Fecha límite', 'Borrador revisable', 'Estado'], rows,
+    notes: [reference ? `Clasificación por fecha explícita respecto a ${reference}.` : 'Sin fecha de referencia válida: no se infiere urgencia temporal.', 'Clasificación por reglas, no lectura de buzón ni comprensión por IA. Revisa intención, destinatario, adjuntos y compromisos antes de enviar.', 'No acepta plazos, reconoce deudas ni envía correos. Las fechas deben escribirse AAAA-MM-DD.']};
+}
+const MONTHS = {enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12};
+function taskDate(value, year) {
+  const s = text(value);
+  if (!s) return UNKNOWN;
+  const direct = isoDate(s);
+  if (direct) return direct;
+  const m = s.match(/^(\d{1,2})\s+(?:de\s+)?([a-záéíóú]+)(?:\s+(?:de\s+)?(\d{4}))?$/i);
+  if (m && MONTHS[m[2].toLowerCase()]) {
+    const y = m[3] || (Number.isInteger(Number(year)) && Number(year) >= 1900 && Number(year) <= 2200 ? String(year) : '');
+    if (!y) return s + ' (año por confirmar)';
+    return isoDate(`${y}-${String(MONTHS[m[2].toLowerCase()]).padStart(2, '0')}-${m[1].padStart(2, '0')}`) || `Revisar fecha: ${s}`;
+  }
+  return `Revisar fecha: ${s}`;
+}
+function minutes(input, opts) {
+  const rows = [];
+  for (const line of inputText(input).split(/\r?\n/).map(text).filter(Boolean)) {
+    let task = line, person = '', date = '';
+    if (line.includes('|')) {
+      const parts = line.split('|').map(text);
+      if (parts.length !== 3) throw new Error('Cada línea con | debe contener Tarea|Responsable|Fecha.');
+      if (norm(parts[0]) === 'tarea' && norm(parts[1]) === 'responsable') continue;
+      [task, person, date] = parts;
+    } else {
+      const named = line.match(/^([^:]{1,100}):\s*(.+)$/);
+      if (named) {
+        person = text(named[1]); task = text(named[2]);
+        const comma = task.lastIndexOf(',');
+        if (comma >= 0 && /^(?:\d{4}-\d{2}-\d{2}|\d{1,2}\s+(?:de\s+)?[a-záéíóú]+)/i.test(task.slice(comma + 1).trim())) {
+          date = task.slice(comma + 1).trim(); task = task.slice(0, comma).trim();
+        }
+      }
+    }
+    if (!task) throw new Error('Hay una fila sin tarea: completa el texto antes de continuar.');
+    const due = taskDate(date, opts.year);
+    const incomplete = !person || !isoDate(due);
+    rows.push([task, person || UNKNOWN, due, incomplete ? 'Confirmar datos' : 'Asignación registrada; no completada']);
+  }
+  if (!rows.length) throw new Error('Incluye al menos una tarea debajo del encabezado.');
+  return {columns: ['Tarea', 'Responsable', 'Fecha', 'Estado'], rows,
+    notes: ['Convierte líneas estructuradas en acuerdos. No deduce responsables, años, horas ni fechas de expresiones como mañana.', 'El año opcional solo se aplica si lo indicas expresamente. Las asignaciones no se marcan terminadas.', `${rows.filter(r => r[3] === 'Confirmar datos').length} fila(s) necesitan confirmación.`]};
+}
+function benchmark(input, opts) {
+  const data = table(input);
+  requireFields(data, [['competidor', 'marca'], ['precio'], ['evidencia', 'fuente']]);
+  const requestedUnit = text(opts.unit), groups = new Map();
+  const rows = data.map(r => {
+    const name = field(r, 'competidor', 'marca'), rawPrice = field(r, 'precio'), price = money(rawPrice);
+    const unit = field(r, 'unidad', 'producto') || requestedUnit, evidence = field(r, 'evidencia', 'fuente');
+    const valid = price !== null && price >= 0;
+    const comparable = valid && unit && (!requestedUnit || norm(unit) === norm(requestedUnit));
+    if (comparable) {
+      const key = norm(unit); const group = groups.get(key) || {unit, values: []};
+      group.values.push(price); groups.set(key, group);
+    }
+    const status = !valid ? 'Precio por revisar; excluido' : !unit ? 'Falta unidad; excluido de comparación' : !comparable ? 'Otra unidad; excluido' : 'Comparable según unidad declarada';
+    return [name || UNKNOWN, unit || UNKNOWN, valid ? fmt(price) : UNKNOWN, evidence || UNKNOWN, status, evidence ? 'Fuente no verificada por esta app' : 'Falta evidencia'];
+  });
+  const notes = ['No navega ni verifica fuentes o precios actuales. Las estadísticas describen solo las filas comparables que proporcionaste; no representan al mercado.', 'Mantén misma moneda, tamaño, modalidad y fecha. La unidad indicada como opción se aplica únicamente a filas que no la incluyan.'];
+  for (const {unit, values} of groups.values()) {
+    values.sort((a, b) => a - b); const n = values.length;
+    const median = n % 2 ? values[(n - 1) / 2] : (values[n / 2 - 1] + values[n / 2]) / 2;
+    notes.push(`${unit}: n=${n}; media=${fmt(values.reduce((a, b) => a + b, 0) / n)}; mediana=${fmt(median)}; mínimo=${fmt(values[0])}; máximo=${fmt(values[n - 1])}. Moneda/unidad declaradas por ti.`);
+  }
+  if (!groups.size) notes.push('Sin filas comparables: completa precio y unidad para calcular estadísticas.');
+  return {columns: ['Competidor', 'Unidad', 'Precio', 'Evidencia', 'Comparabilidad', 'Revisión'], rows, notes};
+}
+function sales(input, opts) {
+  const data = table(input), catalog = table(opts.catalog || '');
+  requireFields(data, [['sku'], ['cantidad'], ['precio_unitario', 'precio']]);
+  requireFields(catalog, [['sku'], ['costo_unitario', 'costo']]);
+  const costs = new Map(), duplicate = new Set();
+  for (const r of catalog) {
+    const sku = field(r, 'sku');
+    if (!sku) throw new Error('El catálogo contiene un SKU vacío.');
+    if (costs.has(sku)) duplicate.add(sku);
+    costs.set(sku, money(field(r, 'costo_unitario', 'costo')));
+  }
+  const threshold = money(opts.threshold ?? 100);
+  if (threshold === null || threshold < 0) throw new Error('El umbral de margen debe ser un número no negativo.');
+  let totalSales = 0, knownSales = 0, knownCosts = 0, complete = 0;
+  const rows = data.map(r => {
+    const sku = field(r, 'sku'), qty = money(field(r, 'cantidad')), price = money(field(r, 'precio_unitario', 'precio'));
+    const cost = costs.get(sku);
+    const validSale = qty !== null && qty >= 0 && price !== null && price >= 0;
+    const sold = validSale ? qty * price : null;
+    if (sold !== null) totalSales += sold;
+    let state = 'REVISAR SKU', costTotal = null, margin = null;
+    if (!validSale) state = 'REVISAR CANTIDAD/PRECIO';
+    else if (duplicate.has(sku)) state = 'CATÁLOGO DUPLICADO';
+    else if (typeof cost === 'number' && cost >= 0) {
+      costTotal = qty * cost; margin = sold - costTotal;
+      state = margin < threshold ? 'REVISAR MARGEN' : 'OK';
+      complete++; knownSales += sold; knownCosts += costTotal;
+    }
+    return [sku || UNKNOWN, qty === null ? UNKNOWN : String(qty), fmt(sold), fmt(costTotal), fmt(margin), state];
+  });
+  return {columns: ['SKU', 'Cantidad', 'Venta total', 'Costo total', 'Margen', 'Alerta'], rows,
+    notes: [`Ventas de líneas con cantidad/precio válidos: ${fmt(totalSales)}.`, `Solo ${complete} línea(s) con costo válido y SKU único: ventas ${fmt(knownSales)}, costos ${fmt(knownCosts)}, margen ${fmt(knownSales - knownCosts)}.`, `Umbral: ${fmt(threshold)} por línea. Los costos ausentes o duplicados no se convierten en cero.`, 'No calcula utilidad neta, impuestos, descuentos ni cargos adicionales. Cantidades o precios negativos requieren revisar el movimiento y se excluyen del cálculo.']};
+}
+function reviews(input, opts) {
+  const data = table(input);
+  requireFields(data, [['nombre'], ['calificacion', 'estrellas'], ['resena', 'texto']]);
+  const contact = text(opts.contact), english = opts.language === 'en';
+  const rows = data.map(r => {
+    const name = field(r, 'nombre'), review = field(r, 'resena', 'texto'), rating = money(field(r, 'calificacion', 'estrellas'));
+    const validRating = rating !== null && Number.isInteger(rating) && rating >= 1 && rating <= 5;
+    const sensitive = /(?:cobr|cargo|tarjeta|reembolso|discrimin|apariencia|racis|enferm|sent[ií] mal|intoxic|alerg|salud|amenaz)/i.test(review);
+    const discount = /descuento|gratis|regalo|compensaci[oó]n/i.test(review);
+    const route = contact ? (english ? ` Please use this verified contact route: ${contact}.` : ` Para revisarlo, utiliza este canal de contacto confirmado: ${contact}.`) : '';
+    let draft;
+    if (!review) draft = english ? 'No review text provided. Decide whether a response is needed.' : 'No hay texto de reseña. Revisa si hace falta responder.';
+    else if (sensitive) draft = (english ? 'We are sorry to hear about the experience you describe. Your report needs a private review by the responsible person. Please do not post personal or payment details here.' : 'Lamentamos la experiencia que describes. Tu reporte requiere revisión privada de la persona responsable. Evita publicar aquí datos personales o de pago.') + route;
+    else if (discount) draft = (english ? 'Thank you for sharing your concern. We cannot confirm discounts or compensation through this draft. The responsible person must review your request.' : 'Gracias por compartir tu inquietud. Este borrador no confirma descuentos ni compensaciones. La persona responsable debe revisar tu solicitud.') + route;
+    else if (validRating && rating >= 4) draft = english ? 'Thank you for sharing your feedback. We appreciate hearing about your experience.' : 'Gracias por compartir tu opinión. Apreciamos conocer tu experiencia.';
+    else draft = (english ? 'Thank you for describing your experience. We are sorry it did not meet your expectations. We will pass your comments to the responsible person for review.' : 'Gracias por describir tu experiencia. Lamentamos que no haya cubierto tus expectativas. Tus comentarios requieren revisión de la persona responsable.') + route;
+    const state = sensitive ? 'ESCALAR ANTES DE PUBLICAR' : !validRating || !review ? 'REVISAR DATOS' : 'BORRADOR PARA REVISAR';
+    return [name || UNKNOWN, validRating ? String(rating) : UNKNOWN, review, draft, state];
+  });
+  return {columns: ['Nombre', 'Calificación', 'Reseña', 'Borrador', 'Estado'], rows,
+    notes: ['Redacción con plantillas por reglas; no conecta con Google ni envía respuestas. Personaliza cada borrador antes de usarlo.', 'Nunca concede descuentos, reembolsos, cambios ya realizados o investigaciones concluidas. No pide modificar la reseña ni ofrece incentivos.', contact ? 'Confirma que el canal que escribiste existe y que puede compartirse públicamente.' : 'No se añadió un contacto: no se inventa teléfono, correo o enlace.', 'Casos de cobro, salud, trato o amenazas se escalan; la calificación no sustituye una investigación. No hay traducción automática: elige el idioma del borrador.']};
+}
+function deck(input, opts) {
+  const lines = inputText(input).split(/\r?\n/).map(text).filter(Boolean);
+  let project = text(opts.title), section = 'Notas proporcionadas';
+  const content = [];
+  for (const line of lines) {
+    const titled = line.match(/^(?:titulo|título)\s*:\s*(.+)$/i);
+    if (titled) { if (!project) project = titled[1].trim(); continue; }
+    const heading = line.match(/^#{1,6}\s+(.+)$/) || line.match(/^([^:]{1,80}):\s*$/);
+    if (heading) { section = heading[1].trim(); continue; }
+    content.push({section, text: line.replace(/^[-*]\s+/, '')});
+  }
+  if (!content.length) throw new Error('Añade contenido debajo de tus encabezados; un título solo no basta.');
+  const groups = Array.from({length: 14}, () => []);
+  content.forEach((item, i) => groups[Math.min(13, Math.floor(i * 14 / Math.max(14, content.length)))].push(item));
+  const rows = [['01', project || 'Presentación de notas', 'Guion basado en los datos que proporcionaste.', 'Portada', 'Revisar título y audiencia']];
+  for (let i = 0; i < 14; i++) {
+    const items = groups[i], count = String(i + 2).padStart(2, '0');
+    rows.push([count, items[0]?.section || `Contenido por completar ${i + 2}`,
+      items.length ? items.map(item => item.text).join('\n') : 'No se proporcionaron notas para esta lámina.',
+      items.length ? 'Título y contenido; revisar distribución visual' : 'Lámina vacía para completar',
+      items.length ? 'Contrastar con las notas originales' : 'No publicar como contenido terminado']);
+  }
+  const markdown = `# ${mdText(project || 'Presentación de notas')}\n\nGuion local de quince láminas. No es un archivo PPTX.\n\n` + rows.map(row => `## ${row[0]}. ${mdText(row[1])}\n\n${mdText(row[2])}\n\nControl: ${mdText(row[4])}.`).join('\n\n');
+  return {columns: ['Lámina', 'Título', 'Contenido', 'Disposición sugerida', 'Control'], rows, markdown,
+    notes: [`${content.length} bloque(s) de notas distribuidos en catorce láminas de contenido más portada.`, 'Conserva el texto y las cifras que proporcionaste; no inventa conclusiones, porcentajes, causas, fechas o responsables.', 'Si faltan notas, deja láminas marcadas para completar. Revisa legibilidad y datos antes de presentar. Puedes descargar el guion Markdown; no se crea un PPTX ni se opera un editor externo.']};
+}
+
+const toolsA = {
+  R01: {id: 'R01', title: 'Revisa importes de comprobantes en texto', summary: 'Extrae etiquetas y compara subtotal, impuesto y total. Sin OCR ni validación fiscal.', inputLabel: 'Comprobantes en texto', inputHint: 'Una etiqueta por línea; separa documentos con --- o inicia otro Folio:.', sample: 'Folio: EJ-101\nConcepto: Soporte\nSubtotal: 850.00\nImpuesto: 136.00\nTotal: 986.00\n---\nFolio: EJ-102\nConcepto: Consumibles\nSubtotal: 100.00\nImpuesto: 16.00\nTotal: 115.00', options: [], action: 'Extraer y revisar', run: receipt},
+  R02: {id: 'R02', title: 'Ordena correos y prepara borradores', summary: 'Clasifica fechas explícitas y propone respuestas revisables. No entra al buzón ni envía mensajes.', inputLabel: 'Mensajes CSV', inputHint: 'Encabezados: remitente,asunto,mensaje,fecha_limite. Fechas AAAA-MM-DD; usa comillas si el texto contiene comas.', sample: 'remitente,asunto,mensaje,fecha_limite\nDirección,Reporte,Confirma cifras conciliadas,2026-10-26\nCliente,Entrega,Falta confirmar direccion,\nProveedor,Estado de cuenta,Confirma recepcion sin reconocer adeudo,2026-10-27\nBoletin,Resumen,Solo informativo; no requiere respuesta,', options: [{key: 'date', label: 'Fecha de referencia para priorizar', type: 'date', value: today()}], action: 'Clasificar y preparar', run: (input, opts = {}) => inbox(input, opts)},
+  R03: {id: 'R03', title: 'Organiza acuerdos sin inventar asignaciones', summary: 'Convierte tareas estructuradas en una minuta y marca los datos faltantes.', inputLabel: 'Tareas y acuerdos', inputHint: 'Tarea|Responsable|Fecha o Laura: cotización, 27 de octubre. Una tarea por línea.', sample: 'Tarea|Responsable|Fecha\nPreparar cotización|Laura|2026-10-27\nRevisar demo|Carlos|2026-10-28\nRevisar inventario||', options: [{key: 'year', label: 'Año para fechas sin año (opcional)', type: 'text', value: ''}], action: 'Organizar minuta', run: (input, opts = {}) => minutes(input, opts)},
+  R04: {id: 'R04', title: 'Compara precios con evidencia declarada', summary: 'Agrupa unidades comparables y calcula media, mediana y rango de tus datos. No investiga la web.', inputLabel: 'Competidores CSV', inputHint: 'competidor,precio,unidad,evidencia. Los precios y fuentes provienen de ti; usa una sola moneda.', sample: 'competidor,precio,unidad,evidencia\nEjemplo Norte,50,Latte 300 ml,Ficha ficticia F1\nEjemplo Centro,65,Latte 300 ml,Ficha ficticia F2\nEjemplo Sur,,Latte 300 ml,Ficha ficticia F3\nEjemplo Este,58,Latte 300 ml,Ficha ficticia F4\nEjemplo Oeste,70,Latte 300 ml,Ficha ficticia F5', options: [{key: 'unit', label: 'Comparar esta unidad (opcional; aplica a filas sin unidad)', type: 'text', value: ''}], action: 'Calcular comparación', run: (input, opts = {}) => benchmark(input, opts)},
+  R05: {id: 'R05', title: 'Cruza ventas y catálogo por SKU', summary: 'Calcula ventas, costos y margen por línea con tus dos tablas. Los costos faltantes quedan pendientes.', inputLabel: 'Ventas CSV', inputHint: 'sku,cantidad,precio_unitario. También debes pegar tu catálogo en el campo inferior.', sample: 'sku,cantidad,precio_unitario\nA100,2,150\nA200,1,200\nB100,3,70\nX999,1,90', options: [{key: 'catalog', label: 'Catálogo CSV: sku,costo_unitario', type: 'textarea', value: 'sku,costo_unitario\nA100,80\nA200,120\nB100,45'}, {key: 'threshold', label: 'Revisar margen de línea menor que', type: 'number', value: 100}], action: 'Cruzar y calcular', run: (input, opts = {}) => sales(input, opts)},
+  R06: {id: 'R06', title: 'Prepara respuestas a reseñas', summary: 'Genera borradores por reglas y escala situaciones sensibles. No publica ni ofrece compensaciones.', inputLabel: 'Reseñas CSV', inputHint: 'nombre,calificacion,resena. Son plantillas editables; no un chatbot conectado.', sample: 'nombre,calificacion,resena\nPersona A,5,Me gustó el café\nPersona B,2,Esperé demasiado\nPersona C,3,Quiero un descuento\nPersona D,1,Aparecen dos cargos en mi tarjeta', options: [{key: 'contact', label: 'Canal de contacto confirmado (opcional)', type: 'text', value: ''}, {key: 'language', label: 'Idioma de los borradores', type: 'select', value: 'es', choices: [{value: 'es', label: 'Español'}, {value: 'en', label: 'English'}]}], action: 'Preparar borradores', run: (input, opts = {}) => reviews(input, opts)},
+  R07: {id: 'R07', title: 'Organiza notas en quince láminas', summary: 'Distribuye tus notas en un guion descargable de texto sin inventar datos ni prometer un PPTX.', inputLabel: 'Notas con encabezados', inputHint: 'Usa Título: y encabezados #. Cada línea de contenido será un bloque; lo que falte queda por completar.', sample: 'Título: Revisión comercial · caso ficticio\n# Resultados\nVentas enero: 120000 MXN\nVentas febrero: 135000 MXN\nVentas marzo: 150000 MXN\nMeta trimestral: 420000 MXN\n# Comparación\nTrimestre anterior: 360000 MXN\nCostos reportados: 260000 MXN; faltan otros gastos\n# Embudo\nProspectos: 500\nDemostraciones: 120\nCierres: 40\n# Seguimiento\nPendientes abiertos: 6; urgentes: 2\nResponsables de urgentes: por confirmar\n# Propuesta\nCapacitación: 5000 MXN; aprobación pendiente\nSeguimiento: 8000 MXN; aprobación pendiente\nDocumentación: 7000 MXN; aprobación pendiente', options: [{key: 'title', label: 'Título de presentación (opcional)', type: 'text', value: ''}], action: 'Crear guion de quince láminas', run: (input, opts = {}) => deck(input, opts)}
+};
+;return toolsA;})();
+const toolsB=(()=>{/* Herramientas locales R08–R13. Funciones puras: sin DOM, red, modelos ni acceso a archivos. */
+const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const clean = value => String(value ?? '').trim();
+const md = value => clean(value).replace(/\\/g, '\\\\').replace(/([`*_[\]<>|])/g, '\\$1').replace(/\r?\n/g, ' ');
+
+function csv(text) {
+  text = String(text ?? '').replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
+  if (!text.trim()) throw new Error('Pega los datos o usa el ejemplo para comenzar.');
+  const first = text.split('\n')[0];
+  const sep = first.includes('\t') ? '\t' : first.includes(';') && !first.includes(',') ? ';' : ',';
+  const rows = []; let row = [], cell = '', quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '"') {
+      if (quoted && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (quoted || !cell.trim()) quoted = !quoted;
+      else cell += ch;
+    } else if (ch === sep && !quoted) { row.push(cell.trim()); cell = ''; }
+    else if (ch === '\n' && !quoted) { row.push(cell.trim()); if (row.some(Boolean)) rows.push(row); row = []; cell = ''; }
+    else cell += ch;
+  }
+  if (quoted) throw new Error('Hay una comilla CSV sin cerrar. Revisa los campos con comas o saltos de línea.');
+  row.push(cell.trim()); if (row.some(Boolean)) rows.push(row);
+  if (rows.length < 2) throw new Error('El CSV necesita encabezados y al menos una fila de datos.');
+  if (rows.length > 501) throw new Error('Usa hasta 500 filas por revisión para mantener el navegador ágil.');
+  const headers = rows.shift().map(norm);
+  if (new Set(headers).size !== headers.length || headers.some(h => !h)) throw new Error('Los encabezados deben ser distintos y no estar vacíos.');
+  return { headers, rows: rows.map((values, i) => {
+    if (values.length !== headers.length) throw new Error(`Fila ${i + 2}: hay ${values.length} campos; se esperaban ${headers.length}. Usa comillas si un texto contiene comas.`);
+    return Object.fromEntries(headers.map((h, n) => [h, values[n]]));
+  }) };
+}
+
+function requireHeaders(data, names) {
+  const missing = names.filter(name => !data.headers.includes(norm(name)));
+  if (missing.length) throw new Error(`Faltan encabezados: ${missing.join(', ')}.`);
+}
+
+function tableMarkdown(columns, rows) {
+  return `| ${columns.map(md).join(' | ')} |\n| ${columns.map(() => '---').join(' | ')} |\n` +
+    rows.map(row => `| ${row.map(md).join(' | ')} |`).join('\n');
+}
+
+function isoDay(value, label) {
+  const s = clean(value);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) throw new Error(`${label}: usa una fecha real AAAA-MM-DD.`);
+  const ms = Date.parse(`${s}T00:00:00Z`);
+  if (!Number.isFinite(ms) || new Date(ms).toISOString().slice(0, 10) !== s) throw new Error(`${label}: fecha no válida.`);
+  return ms / 86400000;
+}
+
+function cents(value) {
+  const s = clean(value);
+  if (!/^\d+(?:\.\d{1,2})?$/.test(s)) throw new Error('Monto: usa un número no negativo como 18500.00, sin moneda ni separador de miles.');
+  const [whole, fraction = ''] = s.split('.');
+  const n = Number(whole) * 100 + Number(fraction.padEnd(2, '0'));
+  if (!Number.isSafeInteger(n)) throw new Error('El monto es demasiado grande para calcularlo con precisión.');
+  return `${Math.floor(n / 100)}.${String(n % 100).padStart(2, '0')}`;
+}
+
+function proposalRecords(input) {
+  const text = clean(input);
+  if (!text) throw new Error('Pega los datos del cliente o utiliza el ejemplo.');
+  const first = text.split(/\r?\n/)[0];
+  if (/[,;\t]/.test(first) && !/^\s*cliente\s*:/i.test(first)) {
+    const parsed = csv(text); requireHeaders(parsed, ['cliente', 'alcance']); return parsed.rows;
+  }
+  const result = {}; let current = '';
+  const known = new Set(['cliente', 'alcance', 'precio', 'entrega', 'exclusiones', 'pago']);
+  for (const line of text.split(/\r?\n/)) {
+    const match = line.match(/^\s*([^:]{1,35}):\s*(.*)$/);
+    if (match && known.has(norm(match[1]))) { current = norm(match[1]); result[current] = match[2].trim(); }
+    else if (line.trim() && current) result[current] += `\n${line.trim()}`;
+    else if (line.trim()) throw new Error('Usa secciones rotuladas cliente:, alcance:, precio:, entrega: y exclusiones:, o un CSV con encabezados.');
+  }
+  if (!result.cliente || !result.alcance) throw new Error('Completa las secciones cliente: y alcance:.');
+  return [result];
+}
+
+const r08 = {
+  id: 'R08', title: 'Propuesta comercial con datos controlados',
+  summary: 'Construye un borrador con tus condiciones y un tono elegido. Plantilla local: no clona voz ni aprende de documentos.',
+  inputLabel: 'Datos de la propuesta', inputHint: 'Usa cliente:, alcance:, precio:, entrega:, exclusiones: y pago:, o CSV con esos encabezados. El precio se conserva como texto, sin calcular impuestos.',
+  sample: 'cliente: Taller Horizonte\nalcance: Una hoja de registro de solicitudes, una guía de dos páginas y una revisión de 30 minutos.\nprecio: 3200 MXN\nentrega: Por confirmar\nexclusiones: Integraciones, carga de historial y mantenimiento.\npago: Por confirmar',
+  options: [{ key: 'tono', label: 'Tono', type: 'select', value: 'directo', choices: [
+    { value: 'directo', label: 'Directo' }, { value: 'cercano', label: 'Cercano' }, { value: 'formal', label: 'Formal' }
+  ] }], action: 'Crear borrador de propuesta',
+  run(input, opts = {}) {
+    const records = proposalRecords(input);
+    const openings = { directo: 'Te propongo el siguiente alcance de trabajo.', cercano: 'Vamos por partes: este es el alcance que podemos revisar juntos.', formal: 'Presentamos para su revisión la siguiente propuesta de trabajo.' };
+    const opening = openings[opts.tono] || openings.directo;
+    const columns = ['Cliente', 'Sección', 'Contenido', 'Revisión']; const rows = []; const documents = [];
+    records.forEach((r, i) => {
+      if (!r.cliente || !r.alcance) throw new Error(`Propuesta ${i + 1}: cliente y alcance no pueden estar vacíos.`);
+      const price = r.precio || 'Por confirmar', delivery = r.entrega || 'Por confirmar';
+      const exclusions = r.exclusiones || 'Por confirmar', payment = r.pago || 'Por confirmar';
+      const parts = [['Alcance', r.alcance, 'Verificar que describe todos los entregables.'],
+        ['Inversión', price, 'No se han calculado impuestos, descuentos ni recargos.'],
+        ['Entrega', delivery, 'Confirmar antes de asumir un compromiso.'],
+        ['Exclusiones', exclusions, 'Validar límites con ambas partes.'],
+        ['Condiciones de pago', payment, 'No se infieren condiciones faltantes.']];
+      parts.forEach(part => rows.push([r.cliente, ...part]));
+      documents.push(`# Propuesta · ${md(r.cliente)}\n\n${opening}\n\n` + parts.map(([title, text]) => `## ${title}\n\n${md(text)}`).join('\n\n') + '\n\n## Siguiente paso\n\nRevisar el alcance y confirmar los datos pendientes antes de enviar o aceptar esta propuesta.');
+    });
+    return { columns, rows, notes: ['Borrador generado por plantilla y reglas locales; no usa IA ni se envía a nadie.', 'Los valores escritos se conservan; revisa precios, fechas y compromisos. Lo no aportado queda Por confirmar.'], markdown: documents.join('\n\n---\n\n') };
+  }
+};
+
+const r09 = {
+  id: 'R09', title: 'Recordatorios de pago sin amenazas',
+  summary: 'Calcula días de atraso a una fecha de corte y prepara un mensaje revisable por factura, sin envíos automáticos.',
+  inputLabel: 'Facturas en CSV', inputHint: 'Encabezados: factura,cliente,monto,vencimiento. Monto sin separador de miles; vencimiento AAAA-MM-DD. No incluyas datos bancarios.',
+  sample: 'factura,cliente,monto,vencimiento\nF-101,Cliente A,18500.00,2026-10-20\nF-102,Cliente B,42000.00,2026-10-10\nF-103,Cliente C,65800.00,2026-09-23\nF-104,Cliente D,8400.00,2026-09-10\nF-105,Cliente E,7600.00,2026-08-26',
+  options: [{ key: 'fecha', label: 'Fecha de corte: cámbiala para tu revisión', type: 'date', value: '2026-10-25' }], action: 'Calcular atraso y preparar mensajes',
+  run(input, opts = {}) {
+    const data = csv(input); requireHeaders(data, ['factura', 'cliente', 'monto', 'vencimiento']);
+    const day = isoDay(opts.fecha || '2026-10-25', 'Fecha de corte');
+    const counts = new Map();
+    for (const r of data.rows) { const key = `${r.factura.toLowerCase()}\u0000${r.cliente.toLowerCase()}`; counts.set(key, (counts.get(key) || 0) + 1); }
+    const rows = data.rows.map((r, i) => {
+      try {
+        if (!r.factura || !r.cliente) throw new Error('Falta factura o cliente.');
+        const amount = cents(r.monto), due = isoDay(r.vencimiento, 'Vencimiento');
+        const key = `${r.factura.toLowerCase()}\u0000${r.cliente.toLowerCase()}`;
+        if (counts.get(key) > 1) throw new Error('Factura repetida para el mismo cliente; verificar antes de contactar.');
+        const days = day - due;
+        if (days <= 0) return [r.factura, r.cliente, amount, String(days), '0 · No vencida', 'Sin mensaje de cobranza: la factura no está vencida en la fecha de corte.'];
+        const level = days <= 7 ? 1 : days <= 20 ? 2 : days <= 35 ? 3 : days <= 50 ? 4 : 5;
+        const request = [null, '¿Nos confirmas si ya realizaste el pago o cuándo podrías revisarlo?',
+          '¿Qué fecha estimada de pago puedes proponernos?', '¿Puedes confirmar el saldo y proponer una fecha de pago?',
+          '¿Con quién podemos revisar el saldo pendiente y acordar el siguiente paso?',
+          '¿Puedes confirmar el estado del saldo y proponer una fecha? El seguimiento quedará en revisión interna.'][level];
+        const message = `Hola, ${r.cliente}. Damos seguimiento a ${r.factura} por ${amount} MXN, con ${days} días de atraso a la fecha de corte. ${request}`;
+        return [r.factura, r.cliente, amount, String(days), String(level), message];
+      } catch (error) { return [r.factura || `Fila ${i + 2}`, r.cliente || 'Por confirmar', r.monto, 'Por confirmar', 'REVISAR', error.message]; }
+    });
+    const columns = ['Factura', 'Cliente', 'Saldo MXN', 'Días de atraso', 'Nivel', 'Borrador o revisión'];
+    return { columns, rows, notes: ['Reglas locales: 1–7 días nivel 1; 8–20 nivel 2; 21–35 nivel 3; 36–50 nivel 4; más de 50 nivel 5.', 'Fecha calculada por días de calendario, sin efectos de horario de verano. Un valor negativo significa que aún faltan días para vencer.', 'Verifica pagos recientes y autoriza el mensaje antes de enviarlo. No se añaden recargos, amenazas, descuentos ni suspensión de servicios.'], markdown: '# Seguimiento de facturas\n\n' + tableMarkdown(columns, rows) };
+  }
+};
+
+const r10 = {
+  id: 'R10', title: 'Diagrama de proceso desde pasos explícitos',
+  summary: 'Dibuja los nodos y conexiones de tu CSV y detecta destinos inexistentes. No interpreta notas libres ni inventa reglas.',
+  inputLabel: 'Pasos del proceso en CSV', inputHint: 'Encabezados: id,acción,responsable,sí,no. Escribe el ID del siguiente paso; deja los destinos vacíos al terminar. Cada destino debe tener su propia fila.',
+  sample: 'id,acción,responsable,sí,no\nS1,Registrar solicitud,Operaciones,S2,\nS2,¿Hay presupuesto?,Finanzas,S3,POST\nS3,¿Proveedor registrado?,Administración,S4,PEND\nS4,¿Monto mayor a 5000 MXN?,Finanzas,DIR,AUT\nDIR,¿Dirección aprueba?,Dirección,PAGO,RECH\nAUT,Autorizar monto menor o igual a 5000,Finanzas,PAGO,\nPAGO,Registrar pago,Tesorería,FIN,\nPOST,Postpuesto,Finanzas,,\nPEND,Pendiente de datos,Administración,,\nRECH,Rechazado,Dirección,,\nFIN,Pago registrado,Tesorería,,',
+  options: [], action: 'Validar y dibujar el flujo',
+  run(input) {
+    const data = csv(input); requireHeaders(data, ['id', 'acción', 'responsable', 'sí', 'no']);
+    if (data.rows.length > 100) throw new Error('El diagrama admite hasta 100 pasos por revisión.');
+    const ids = new Set();
+    for (const [i, r] of data.rows.entries()) {
+      if (!/^[A-Za-z0-9_-]{1,40}$/.test(r.id)) throw new Error(`Fila ${i + 2}: usa un ID de letras, números, guion o guion bajo, sin espacios.`);
+      if (ids.has(r.id)) throw new Error(`ID repetido: ${r.id}. Cada paso necesita un ID único.`);
+      if (!r.accion) throw new Error(`El paso ${r.id} necesita una acción.`); ids.add(r.id);
+    }
+    const nodes = data.rows.map(r => ({ id: r.id, label: `${r.id} · ${r.accion}\n${r.responsable || 'Responsable: Por confirmar'}` }));
+    const edges = [];
+    for (const r of data.rows) for (const [key, label] of [['si', r.no ? 'Sí' : 'Siguiente'], ['no', 'No']]) {
+      if (!r[key]) continue;
+      if (!ids.has(r[key])) throw new Error(`El paso ${r.id} apunta a ${r[key]}, pero ese ID no tiene una fila. Añádelo o corrige el destino.`);
+      edges.push({ from: r.id, to: r[key], label });
+    }
+    const incoming = new Set(edges.map(e => e.to)), starts = nodes.filter(n => !incoming.has(n.id));
+    const outgoing = new Set(edges.map(e => e.from)), ends = nodes.filter(n => !outgoing.has(n.id));
+    const notes = ['El dibujo representa literalmente tus filas y conexiones; no certifica una política ni ejecuta acciones.',
+      `Inicios sin conexiones entrantes: ${starts.map(n => n.id).join(', ') || 'ninguno; revisa si todo forma un ciclo'}.`,
+      `Finales sin destinos: ${ends.map(n => n.id).join(', ') || 'ninguno; revisa las condiciones de cierre'}.`,
+      'Las etiquetas Sí/No proceden de tus columnas. Recorre ejemplos de ambas rutas antes de usarlo como procedimiento.'];
+    const columns = ['ID', 'Acción', 'Responsable', 'Sí / siguiente', 'No'];
+    const rows = data.rows.map(r => [r.id, r.accion, r.responsable || 'Por confirmar', r.si || '—', r.no || '—']);
+    return { columns, rows, notes, diagram: { nodes, edges }, markdown: '# Proceso estructurado\n\n' + tableMarkdown(columns, rows) };
+  }
+};
+
+const r11 = {
+  id: 'R11', title: 'Tareas candidatas desde una transcripción',
+  summary: 'Marca frases con verbos de tarea y conserva su evidencia literal. Reglas locales, sin IA, audio ni transcripción automática.',
+  inputLabel: 'Transcripción escrita, una idea por línea', inputHint: 'Para extraer campos con precisión usa: Tarea: ... | Responsable: ... | Fecha: ... . En texto libre solo se marca una candidata; los campos no rotulados quedan Por confirmar.',
+  sample: '[00:12] Tarea: Ajustar cotización | Responsable: Ana | Fecha: 2026-10-26 16:00\n[00:30] Tarea: Enviar borrador del contrato | Responsable: Luis | Fecha: 2026-10-27\n[00:45] Hay que corregir las descripciones del catálogo.\n[01:00] Tarea: Agendar llamada | Responsable: Marcos | Fecha: 2026-10-30\n[01:15] Verificar si el depósito se refleja.\n[01:30] Gracias, eso es todo.',
+  options: [], action: 'Marcar tareas y datos pendientes',
+  run(input) {
+    const lines = String(input ?? '').split(/\r?\n/).map(clean).filter(Boolean);
+    if (!lines.length) throw new Error('Pega una transcripción de texto o utiliza el ejemplo.');
+    if (lines.length > 1000) throw new Error('Usa hasta 1000 líneas por revisión.');
+    const rows = []; let omitted = 0;
+    for (const source of lines) {
+      const text = source.replace(/^\[\d{1,2}:\d{2}(?::\d{2})?\]\s*/, '');
+      const explicit = text.match(/(?:^|\|)\s*tarea\s*:\s*([^|]+)/i);
+      const candidate = /\b(?:hay que|debe[n]?|favor de|por favor|pendiente(?:s)?)\b/i.test(text) ||
+        /^(?:(?:[^,|]{1,40}),\s*)?(?:ajust(?:a|ar)|env(?:ía|iar)|corr(?:ige|egir)|agend(?:a|ar)|revis(?:a|ar)|verific(?:a|ar)|prepar(?:a|ar)|actualiz(?:a|ar)|entreg(?:a|ar)|confirm(?:a|ar))\b/i.test(text);
+      if (!explicit && !candidate) { omitted++; continue; }
+      const person = text.match(/(?:^|\|)\s*responsable\s*:\s*([^|]+)/i);
+      const date = text.match(/(?:^|\|)\s*fecha\s*:\s*([^|]+)/i);
+      const negative = /\b(?:no|cancelad[ao]|descartar|olvida)\b/i.test(text);
+      const review = negative ? 'Revisar negación o cancelación; no asignar automáticamente.' :
+        person && date ? 'Campos rotulados: cotejar con la fuente.' : 'Confirmar campos no rotulados; no se infieren responsables ni fechas.';
+      rows.push([explicit ? explicit[1].trim() : text, person ? person[1].trim() : 'Por confirmar',
+        date ? date[1].trim() : 'Por confirmar', source, review]);
+    }
+    const columns = ['Tarea candidata', 'Responsable', 'Fecha literal', 'Evidencia literal', 'Revisión'];
+    return { columns, rows, notes: ['Detector por patrones locales; no usa IA ni escucha archivos de audio.',
+      'Solo copia responsables y fechas con las etiquetas Responsable: y Fecha:. No interpreta fechas relativas, correcciones ni dependencias.',
+      `${omitted} líneas sin patrón de tarea omitidas. Las candidatas pueden incluir falsos positivos; revisa también el texto original.`,
+      'Una negación, cambio de responsable o fecha ambigua requiere decisión humana antes de asignar trabajo.'], markdown: '# Tareas candidatas para revisar\n\n' + tableMarkdown(columns, rows) };
+  }
+};
+
+const r12 = {
+  id: 'R12', title: 'Manual desde pasos que tú defines',
+  summary: 'Convierte acciones y comprobaciones en un manual descargable e imprimible. Sin capturas inventadas ni grabación de pantalla.',
+  inputLabel: 'Pasos del manual en CSV', inputHint: 'Encabezados: título,acción,comprobación. Si una acción contiene comas, enciérrala entre comillas. Registra acciones reales o una práctica claramente identificada.',
+  sample: 'título,acción,comprobación\nCrear hoja,Abre sheets.google.com/create y nombra la hoja Práctica R12,Se ve una hoja nueva con ese título\nEncabezados,Escribe Folio en A1 y Total en B1,Hay dos encabezados en columnas distintas\nDato de práctica,Escribe DEMO-001 en A2 y 1160 en B2,La fila contiene el folio y el número indicados\nRevisión,Compara la fila con los datos de práctica y corrige diferencias,El folio aparece una vez y el total es 1160\nRepetición,Repite los pasos en otra hoja vacía usando solo el manual,Anota qué paso faltó o fue ambiguo',
+  options: [
+    { key: 'titulo', label: 'Título del manual', type: 'text', value: 'Registro de práctica R12' },
+    { key: 'version', label: 'Versión', type: 'text', value: '1.0' }
+  ], action: 'Crear manual paso a paso',
+  run(input, opts = {}) {
+    const data = csv(input); requireHeaders(data, ['título', 'acción', 'comprobación']);
+    const columns = ['Paso', 'Título', 'Acción', 'Comprobación'];
+    const rows = data.rows.map((r, i) => {
+      if (!r.titulo || !r.accion) throw new Error(`Paso ${i + 1}: completa título y acción.`);
+      return [String(i + 1), r.titulo, r.accion, r.comprobacion || 'Por confirmar'];
+    });
+    const title = opts.titulo || 'Manual de trabajo', version = opts.version || 'Por confirmar';
+    const markdown = `# ${md(title)}\n\nVersión: ${md(version)}\n\nEstado: borrador pendiente de prueba humana.\n\n## Procedimiento\n\n` +
+      rows.map(([n, t, a, c]) => `### ${n}. ${md(t)}\n\n${md(a)}\n\n**Comprueba:** ${md(c)}`).join('\n\n') +
+      '\n\n## Prueba de repetición\n\nUna persona debe repetir el proceso usando solo este manual y registrar pasos faltantes, resultados y correcciones antes de marcarlo como probado.\n\n## Capturas\n\nNo se han generado capturas ni se ha grabado la pantalla. Si se añaden imágenes propias, revisar privacidad y correspondencia con cada paso antes de compartirlas.';
+    return { columns, rows, markdown, notes: ['Manual armado en tu navegador con las acciones que escribiste; no controla otros programas.',
+      'Puedes descargar el texto o una versión HTML imprimible desde la interfaz. Esto no publica ni comparte el documento.',
+      'Una comprobación vacía queda Por confirmar. Ningún manual se marca probado automáticamente.'] };
+  }
+};
+
+const clausePatterns = [
+  { name: 'Renovación o prórroga', re: /renov\w*|pr[oó]rroga/i, question: '¿Qué plazo y medio de aviso describe el documento completo y qué falta aclarar?' },
+  { name: 'Terminación o pago asociado', re: /terminaci[oó]n|cancelaci[oó]n|penal\w*|multa\w*|mensualidad\w*/i, question: '¿Qué supuestos y base de cálculo aparecen en el documento completo? Revisar con un abogado antes de decidir.' },
+  { name: 'Ajuste de precio', re: /ajust\w*.*(?:precio|tarifa)|(?:precio|tarifa).*ajust\w*|aumento|incremento|porcentaje/i, question: '¿Se especifican porcentaje, límites, aviso y mecanismo de revisión en la fuente completa?' },
+  { name: 'Mantenimiento', re: /mantenimiento/i, question: '¿Dónde se definen el alcance, la frecuencia y el costo de ese mantenimiento?' },
+  { name: 'Lugar de controversias', re: /tribunal\w*|jurisdicci[oó]n|arbitraje|controversia\w*/i, question: '¿Qué implicaría este apartado para las partes en su caso concreto? Consultar revisión profesional.' }
+];
+
+const r13 = {
+  id: 'R13', title: 'Localiza cláusulas y prepara preguntas',
+  summary: 'Busca palabras clave y conserva citas literales para una revisión humana. No es IA, asesoría jurídica ni un dictamen sobre validez.',
+  inputLabel: 'Texto de cláusulas', inputHint: 'Separa cláusulas con una línea vacía. Se buscan renovación, terminación, ajustes, mantenimiento y controversias; una coincidencia no determina legalidad.',
+  sample: '4.2 Vigencia\nEste acuerdo durará doce meses. Se renovará por periodos iguales si ninguna parte avisa por escrito con treinta días de anticipación.\n\n7.1 Terminación\nSi el cliente termina antes de concluir el periodo, pagará dos mensualidades.\n\n9.4 Ajuste de precio\nEl proveedor podrá ajustar el precio una vez al año. El porcentaje se notificará con quince días de anticipación.\n\n12.3 Mantenimiento\nEl mantenimiento preventivo se cobrará por separado.\n\n15.1 Controversias\nLas diferencias se someterán a los tribunales de la Ciudad de México.',
+  options: [], action: 'Buscar coincidencias y citas',
+  run(input) {
+    const text = clean(input);
+    if (!text) throw new Error('Pega el texto de las cláusulas o utiliza el ejemplo ficticio.');
+    if (text.length > 150000) throw new Error('Revisa fragmentos de hasta 150000 caracteres por vez.');
+    const blocks = text.split(/\n\s*\n/).map(clean).filter(Boolean); const rows = [];
+    for (const [i, block] of blocks.entries()) {
+      const id = block.match(/^\s*(\d+(?:\.\d+)*)(?:[.)])?(?:\s|$)/)?.[1] || `Fragmento ${i + 1}`;
+      for (const pattern of clausePatterns) {
+        if (!pattern.re.test(block)) continue;
+        const sentences = block.split(/(?<=[.!?])\s+/);
+        const literal = sentences.find(sentence => pattern.re.test(sentence)) || block;
+        rows.push([id, pattern.name, literal, pattern.question, 'Lectura pendiente; sin conclusión jurídica.']);
+      }
+    }
+    const columns = ['Cláusula o fragmento', 'Coincidencia', 'Cita literal', 'Pregunta para revisar', 'Estado'];
+    return { columns, rows, notes: ['Búsqueda local de palabras: no usa IA ni evalúa legalidad, abusividad, validez o conveniencia de firmar.',
+      'Las citas son fragmentos exactos de tu entrada. Revisa el contexto y los anexos; las coincidencias pueden repetirse o ser irrelevantes.',
+      rows.length ? `${rows.length} coincidencias para revisar. No constituye una auditoría completa del contrato.` : 'Sin coincidencias en estas cinco categorías. Esto no demuestra ausencia de problemas.',
+      'No se calculan multas ni se citan leyes. Para un contrato real consulta a un abogado con el documento completo.'], markdown: '# Preguntas de lectura contractual\n\n' + tableMarkdown(columns, rows) };
+  }
+};
+
+const toolsB = { R08: r08, R09: r09, R10: r10, R11: r11, R12: r12, R13: r13 };
+;return toolsB;})();
+const toolsC=(()=>{/* Herramientas locales R14–R20. No acceden a red, archivos, DOM ni proveedores de IA. */
+const MAX_INPUT = 300000;
+const MAX_ROWS = 1000;
+const norm = value => String(value ?? "").trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const text = value => String(value ?? "");
+const clean = value => text(value).trim().replace(/\s+/g, " ");
+const md = value => text(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/[\\|*_\x60\[\]]/g, "\\$&").replace(/\r?\n/g, " ");
+const equalName = value => text(value).toLocaleLowerCase("es-MX");
+function inputText(value) {
+  const result = text(value).replace(/^\uFEFF/, "");
+  if (!result.trim()) throw new Error("Pega los datos de práctica o escribe tus datos antes de ejecutar.");
+  if (result.length > MAX_INPUT) throw new Error("La entrada supera 300000 caracteres. Trabaja por lotes y conserva el original.");
+  return result;
+}
+function splitRows(source, delimiter) {
+  const rows = [];
+  let row = [], value = "", quoted = false, closed = false;
+  for (let i = 0; i < source.length; i++) {
+    const ch = source[i];
+    if (quoted) {
+      if (ch === '"') {
+        if (source[i + 1] === '"') { value += '"'; i++; }
+        else { quoted = false; closed = true; }
+      } else value += ch;
+      continue;
+    }
+    if (ch === delimiter) { row.push(value); value = ""; closed = false; }
+    else if (ch === "\n" || ch === "\r") {
+      if (ch === "\r" && source[i + 1] === "\n") i++;
+      row.push(value);
+      if (row.some(cell => cell.trim())) rows.push(row);
+      row = []; value = ""; closed = false;
+    } else if (ch === '"' && !value.trim() && !closed) { value = ""; quoted = true; }
+    else if (closed && ch.trim()) throw new Error("CSV inválido: hay texto después de cerrar unas comillas.");
+    else if (!closed) value += ch;
+  }
+  if (quoted) throw new Error("CSV inválido: falta cerrar unas comillas.");
+  row.push(value);
+  if (row.some(cell => cell.trim())) rows.push(row);
+  return rows;
+}
+function delimiterOf(source) {
+  const line = source.split(/\r?\n/).find(value => value.trim()) || "";
+  const counts = [",", ";", "\t", "|"].map(delimiter => {
+    let count = 0, quoted = false;
+    for (let i = 0; i < line.length; i++) {
+      if (line[i] === '"') {
+        if (quoted && line[i + 1] === '"') i++;
+        else quoted = !quoted;
+      } else if (!quoted && line[i] === delimiter) count++;
+    }
+    return [delimiter, count];
+  });
+  counts.sort((a, b) => b[1] - a[1]);
+  return counts[0][0];
+}
+function csvTable(input) {
+  const source = inputText(input);
+  const raw = splitRows(source, delimiterOf(source));
+  if (raw.length < 2) throw new Error("Incluye un encabezado y al menos una fila de datos.");
+  const headers = raw.shift().map((value, i) => value.trim() || "Columna_" + (i + 1));
+  if (new Set(headers.map(norm)).size !== headers.length) throw new Error("Hay encabezados repetidos; usa un nombre distinto para cada columna.");
+  if (raw.length > MAX_ROWS) throw new Error("La práctica admite hasta 1000 filas por lote; no se han descartado filas.");
+  const rows = raw.map((row, i) => {
+    if (row.length > headers.length) throw new Error("La fila de datos " + (i + 1) + " tiene más campos que el encabezado. Pon entre comillas los textos con comas.");
+    return headers.map((_, j) => row[j] ?? "");
+  });
+  return { headers, rows, source };
+}
+const indexOf = (headers, aliases) => headers.findIndex(value => aliases.includes(norm(value)));
+function required(headers, aliases, label) {
+  const index = indexOf(headers, aliases);
+  if (index < 0) throw new Error("Falta la columna " + label + ".");
+  return index;
+}
+function isoDate(value) {
+  const s = clean(value);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return "";
+  const [year, month, day] = s.split("-").map(Number);
+  if (year < 1900 || year > 2199 || month < 1 || month > 12 || day < 1) return "";
+  const leap = year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+  const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  return day <= days[month - 1] ? s : "";
+}
+function markdownTable(columns, rows) {
+  return "| " + columns.map(md).join(" | ") + " |\n| " + columns.map(() => "---").join(" | ") + " |\n" +
+    rows.map(row => "| " + row.map(md).join(" | ") + " |").join("\n");
+}
+function finiteNumber(value, label, { integer = false, positive = false } = {}) {
+  const s = clean(value);
+  if (!/^\d+(?:[.,]\d{1,2})?$/.test(s)) throw new Error(label + ": usa un número sin símbolo de moneda ni separadores de miles, como 1000.00.");
+  const n = Number(s.replace(",", "."));
+  if (!Number.isFinite(n) || n > 100000000000 || (integer && !Number.isInteger(n)) || (positive && n <= 0))
+    throw new Error(label + ": el valor no es válido.");
+  return n;
+}
+function uniqueSlug(value) {
+  return clean(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9_-]+/g, "-").replace(/^[-_]+|[-_]+$/g, "").slice(0, 110);
+}
+function fileExtension(value) {
+  const lower = value.toLowerCase();
+  for (const ext of [".tar.gz", ".tar.bz2", ".tar.xz"]) if (lower.endsWith(ext)) return value.slice(-ext.length);
+  const dot = value.lastIndexOf(".");
+  return dot > 0 && dot < value.length - 1 ? value.slice(dot) : "";
+}
+function simpleChoice(key, label, value, choices) {
+  return { key, label, type: "select", value, choices: choices.map(([value, label]) => ({ value, label })) };
+}
+
+const R14 = {
+  id: "R14",
+  title: "Limpia y revisa una base sin perder registros",
+  summary: "Normaliza espacios y teléfonos como propuesta, conserva cada fila y señala IDs repetidos o conflictivos. No suma saldos ni decide identidades por nombre.",
+  inputLabel: "Tabla CSV con ID y datos de clientes",
+  inputHint: "Incluye id_cliente (o id); nombre, teléfono y saldo son opcionales. Hasta 1000 filas. Las columnas originales se conservan.",
+  sample: "id_cliente,nombre,telefono,saldo\nC001, ana  lopez ,55 1000 1001,1200.00\nC002,bruno diaz,+52 55 1000 1002,800.00\nC001,Ana Lopez,5510001001,1200.00\nC003,ANA LOPEZ,5510001003,500.00\nC004,carla neri,551000100,350.00\nC002,Bruno Diaz,5510001002,950.00\n,Bruno Diaz,5510001002,800.00",
+  options: [
+    simpleChoice("nameCase", "Propuesta de nombres", "spaces", [["spaces", "Solo corregir espacios"], ["title", "Mayúscula inicial por palabra; revisar"]]),
+    simpleChoice("phoneRule", "Regla de teléfono declarada para este lote", "mx", [["mx", "México: revisar diez dígitos; retirar +52 explícito"], ["separators", "Solo quitar separadores; conservar prefijo"]])
+  ],
+  action: "Revisar y preparar propuesta",
+  run(input, opts = {}) {
+    const data = csvTable(input);
+    const idIndex = required(data.headers, ["id", "idcliente", "identificador"], "id_cliente o id");
+    const nameIndex = indexOf(data.headers, ["nombre", "cliente", "nombrecliente"]);
+    const phoneIndex = indexOf(data.headers, ["telefono", "tel", "celular"]);
+    const groups = new Map(), changes = [];
+    const prepared = data.rows.map((row, i) => {
+      const id = clean(row[idIndex]);
+      const nameOriginal = nameIndex < 0 ? "" : row[nameIndex];
+      let name = clean(nameOriginal);
+      if (opts.nameCase === "title") name = name.toLocaleLowerCase("es-MX").replace(/(^|\s)\p{L}/gu, value => value.toLocaleUpperCase("es-MX"));
+      const phoneOriginal = phoneIndex < 0 ? "" : row[phoneIndex];
+      let phone = clean(phoneOriginal).replace(/[\s().-]/g, "");
+      const phoneRule = opts.phoneRule || "mx";
+      if (phoneRule === "mx" && /^\+52\d{10}$/.test(phone)) phone = phone.slice(3);
+      const issues = [];
+      if (!id) issues.push("ID vacío: por confirmar; no unir por nombre");
+      if (phoneIndex >= 0 && phone && (phoneRule === "mx" ? !/^\d{10}$/.test(phone) : !/^\+?\d+$/.test(phone)))
+        issues.push("Teléfono por revisar; no se completa");
+      if (nameIndex >= 0 && name !== nameOriginal) changes.push(["Fila " + (i + 1), data.headers[nameIndex], nameOriginal, name]);
+      if (phoneIndex >= 0 && phone !== phoneOriginal) changes.push(["Fila " + (i + 1), data.headers[phoneIndex], phoneOriginal, phone]);
+      const compare = row.map((value, j) => j === nameIndex ? clean(name).toLocaleLowerCase("es-MX") : j === phoneIndex ? phone : clean(value));
+      const item = { row, i, id, name, phone, issues, signature: JSON.stringify(compare) };
+      if (id) { if (!groups.has(id)) groups.set(id, []); groups.get(id).push(item); }
+      return item;
+    });
+    for (const group of groups.values()) {
+      if (group.length < 2) continue;
+      const same = new Set(group.map(item => item.signature)).size === 1;
+      const origins = group.map(item => item.i + 1).join(", ");
+      group.forEach(item => item.issues.push(same ? "Repetición por ID en filas " + origins + ": conservar, no sumar" : "Conflicto del mismo ID en filas " + origins + ": conservar y cotejar"));
+    }
+    const columns = ["Fila de origen", ...data.headers];
+    if (nameIndex >= 0) columns.push("Nombre propuesto");
+    if (phoneIndex >= 0) columns.push("Teléfono propuesto");
+    columns.push("Revisión");
+    const rows = prepared.map(item => {
+      const row = [String(item.i + 1), ...item.row];
+      if (nameIndex >= 0) row.push(item.name);
+      if (phoneIndex >= 0) row.push(item.phone);
+      row.push(item.issues.join("; ") || "Sin conflicto detectado por estas reglas; verificar");
+      return row;
+    });
+    return {
+      columns, rows,
+      notes: [
+        "Se conservan " + rows.length + " filas y todas las columnas originales. Las propuestas no sobrescriben los datos.",
+        "Los IDs se comparan después de quitar espacios externos, respetando mayúsculas. Nombres parecidos no prueban identidad.",
+        "No se ha sumado, sustituido ni consolidado ningún saldo. La coincidencia de reglas no certifica que los datos sean correctos."
+      ],
+      markdown: "# Revisión R14\n\n" + markdownTable(columns, rows) + "\n\n## Cambios propuestos\n\n" + (changes.length ? markdownTable(["Fila", "Campo", "Original", "Propuesto"], changes) : "No se detectaron cambios de formato.") +
+        "\n\nLas columnas originales conservan la evidencia. Resolver cada conflicto con la fuente autorizada, sin borrar filas ni sumar saldos."
+    };
+  }
+};
+
+const R15 = {
+  id: "R15",
+  title: "Prepara nombres de archivos sin colisiones",
+  summary: "Genera una vista previa con fechas y conceptos explícitos. Mantiene extensiones y evita reemplazar nombres existentes. Esta función no toca tus archivos.",
+  inputLabel: "Archivo original | fecha del documento | concepto verificado",
+  inputHint: "Una línea por archivo con encabezado original|fecha|concepto. Fecha AAAA-MM-DD; concepto puede incluir proveedor e importe. No uses la fecha de modificación como fecha del documento.",
+  sample: "original|fecha|concepto\nscan_001.txt|2026-03-04|Luz-Taller_3420-00\ndoc_002.csv|2026-03-05|Red-Oficina_899-00\nnota_003.md|2026-03-05|Red-Oficina_899-00\nnota_004.md|2026-03-05|Red-Oficina_899-00\n2026-03-05_Red-Oficina_899-00.csv|2026-03-05|Red-Oficina_899-00",
+  options: [],
+  action: "Crear vista previa de nombres",
+  run(input) {
+    const data = csvTable(input);
+    const originalIndex = required(data.headers, ["original", "archivo", "archivooriginal", "nombreoriginal"], "original");
+    const dateIndex = required(data.headers, ["fecha", "fechadocumento"], "fecha");
+    const conceptIndex = required(data.headers, ["concepto", "descripcion", "proveedor"], "concepto");
+    const originals = new Map(), used = new Set();
+    data.rows.forEach(row => {
+      const key = equalName(row[originalIndex].trim());
+      originals.set(key, (originals.get(key) || 0) + 1);
+    });
+    const plan = data.rows.map((row, i) => {
+      const original = row[originalIndex].trim(), date = isoDate(row[dateIndex]), concept = uniqueSlug(row[conceptIndex]);
+      const extension = fileExtension(original);
+      let issue = "";
+      if (!original || /[\\/:*?"<>|\x00-\x1f]/.test(original) || original === "." || original === ".." || /[. ]$/.test(original))
+        issue = "Revisar: solo nombres de archivo válidos, sin rutas";
+      else if (originals.get(equalName(original)) > 1) issue = "Revisar: nombre original repetido; no se puede mapear de forma única";
+      else if (!date) issue = "Revisar: fecha de documento ausente o inválida";
+      else if (!concept) issue = "Revisar: concepto ausente o sin caracteres válidos";
+      return { original, extension, i, issue, base: issue ? original : date + "_" + concept };
+    });
+    const destinationCounts = new Map();
+    plan.filter(item => !item.issue).forEach(item => {
+      const key = equalName(item.base + item.extension);
+      destinationCounts.set(key, (destinationCounts.get(key) || 0) + 1);
+    });
+    const rows = plan.map(item => {
+      if (item.issue) { used.add(equalName(item.original)); return [item.original, item.original, item.issue]; }
+      let name = item.base + item.extension;
+      const own = equalName(item.original);
+      const stays = equalName(name) === own && !used.has(own);
+      if (stays) name = item.original;
+      const collision = !stays && (destinationCounts.get(equalName(name)) > 1 ||
+        (originals.has(equalName(name)) && equalName(name) !== own) || used.has(equalName(name)));
+      if (collision) {
+        const stem = item.base + "_A" + String(item.i + 1).padStart(2, "0");
+        name = stem + item.extension;
+        let n = 2;
+        while (originals.has(equalName(name)) || used.has(equalName(name))) name = stem + "_" + n++ + item.extension;
+      }
+      used.add(equalName(name));
+      return [item.original, name, name === item.original ? "Sin cambio" : collision ? "Listo: colisión evitada con sufijo único" : "Listo: propuesta para revisar"];
+    });
+    return {
+      columns: ["Original", "Nuevo", "Estado"], rows,
+      notes: [
+        "Los nombres nuevos son una propuesta. Los originales no se renombran ni se sobrescriben.",
+        "Se preservan extensiones y se comparan colisiones sin distinguir mayúsculas, como precaución para Windows.",
+        "Las filas con Revisar conservan el nombre original. No inventamos fechas a partir de la modificación del archivo.",
+        "Antes de aplicar o descargar una copia renombrada, compara nombre, contenido y número de archivos."
+      ],
+      markdown: "# Plan de nombres R15\n\n" + markdownTable(["Original", "Nuevo", "Estado"], rows) + "\n\nConservar una copia original y este mapeo para revertir. Renombrar una extensión no convierte el contenido."
+    };
+  }
+};
+
+function dueDateFrom(body) {
+  const candidates = [...body.matchAll(/\b(\d{4}-\d{2}-\d{2})\b/g)].map(match => match[1]);
+  const unique = [...new Set(candidates)];
+  if (!unique.length) return { date: "Por confirmar", note: "No hay fecha absoluta explícita" };
+  if (unique.length > 1) return { date: "Por confirmar", note: "Hay varias fechas; revisar versión vigente" };
+  return isoDate(unique[0]) ? { date: unique[0], note: "" } : { date: "Por confirmar", note: "Fecha inválida; revisar" };
+}
+const R16 = {
+  id: "R16",
+  title: "Extrae acuerdos con responsable, fecha y evidencia",
+  summary: "Organiza un CSV explícito o detecta posibles compromisos en un chat. No inventa responsables, calcula expresiones ambiguas ni confirma que un pago ocurrió.",
+  inputLabel: "Acuerdos en CSV o texto de chat",
+  inputHint: "CSV recomendado: frase,responsable,fecha. También admite líneas [fecha, hora] Persona: mensaje; en chat un responsable debe aparecer como responsable: Nombre. Revisa siempre la evidencia.",
+  sample: "frase,responsable,fecha\nEnviar catálogo final,Ana,2026-05-19\nRevisar servidor,Carlos,2026-05-20\nConfirmar soporte adicional,,\n",
+  options: [],
+  action: "Organizar acuerdos para revisar",
+  run(input) {
+    const source = inputText(input), first = source.split(/\r?\n/).find(line => line.trim()) || "";
+    const firstFields = splitRows(first, delimiterOf(first))[0] || [];
+    const structured = firstFields.some(value => ["frase", "acuerdo", "compromiso", "tarea"].includes(norm(value)));
+    const columns = ["Fila", "Acuerdo o posible compromiso", "Responsable", "Fecha", "Revisión", "Evidencia"];
+    const rows = [];
+    if (structured) {
+      const data = csvTable(source);
+      const phraseIndex = required(data.headers, ["frase", "acuerdo", "compromiso", "tarea"], "frase o acuerdo");
+      const responsibleIndex = indexOf(data.headers, ["responsable", "persona", "asignado"]);
+      const dateIndex = indexOf(data.headers, ["fecha", "fechalimite", "vencimiento"]);
+      data.rows.forEach((row, i) => {
+        if (!clean(row[phraseIndex])) return;
+        const responsible = responsibleIndex >= 0 ? clean(row[responsibleIndex]) : "";
+        const rawDate = dateIndex >= 0 ? clean(row[dateIndex]) : "";
+        const date = isoDate(rawDate);
+        const issues = ["Datos declarados; verificar contra fuente"];
+        if (!responsible) issues.push("Responsable por confirmar");
+        if (!date) issues.push(rawDate ? "Fecha inválida o relativa; por confirmar" : "Fecha por confirmar");
+        rows.push([String(i + 1), clean(row[phraseIndex]), responsible || "Por confirmar", date || "Por confirmar", issues.join("; "), "Fila de datos " + (i + 1) + ": " + row.join(" | ")]);
+      });
+    } else {
+      const lines = source.split(/\r?\n/).filter(line => line.trim());
+      if (lines.length > MAX_ROWS) throw new Error("Usa hasta 1000 líneas por lote; no se han descartado mensajes.");
+      lines.forEach((line, i) => {
+        let body = line.trim();
+        body = body.replace(/^\[[^\]]+\]\s*[^:]{1,80}:\s*/, "");
+        body = body.replace(/^(?:\d{1,2}\/\d{1,2}\/\d{2,4}|\d{4}-\d{2}-\d{2}),?\s+.*?\s+-\s+[^:]{1,80}:\s*/, "");
+        const folded = body.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        if (!/\b(acuerdo|confirmo|confirmar|entregar|enviar|pagar|revisar|preparar|cotizar|coordinar|cambio|compromiso|entrega)\b/i.test(body)) return;
+        const assigned = body.match(/\bresponsable\s*:\s*([^;|\n]+?)(?=\s+(?:fecha|vence)\s*:|[;|]|$)/i);
+        const dates = dueDateFrom(body);
+        const issues = ["Posible compromiso; requiere revisión"];
+        if (/\b(quiza|tal vez|propuesta|podria|si se|pendiente de aprobar)\b/i.test(folded)) issues.push("Propuesta o condición; no confirmado");
+        if (!assigned) issues.push("Responsable por confirmar; no se asigna al emisor");
+        if (dates.note) issues.push(dates.note);
+        rows.push([String(i + 1), body, assigned ? clean(assigned[1]) : "Por confirmar", dates.date, issues.join("; "), "Línea " + (i + 1) + ": " + line]);
+      });
+    }
+    if (!rows.length) throw new Error("No se detectaron acuerdos con estas reglas. Usa CSV con encabezado frase,responsable,fecha para registrar solo lo que puedas comprobar.");
+    return {
+      columns, rows,
+      notes: [
+        "La extracción es por reglas: no confirma compromisos ni comprende todo un historial.",
+        "La fecha de un mensaje no se toma como fecha límite. Fechas relativas, múltiples o inválidas quedan Por confirmar.",
+        "Conserva la evidencia y revisa cambios/contradicciones antes de dar seguimiento. No se envía ningún mensaje."
+      ],
+      markdown: "# Control de acuerdos R16\n\n" + markdownTable(columns, rows) + "\n\nRevisión humana pendiente. Una fecha límite no acredita que una entrega o un pago ya ocurrió."
+    };
+  }
+};
+
+const CONTENT_ANGLES = [
+  ["Reel breve", "Empieza por esta duda: ", "Muestra la pregunta, el dato necesario para contestarla y el paso que la persona puede comprobar."],
+  ["Carrusel", "Antes de decidir, aclara esto: ", "Usa una lámina para la duda, otra para la condición verificada y otra para lo que sigue Por confirmar."],
+  ["Historia", "¿Dónde se confirma esto? ", "Explica el canal o documento aprobado para consultar la respuesta; no inventes direcciones ni políticas."],
+  ["Lista visual", "Tres revisiones para esta pregunta: ", "Prepara una lista de entrada, condición y comprobación. Completa cada punto solo con información vigente del negocio."],
+  ["Reel de error y corrección", "No adivines la respuesta a: ", "Muestra un error común de interpretación y corrígelo con una condición que el negocio pueda demostrar."],
+  ["Carrusel paso a paso", "Una respuesta clara para: ", "Divide un procedimiento confirmado en pocos pasos. Si no está documentado, indica qué falta confirmar antes de publicar."]
+];
+const R17 = {
+  id: "R17",
+  title: "Crea un calendario completo de treinta ideas",
+  summary: "Convierte preguntas frecuentes en treinta borradores con formatos y ángulos rotativos. No inventa respuestas, políticas ni horarios de publicación.",
+  inputLabel: "Preguntas frecuentes, una por línea",
+  inputHint: "Pega preguntas anonimizadas. El calendario propone cómo explicarlas; la respuesta debe completarse con información real y revisada.",
+  sample: "¿Cuánto cuesta el envío?\n¿Qué incluye el kit?\n¿Cómo se coloca el producto?\n¿Cómo reporto una pieza distinta?\n¿Cómo solicito información por canal privado?\n¿Cómo limpio el organizador?",
+  options: [{ key: "audience", label: "Público al que explicarás estas dudas", type: "text", value: "personas que usan el producto por primera vez" }],
+  action: "Generar treinta días de ideas",
+  run(input, opts = {}) {
+    const questions = [...new Set(inputText(input).split(/\r?\n/).map(line => clean(line.replace(/^\s*(?:[-*•]|\d+[.)])\s*/, ""))).filter(Boolean))];
+    if (!questions.length) throw new Error("Escribe al menos una pregunta.");
+    if (questions.length > MAX_ROWS) throw new Error("La práctica admite hasta 1000 preguntas; divide el listado en lotes.");
+    const audience = clean(opts.audience) || "tu audiencia";
+    const columns = ["Día", "Pregunta de origen", "Formato", "Gancho para revisar", "Qué explicar", "Acción final"];
+    const rows = Array.from({ length: 30 }, (_, i) => {
+      const question = questions[i % questions.length];
+      const cycle = Math.floor(i / questions.length);
+      const angle = CONTENT_ANGLES[((i % questions.length) + cycle) % CONTENT_ANGLES.length];
+      const cta = i % 2 ? "¿Qué parte de este proceso necesitas que expliquemos mejor?" : "Guarda los pasos que hayas comprobado para consultarlos después.";
+      return [String(i + 1).padStart(2, "0"), question, angle[0], angle[1] + question, angle[2] + " Adáptalo a " + audience + ".", cta];
+    });
+    return {
+      columns, rows,
+      notes: [
+        "Se generan exactamente treinta filas numeradas 01–30. Son borradores; no publicaciones programadas.",
+        "No se han generado precios, garantías, plazos ni respuestas a partir de suposiciones. Completa la explicación con fuentes propias verificadas.",
+        questions.length < 6 ? "Hay pocas preguntas de origen: se reutilizan desde otros ángulos. Revisa que cada pieza aporte algo distinto antes de publicarla." : "Se rotan las preguntas y los formatos; revisa que los temas correspondan a tu audiencia.",
+        "No hay promesa de vistas, seguidores o ventas ni entrega condicionada a comentar una palabra."
+      ],
+      markdown: "# Calendario de treinta ideas R17\n\nPúblico declarado: " + md(audience) + ".\n\n" + markdownTable(columns, rows) + "\n\nRevisar cada respuesta y política antes de grabar. Decide la frecuencia; los días numerados no agendan una cuenta."
+    };
+  }
+};
+
+const R18 = {
+  id: "R18",
+  title: "Calcula y revisa cinco o más cotizaciones",
+  summary: "Calcula cantidad por precio más flete y distingue monedas, cantidades y especificaciones. No convierte divisas ni recomienda una compra.",
+  inputLabel: "CSV de cotizaciones con importes finales",
+  inputHint: "Encabezados: proveedor,cantidad,precio_unitario,flete,moneda,entrega. Precios y flete ya con cargos incluidos; usa números sin $ ni miles. Opcional: especificacion. No se calculan impuestos ni tipos de cambio.",
+  sample: "proveedor,cantidad,precio_unitario,flete,moneda,entrega,especificacion\nTaller Alfa,10,1160.00,580.00,MXN,5,L-10\nMesa Beta,10,1160.00,0.00,MXN,7,L-10\nLumen Gamma,10,58.00,25.00,USD,6,L-10\nOficina Delta,10,1218.00,290.00,MXN,4,L-10\nEquipo Epsilon,10,1136.80,232.00,MXN,15,L-10",
+  options: [
+    { key: "currency", label: "Moneda que deseas comparar (sin conversión)", type: "text", value: "MXN" },
+    { key: "quantity", label: "Cantidad requerida, en unidades enteras", type: "number", value: 10 },
+    { key: "specification", label: "Especificación requerida", type: "text", value: "L-10" },
+    { key: "maxDelivery", label: "Máximo de días de entrega (vacío: no evaluar)", type: "number", value: 7 }
+  ],
+  action: "Calcular cuadro comparable",
+  run(input, opts = {}) {
+    const data = csvTable(input);
+    const p = required(data.headers, ["proveedor"], "proveedor");
+    const q = required(data.headers, ["cantidad"], "cantidad");
+    const u = required(data.headers, ["preciounitario", "precio"], "precio_unitario");
+    const f = required(data.headers, ["flete", "envio"], "flete");
+    const c = required(data.headers, ["moneda"], "moneda");
+    const d = required(data.headers, ["entrega", "diasentrega", "entregadias"], "entrega");
+    const spec = indexOf(data.headers, ["especificacion", "modelo", "producto"]);
+    const currency = clean(opts.currency ?? "MXN").toUpperCase();
+    if (!/^[A-Z]{3}$/.test(currency)) throw new Error("Escribe una moneda de tres letras, como MXN o USD.");
+    const quantity = finiteNumber(opts.quantity ?? 10, "Cantidad requerida", { integer: true, positive: true });
+    const specification = clean(opts.specification ?? "L-10");
+    const deliveryRaw = opts.maxDelivery === undefined ? "7" : clean(opts.maxDelivery);
+    const maxDelivery = deliveryRaw ? finiteNumber(deliveryRaw, "Máximo de días", { integer: true, positive: true }) : null;
+    const details = [];
+    const rows = data.rows.map((row, i) => {
+      const label = "Fila " + (i + 1);
+      const provider = clean(row[p]);
+      if (!provider) throw new Error(label + ": falta proveedor; no se ha descartado la fila.");
+      const qty = finiteNumber(row[q], label + " cantidad", { integer: true, positive: true });
+      const unit = finiteNumber(row[u], label + " precio unitario");
+      const shipping = finiteNumber(row[f], label + " flete");
+      const money = clean(row[c]).toUpperCase();
+      if (!/^[A-Z]{3}$/.test(money)) throw new Error(label + ": moneda ausente o inválida.");
+      const subCents = qty * Math.round(unit * 100), totalCents = subCents + Math.round(shipping * 100);
+      if (!Number.isSafeInteger(subCents) || !Number.isSafeInteger(totalCents)) throw new Error(label + ": importe demasiado grande para calcularlo con precisión.");
+      const delivery = clean(row[d]);
+      const days = /^\d+(?:\s*d[ií]as?)?$/i.test(delivery) ? Number(delivery.match(/^\d+/)[0]) : null;
+      const issues = [];
+      if (money !== currency) issues.push("Moneda distinta; no comparar con " + currency);
+      if (qty !== quantity) issues.push("Cantidad distinta de " + quantity);
+      if (specification && (spec < 0 || !clean(row[spec]))) issues.push("Especificación por confirmar");
+      else if (specification && clean(row[spec]).toLocaleLowerCase() !== specification.toLocaleLowerCase()) issues.push("Especificación distinta");
+      if (maxDelivery !== null && days === null) issues.push("Entrega no inequívoca; por confirmar");
+      else if (maxDelivery !== null && days > maxDelivery) issues.push("Entrega supera " + maxDelivery + " días");
+      if (!issues.length) issues.push("Coincide en campos evaluados; revisar garantía, vigencia y demás condiciones");
+      const total = (totalCents / 100).toFixed(2);
+      details.push("- " + md(provider) + ": " + qty + " × " + unit.toFixed(2) + " + " + shipping.toFixed(2) + " = **" + total + " " + money + "**. " + md(issues.join("; ")) + ".");
+      return [provider, String(qty), money, total, delivery || "Por confirmar", issues.join("; ")];
+    });
+    return {
+      columns: ["Proveedor", "Cantidad", "Moneda", "Total con flete", "Entrega declarada", "Revisión"], rows,
+      notes: [
+        "Total = cantidad × precio unitario final + flete final. No se agrega impuesto, descuento ni cargo que no esté en la entrada.",
+        "No se convierten monedas ni se suman totales de monedas diferentes. Las ofertas en otra moneda quedan separadas.",
+        "La comparación solo revisa los campos disponibles. Confirma calidad, garantía, vigencia, pago, alcance y aceptación antes de decidir; no hay recomendación automática."
+      ],
+      markdown: "# Cuadro de cotizaciones R18\n\nLos importes unitarios y de flete deben incluir todos los cargos aplicables según su fuente. No se calculan impuestos ni FX.\n\n" +
+        markdownTable(["Proveedor", "Cantidad", "Moneda", "Total con flete", "Entrega", "Revisión"], rows) + "\n\n## Cálculos\n\n" + details.join("\n")
+    };
+  }
+};
+
+const R19 = {
+  id: "R19",
+  title: "Crea un cuestionario desde hechos que puedes comprobar",
+  summary: "Usa definiciones del texto como respuestas y otras definiciones como distractores. Incluye clave y fuente de cada reactivo; requiere revisar ambigüedades.",
+  inputLabel: "Documento de práctica: un término y un hecho por línea",
+  inputHint: "Formato Término: descripción verificable. Incluye al menos tres términos distintos con descripciones distintas. No se inventan leyes, artículos ni reglamentos.",
+  sample: "Registro: Anotar el ID y la fecha de la solicitud.\nPrioridad Normal: Una persona afectada que tiene una alternativa de trabajo.\nPrimera respuesta: Reconocer el ID y pedir datos faltantes sin prometer una fecha no confirmada.\nEstado En seguimiento: Se solicitó un dato y se espera respuesta.\nResponsable no identificado: Escribir Por confirmar en lugar de asignar por intuición.",
+  options: [{ key: "count", label: "Número máximo de preguntas (hasta 50)", type: "number", value: 5 }],
+  action: "Crear y revisar cuestionario",
+  run(input, opts = {}) {
+    const lines = inputText(input).split(/\r?\n/), facts = [], ignored = [];
+    for (let i = 0; i < lines.length; i++) {
+      if (!lines[i].trim()) continue;
+      const match = lines[i].match(/^\s*([^:]{1,120}):\s*(.+?)\s*$/);
+      if (!match) { ignored.push(String(i + 1)); continue; }
+      facts.push({ term: clean(match[1]), fact: clean(match[2]), line: i + 1 });
+    }
+    if (facts.length < 3) throw new Error("Incluye al menos tres líneas válidas en formato Término: hecho, con descripciones distintas.");
+    if (facts.length > MAX_ROWS) throw new Error("Usa hasta 1000 hechos por lote.");
+    if (new Set(facts.map(item => item.term.toLocaleLowerCase())).size !== facts.length) throw new Error("Hay términos repetidos. Revisa y conserva una definición inequívoca para cada término.");
+    if (new Set(facts.map(item => item.fact.toLocaleLowerCase())).size !== facts.length) throw new Error("Hay descripciones idénticas: no permiten construir distractores inequívocos. Diferéncialas antes de generar.");
+    const requested = finiteNumber(opts.count ?? 5, "Número de preguntas", { integer: true, positive: true });
+    if (requested > 50) throw new Error("El máximo de preguntas por práctica es 50.");
+    const count = Math.min(requested, facts.length);
+    const quiz = facts.slice(0, count).map((item, i) => {
+      const pool = [item.fact, facts[(i + 1) % facts.length].fact, facts[(i + 2) % facts.length].fact];
+      const shift = i % 3;
+      const choices = [...pool.slice(shift), ...pool.slice(0, shift)];
+      return {
+        question: "Según el texto, ¿qué descripción corresponde a «" + item.term + "»?",
+        choices, answerIndex: choices.indexOf(item.fact),
+        source: "Línea " + item.line + " · " + item.term + ": " + item.fact
+      };
+    });
+    const columns = ["ID", "Pregunta", "A", "B", "C", "Clave y fuente"];
+    const rows = quiz.map((item, i) => ["Q" + String(i + 1).padStart(2, "0"), item.question, ...item.choices, "ABC"[item.answerIndex] + " · " + item.source]);
+    const exam = quiz.map((item, i) => "## Q" + (i + 1) + "\n\n" + md(item.question) + "\n\n" + item.choices.map((choice, j) => "ABC"[j] + ") " + md(choice)).join("\n\n") + "\n\nRespuesta: ____").join("\n\n");
+    const key = quiz.map((item, i) => "- Q" + (i + 1) + ": " + "ABC"[item.answerIndex] + ". " + md(item.source)).join("\n");
+    return {
+      columns, rows, quiz,
+      notes: [
+        "Los distractores son otros hechos de la misma entrada: revisa que no sean también válidos para el término preguntado.",
+        "Cada respuesta vale un punto en esta práctica; no se define aprobado ni se acredita competencia profesional.",
+        requested > facts.length ? "Se entregan " + count + " preguntas porque hay " + facts.length + " hechos únicos; no se fabrican más." : "Se entregan " + count + " preguntas basadas en el texto.",
+        ignored.length ? "Líneas sin el formato Término: hecho, no usadas: " + ignored.join(", ") + ". Revísalas si eran parte del documento." : "Todas las líneas no vacías se pudieron leer."
+      ],
+      markdown: "# Cuestionario de práctica R19\n\n" + exam + "\n\n# Clave y fuentes\n\n" + key + "\n\nRevisar ambigüedades contra el documento original. No constituye normativa ni certificación profesional."
+    };
+  }
+};
+
+const R20 = {
+  id: "R20",
+  title: "Redacta una autoevaluación con evidencia y límites",
+  summary: "Organiza acciones e impactos que tú declaras y conserva los faltantes. No estima dinero, horas, causalidad ni un aumento salarial.",
+  inputLabel: "CSV de proyectos y evidencias",
+  inputHint: "Encabezados proyecto,accion,evidencia,impacto. Deja vacío lo que no esté medido; un identificador de evidencia debe cotejarse con la fuente.",
+  sample: "proyecto,accion,evidencia,impacto\nReportes,Preparé una plantilla de reporte,Registro E01 y mediciones M01 a M05,Promedio observado 22 a 14 minutos en cinco pruebas comparables\nSoporte,Coordiné diagnóstico y seguimiento; Carlos aplicó la corrección,Ticket T-42 y confirmación E04,Un ticket confirmado como resuelto; sin impacto monetario medido\nGuía de ingreso,Redacté una guía de ocho pasos,Documento G01 revisado por tres personas,\n",
+  options: [{ key: "period", label: "Periodo de la autoevaluación", type: "text", value: "Periodo por confirmar" }],
+  action: "Preparar reporte con trazabilidad",
+  run(input, opts = {}) {
+    const data = csvTable(input);
+    const p = required(data.headers, ["proyecto"], "proyecto");
+    const a = required(data.headers, ["accion", "actividad"], "accion");
+    const e = required(data.headers, ["evidencia", "fuente"], "evidencia");
+    const impact = required(data.headers, ["impacto", "resultado"], "impacto");
+    const period = clean(opts.period) || "Periodo por confirmar";
+    const columns = ["Proyecto", "Acción declarada", "Evidencia a cotejar", "Impacto declarado", "Revisión"];
+    const rows = data.rows.map((row, i) => {
+      if (!clean(row[p]) && !clean(row[a])) throw new Error("Fila " + (i + 1) + ": indica al menos proyecto y acción; no se han descartado datos.");
+      const issues = ["Declaración pendiente de cotejo; no verificada por el sistema"];
+      if (!clean(row[p])) issues.push("Proyecto por confirmar");
+      if (!clean(row[a])) issues.push("Acción por confirmar");
+      if (!clean(row[e])) issues.push("Falta evidencia");
+      if (!clean(row[impact])) issues.push("Sin impacto medido; no estimar");
+      return [clean(row[p]) || "Por confirmar", clean(row[a]) || "Por confirmar", clean(row[e]) || "Por confirmar", clean(row[impact]) || "No medido / por confirmar", issues.join("; ")];
+    });
+    const report = rows.map((row, i) => "## " + (i + 1) + ". " + md(row[0]) + "\n\n- Acción registrada: " + md(row[1]) + ".\n- Resultado o impacto declarado: " + md(row[3]) + ".\n- Evidencia que falta cotejar: " + md(row[2]) + ".\n- Revisión: " + md(row[4]) + ".").join("\n\n");
+    return {
+      columns, rows,
+      notes: [
+        "Los datos provienen únicamente de tu entrada y siguen pendientes de verificación; una referencia escrita no acredita por sí sola el resultado.",
+        "No se calculan importes, horas ahorradas, rendimiento anual ni un aumento salarial. Un impacto vacío permanece No medido / por confirmar.",
+        "Distingue tu acción del trabajo del equipo y conserva fuente, fecha, alcance y tamaño de muestra antes de usar el reporte."
+      ],
+      markdown: "# Borrador de autoevaluación R20\n\nPeriodo declarado: " + md(period) + ".\n\n" + report +
+        "\n\n## Antes de entregar\n\nCotejar cada evidencia; retirar afirmaciones sin respaldo; confirmar atribución de equipo, periodo y muestra. No extrapolar cifras ni presentar una estimación como un resultado medido."
+    };
+  }
+};
+
+const toolsC = { R14, R15, R16, R17, R18, R19, R20 };
+
+;return toolsC;})();
+const tools = { ...toolsA, ...toolsB, ...toolsC };
+const root = document.getElementById('app');
+const id = document.body.dataset.tool || '';
+const base = ['../', '../../', './'].includes(document.body.dataset.base) ? document.body.dataset.base : '../';
+const github = 'https://github.com/atajoia/atajoia.github.io/tree/main/herramientas';
+const archive = 'https://github.com/atajoia/atajoia.github.io/archive/refs/heads/main.zip';
+const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const text = value => String(value ?? '');
+
+function element(tag, attrs = {}, children = []) {
+  const node = document.createElement(tag);
+  for (const [key, value] of Object.entries(attrs)) {
+    if (key === 'class') node.className = value;
+    else if (key === 'text') node.textContent = text(value);
+    else if (key === 'hidden') node.hidden = Boolean(value);
+    else if (value !== undefined && value !== null) node.setAttribute(key, text(value));
+  }
+  for (const child of [children].flat()) if (child !== undefined && child !== null) node.append(child instanceof Node ? child : document.createTextNode(text(child)));
+  return node;
+}
+
+function anchor(label, href, className = '', external = false) {
+  return element('a', { href, class: className, ...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {}), text: label });
+}
+
+function button(label, className = '') { return element('button', { type: 'button', class: className, text: label }); }
+
+function download(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const link = element('a', { href: url, download: safeFilename(filename), hidden: true });
+  document.body.append(link); link.click(); link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
+}
+
+function downloadText(content, filename, mime) { download(new Blob([content], { type: mime }), filename); }
+
+// BEGIN_RENAME_PLAN: helper puro, también probado sin cargar el controlador DOM.
+export function validateRenamePlan(current, files) {
+  if (!files?.size) throw new Error('Selecciona los archivos o prueba el ejemplo antes de crear el ZIP.');
+  const normalized = current.columns.map(value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, ''));
+  const originalIndex = normalized.findIndex(value => ['original', 'archivooriginal', 'nombreoriginal'].includes(value));
+  const destinationIndex = normalized.findIndex(value => ['nuevo', 'nuevonombre', 'nombrenuevo'].includes(value));
+  const stateIndex = normalized.findIndex(value => value === 'estado');
+  if (originalIndex < 0 || destinationIndex < 0) throw new Error('La tabla necesita las columnas Original y Nuevo para crear el ZIP.');
+  if (current.rows.length !== files.size) throw new Error('La vista previa debe incluir exactamente una fila por cada archivo seleccionado.');
+  const origins = new Set(), targets = new Set(), entries = [];
+  for (const row of current.rows) {
+    const original = String(row[originalIndex] ?? ''), destination = String(row[destinationIndex] ?? '');
+    const key = original.toLowerCase(), state = stateIndex < 0 ? '' : String(row[stateIndex] ?? '').trim();
+    // El prefijo define el estado. «Listo: propuesta para revisar» es positivo;
+    // la palabra revisar dentro de una recomendación no convierte la fila en error.
+    if (/^(?:revisar|error|pendiente|por\s+confirmar|faltan?\s+datos?)(?:\b|:)/i.test(state)) throw new Error(`Resuelve la fila de ${original} antes de descargar el ZIP.`);
+    if (origins.has(key)) throw new Error(`Origen repetido en la tabla: ${original}.`); origins.add(key);
+    const file = files.get(original);
+    if (!file) throw new Error(`No está seleccionado el archivo ${original}. No se crean archivos vacíos ni se omite esa fila.`);
+    if (!destination || safeFilename(destination) !== destination) throw new Error(`Nombre de destino no válido: ${destination || '(vacío)'}. Corrígelo antes de descargar.`);
+    const originalExtension = original.match(/\.[^.]+$/)?.[0] || '', destinationExtension = destination.match(/\.[^.]+$/)?.[0] || '';
+    if (originalExtension !== destinationExtension) throw new Error(`La extensión de ${original} cambió. Renombrar no convierte el formato.`);
+    const target = destination.toLowerCase(); if (targets.has(target)) throw new Error(`Destino repetido: ${destination}.`); targets.add(target);
+    entries.push({ name: destination, file });
+  }
+  return entries;
+}
+// END_RENAME_PLAN
+
+function scaffold() {
+  const shell = element('main', { class: 'shell' });
+  const brand = anchor('Atajo ', base, 'brand'); brand.append(element('span', { text: 'IA' }));
+  const nav = element('nav', { 'aria-label': 'Navegación principal' }, [
+    anchor('Todas las herramientas', `${base}herramientas/`),
+    anchor(id ? 'Guía y archivos' : 'Recursos', id ? '../' : base),
+    anchor('Código abierto', github, 'source-link', true)
+  ]);
+  const header = element('header', {}, [brand, nav, element('span', { class: 'pill', text: 'Gratis · En tu navegador' })]);
+  header.style.flexWrap = 'wrap'; nav.style.flexWrap = 'wrap';
+  shell.append(header);
+  root.replaceChildren(shell);
+  return shell;
+}
+
+function footer(shell) {
+  shell.append(element('footer', {}, [
+    element('span', { text: 'Atajo IA · Herramientas gratuitas para el trabajo diario.' }),
+    element('div', {}, [anchor('Privacidad', `${base}privacidad/`), anchor('Términos', `${base}terminos/`), anchor('Descargar código', archive, '', true)])
+  ]));
+}
+
+function gallery(shell) {
+  shell.append(element('section', { class: 'hero' }, [element('p', { class: 'eyebrow', text: 'Una tarea menos, un día más claro' }),
+    element('h1', { text: 'Herramientas que trabajan contigo.' }),
+    element('p', { class: 'summary', text: 'Pega tus datos, revisa el resultado y llévatelo. Sin instalar, sin registros nuevos y sin pagar una API.' }),
+    element('p', { class: 'subtle', text: 'Se procesa en esta pestaña. Puedes probar los ejemplos antes de utilizar tus propios datos.' })]));
+  const searchLabel = element('label', { for: 'tool-search', class: 'data-label', text: '¿Qué necesitas resolver?' });
+  const input = element('input', { id: 'tool-search', type: 'search', placeholder: 'Ej. cobranza, manual, acuerdos, archivos', autocomplete: 'off' });
+  const status = element('p', { id: 'status', role: 'status', 'aria-live': 'polite' });
+  const search = element('section', { class: 'search', 'aria-label': 'Buscar herramientas' }, [searchLabel, input, status]);
+  const grid = element('section', { class: 'gallery', 'aria-label': 'Herramientas disponibles' });
+  const cards = Object.values(tools).sort((a, b) => a.id.localeCompare(b.id)).map(tool => {
+    const card = anchor('', `${base}${tool.id}/app/`, 'tool-card');
+    card.append(element('p', { class: 'eyebrow', text: tool.id }), element('h2', { text: tool.title }),
+      element('p', { text: tool.summary }), element('span', { class: 'go', text: 'Abrir herramienta →' }));
+    grid.append(card); return { card, query: fold(`${tool.id} ${tool.title} ${tool.summary}`) };
+  });
+  function filter() {
+    const q = fold(input.value.trim()); let count = 0;
+    cards.forEach(({ card, query }) => { card.hidden = !query.includes(q); if (!card.hidden) count++; });
+    status.textContent = count ? `${count} herramientas disponibles${q ? ' para tu búsqueda' : ''}.` : 'No encontramos coincidencias. Prueba otra tarea o palabra.';
+  }
+  input.addEventListener('input', filter); filter(); shell.append(search, grid); footer(shell);
+}
+
+function svgDiagram(diagram) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const make = (tag, attrs, content) => {
+    const node = document.createElementNS(ns, tag);
+    for (const [key, value] of Object.entries(attrs || {})) node.setAttribute(key, text(value));
+    if (content !== undefined) node.textContent = text(content); return node;
+  };
+  const nodes = diagram?.nodes, edges = diagram?.edges;
+  if (!Array.isArray(nodes) || !Array.isArray(edges) || !nodes.length) return null;
+  if (nodes.length > 50) throw new Error('La tabla se generó. Para ver el diagrama, usa un máximo de 50 nodos.');
+  const byID = new Map(nodes.map(node => [text(node.id), node]));
+  if (byID.size !== nodes.length || edges.some(edge => !byID.has(text(edge.from)) || !byID.has(text(edge.to)))) throw new Error('El diagrama contiene IDs repetidos o destinos inexistentes; revisa la tabla.');
+  const incoming = new Map(nodes.map(node => [text(node.id), 0])), levels = new Map(nodes.map(node => [text(node.id), 0]));
+  edges.forEach(edge => incoming.set(text(edge.to), incoming.get(text(edge.to)) + 1));
+  const queue = nodes.filter(node => incoming.get(text(node.id)) === 0).map(node => text(node.id)); let count = 0;
+  while (queue.length) {
+    const from = queue.shift(); count++;
+    for (const edge of edges.filter(item => text(item.from) === from)) {
+      const to = text(edge.to); levels.set(to, Math.max(levels.get(to), levels.get(from) + 1));
+      incoming.set(to, incoming.get(to) - 1); if (!incoming.get(to)) queue.push(to);
+    }
+  }
+  const groups = new Map();
+  if (count === nodes.length) nodes.forEach(node => { const level = levels.get(text(node.id)); if (!groups.has(level)) groups.set(level, []); groups.get(level).push(node); });
+  const maxGroup = Math.max(0, ...[...groups.values()].map(group => group.length));
+  const grid = count !== nodes.length || maxGroup > 4;
+  const columns = grid ? Math.min(3, nodes.length) : Math.max(1, maxGroup);
+  const width = columns * 270 + 40, positions = new Map();
+  let height = 0;
+  if (grid) nodes.forEach((node, i) => { const pos = { x: 30 + (i % columns) * 270, y: 35 + Math.floor(i / columns) * 150 }; positions.set(text(node.id), pos); height = Math.max(height, pos.y + 135); });
+  else for (const [level, group] of groups) group.forEach((node, i) => { const start = (width - group.length * 270) / 2;
+    const pos = { x: start + i * 270, y: 35 + level * 150 }; positions.set(text(node.id), pos); height = Math.max(height, pos.y + 135); });
+  const svg = make('svg', { xmlns: ns, viewBox: `0 0 ${width} ${height}`, width, height, role: 'img', 'aria-label': `Diagrama con ${nodes.length} pasos y ${edges.length} conexiones` });
+  svg.append(make('title', {}, `Flujo de ${nodes.length} pasos. Los textos completos también están en la tabla.`));
+  svg.append(make('rect', { width: '100%', height: '100%', fill: '#f8faf6' }));
+  const defs = make('defs'); const marker = make('marker', { id: 'atajo-arrow', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' });
+  marker.append(make('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: '#63766c' })); defs.append(marker); svg.append(defs);
+  edges.forEach(edge => {
+    const a = positions.get(text(edge.from)), b = positions.get(text(edge.to));
+    const x1 = a.x + 115, y1 = a.y + 90, x2 = b.x + 115, y2 = b.y;
+    const d = edge.from === edge.to ? `M ${a.x + 230} ${a.y + 35} C ${a.x + 270} ${a.y - 20} ${a.x + 270} ${a.y + 115} ${a.x + 230} ${a.y + 65}` :
+      `M ${x1} ${y1} C ${x1} ${y1 + 30} ${x2} ${y2 - 30} ${x2} ${y2}`;
+    svg.append(make('path', { d, fill: 'none', stroke: '#63766c', 'stroke-width': 2, 'marker-end': 'url(#atajo-arrow)' }));
+    if (edge.label) {
+      const lx = (x1 + x2) / 2, ly = (y1 + y2) / 2;
+      const group = make('g'); group.append(make('rect', { x: lx - 40, y: ly - 11, width: 80, height: 21, rx: 4, fill: '#f8faf6' }),
+        make('text', { x: lx, y: ly + 4, 'text-anchor': 'middle', 'font-family': 'system-ui,sans-serif', 'font-size': 12, fill: '#3c4d43' }, text(edge.label).slice(0, 15))); svg.append(group);
+    }
+  });
+  nodes.forEach(node => {
+    const p = positions.get(text(node.id)), group = make('g');
+    group.append(make('title', {}, node.label), make('rect', { x: p.x, y: p.y, width: 230, height: 90, rx: 12, fill: '#fff', stroke: '#b6c8bd', 'stroke-width': 1.5 }));
+    const words = text(node.label).split(/\s+/), lines = []; let line = '';
+    words.forEach(word => { if (line.length + word.length > 29 && line) { lines.push(line); line = word; } else line += (line ? ' ' : '') + word; }); if (line) lines.push(line);
+    lines.slice(0, 3).forEach((content, i) => group.append(make('text', { x: p.x + 115, y: p.y + 26 + i * 22, 'text-anchor': 'middle', 'font-family': 'system-ui,sans-serif', 'font-size': 13, fill: '#24382c' }, content + (i === 2 && lines.length > 3 ? '…' : ''))));
+    svg.append(group);
+  });
+  return svg;
+}
+
+function toolPage(shell, spec) {
+  document.title = `${spec.title} · Atajo IA`;
+  shell.append(element('section', { class: 'hero' }, [element('p', { class: 'eyebrow', text: `${spec.id} · Tu resultado, sin complicaciones` }),
+    element('h1', { text: spec.title }), element('p', { class: 'summary', text: spec.summary }),
+    element('div', { class: 'steps' }, [element('span', {}, [element('b', { text: '1' }), 'Pega tus datos']), element('span', {}, [element('b', { text: '2' }), 'Revisa y corrige']), element('span', {}, [element('b', { text: '3' }), 'Descarga el resultado'])]),
+    element('div', { class: 'actions' }, [anchor('Descargar herramienta', `./atajo-${spec.id.toLowerCase()}.html`, 'button'), anchor('Ver guía y archivos', '../', 'button')]) ]));
+  shell.querySelector(`a[href="./atajo-${spec.id.toLowerCase()}.html"]`).setAttribute('download', `atajo-${spec.id.toLowerCase()}.html`);
+  const inputPanel = element('section', { class: 'panel', 'aria-label': 'Datos de entrada' });
+  inputPanel.append(element('div', { class: 'panel-head' }, [element('h2', { text: 'Empieza aquí' }), element('span', { class: 'pill', text: 'Sin registros nuevos' })]));
+  const sample = button('Probar ejemplo');
+  const hint = element('p', { class: 'subtle', id: 'input-hint', text: spec.inputHint });
+  const input = element('textarea', { id: 'tool-input', spellcheck: 'false', autocomplete: 'off', 'aria-describedby': 'input-hint', placeholder: 'Pega aquí tus datos o prueba el ejemplo.' });
+  inputPanel.append(element('label', { class: 'data-label', for: 'tool-input', text: spec.inputLabel }), hint, input);
+  const upload = element('input', { id: 'input-file', type: 'file', accept: '.txt,.csv,.md,text/plain,text/csv,text/markdown' });
+  inputPanel.append(element('label', { class: 'data-label', for: 'input-file', text: 'O abre un archivo TXT, CSV o MD (hasta 2 MB)' }), upload);
+  const optionInputs = new Map();
+  for (const option of spec.options || []) {
+    const optionID = `option-${option.key}`;
+    const label = element('label', { class: 'data-label', for: optionID, text: option.label || option.key });
+    let control;
+    if (option.type === 'select') {
+      control = element('select', { id: optionID });
+      for (const choice of option.choices || []) { const value = typeof choice === 'object' ? choice.value : choice;
+        control.append(element('option', { value: text(value), text: typeof choice === 'object' ? choice.label ?? choice.value : choice })); }
+    } else if (option.type === 'textarea') control = element('textarea', { id: optionID, class: 'option' });
+    else control = element('input', { id: optionID, type: ['number', 'date', 'text'].includes(option.type) ? option.type : 'text', ...(option.type === 'number' ? { step: 'any' } : {}) });
+    control.value = text(option.value); optionInputs.set(option.key, control); inputPanel.append(label, control);
+  }
+  const fileStatus = element('p', { class: 'subtle', role: 'status', 'aria-live': 'polite' });
+  let files = new Map();
+  if (spec.id === 'R15') {
+    const uploadBatch = element('input', { id: 'batch-files', type: 'file', multiple: true });
+    inputPanel.append(element('label', { class: 'data-label', for: 'batch-files', text: 'Archivos para crear una copia ZIP renombrada (hasta 100 / 25 MB)' }), uploadBatch,
+      element('p', { class: 'subtle', text: 'Se conservan en memoria. Sus fechas y conceptos quedan vacíos para que los confirmes; no usamos la fecha de modificación.' }), fileStatus);
+    uploadBatch.addEventListener('change', () => {
+      try { selectFiles([...uploadBatch.files]); input.value = fileInventory([...files.keys()]); dirty(); say(`${files.size} archivos listos. Completa fecha y concepto y crea la vista previa.`); }
+      catch (error) { uploadBatch.value = ''; files = new Map(); fileStatus.textContent = 'No se cargó el lote.'; fail(error); }
+    });
+  }
+  const run = button(spec.action || 'Generar resultado', 'primary');
+  const reset = button('Limpiar datos');
+  const status = element('p', { id: 'status', role: 'status', 'aria-live': 'polite', 'aria-atomic': 'true' });
+  inputPanel.append(element('div', { class: 'actions' }, [sample, run, reset]), status,
+    element('p', { class: 'privacy', text: 'Tus datos se procesan en esta pestaña. No se envían a un servidor, no se guardan automáticamente y no se usan APIs de pago. Al recargar se borran los datos que pegaste.' }));
+  const resultPanel = element('section', { class: 'panel', 'aria-labelledby': 'result-title' });
+  const counter = element('span', { class: 'subtle', 'aria-live': 'polite' });
+  resultPanel.append(element('div', { class: 'panel-head' }, [element('h2', { id: 'result-title', text: 'Tu resultado' }), counter]));
+  const resultHost = element('div');
+  const copy = button('Copiar resultado'); const saveCSV = button('Descargar CSV');
+  const saveMD = button('Descargar texto'); const saveHTML = button('HTML para imprimir');
+  const saveSVG = button('Descargar diagrama'); const zip = button('Descargar ZIP renombrado', 'primary');
+  saveSVG.hidden = spec.id !== 'R10'; zip.hidden = spec.id !== 'R15';
+  const downloads = [copy, saveCSV, saveMD, saveHTML, saveSVG, zip];
+  const actions = element('div', { class: 'result-actions' }, downloads);
+  const offline = anchor('Descargar herramienta', `./atajo-${spec.id.toLowerCase()}.html`, 'button'); offline.setAttribute('download', `atajo-${spec.id.toLowerCase()}.html`);
+  resultPanel.append(resultHost, actions, offline);
+  const workspace = element('div', { class: 'workspace' }, [inputPanel, resultPanel]); shell.append(workspace);
+  shell.append(element('p', { class: 'source' }, [
+    'La herramienta funciona con reglas locales y resultados revisables. ', anchor('Consulta o descarga su código', github, '', true), '. No hace publicaciones ni cambia otros sistemas.'
+  ])); footer(shell);
+  let result = null, svg = null, stale = false, busy = false, documentView = null, quizHost = null, diagramHost = null;
+  function say(message, error = false) { status.textContent = message; status.className = error ? 'notice error' : ''; }
+  function fail(error) { say(error instanceof Error ? error.message : 'No se pudo completar la acción. Revisa los datos y vuelve a intentar.', true); }
+  function enable() {
+    downloads.forEach(item => { item.disabled = !result || stale || busy; });
+    [sample, run, reset, upload].forEach(item => { item.disabled = busy; });
+    input.readOnly = busy; optionInputs.forEach(control => { control.disabled = busy; });
+    const batch = document.getElementById('batch-files'); if (batch) batch.disabled = busy;
+    if (!svg) saveSVG.disabled = true;
+    if (spec.id === 'R15' && !files.size) zip.disabled = true;
+  }
+  function empty() { result = null; svg = null; stale = false; documentView = null; quizHost = null; diagramHost = null; counter.textContent = '';
+    resultHost.replaceChildren(element('div', { class: 'empty' }, [element('strong', { text: 'Aquí verás el resultado.' }), element('p', { text: 'Prueba el ejemplo para entenderlo o utiliza tus propios datos. Después podrás revisar y descargar.' })])); enable(); }
+  function dirty() { if (result) { stale = true; enable(); say('La entrada cambió. Vuelve a generar para actualizar el resultado y las descargas.'); } }
+  function fileInventory(names) {
+    const first = text(spec.sample).split(/\r?\n/)[0];
+    const header = first.split(/[|,;\t]/).map(value => value.trim()).slice(0, 3);
+    if (header.length !== 3) return csvText(['original', 'fecha', 'concepto'], names.map(name => [name, '', '']));
+    return csvText(header, names.map(name => [name, '', '']));
+  }
+  function selectFiles(selected) {
+    if (!selected.length || selected.length > 100) throw new Error('Selecciona de 1 a 100 archivos para el lote.');
+    if (selected.reduce((total, file) => total + file.size, 0) > 25 * 1024 * 1024) throw new Error('El lote supera 25 MB. Selecciona menos archivos.');
+    const selectedNames = new Set(); const next = new Map();
+    for (const file of selected) { const key = file.name.toLowerCase();
+      if (selectedNames.has(key)) throw new Error(`Hay nombres de origen repetidos: ${file.name}. Usa un lote con nombres únicos.`);
+      selectedNames.add(key); next.set(file.name, file);
+    }
+    files = next; fileStatus.textContent = `${files.size} archivos solo en memoria. Los originales no se modifican.`;
+  }
+  function showQuiz(questions) {
+    const host = element('section', { 'aria-label': 'Evaluación de práctica' });
+    host.append(element('h3', { text: 'Responde y comprueba' }), element('p', { class: 'subtle', text: 'Las preguntas se construyen con reglas y con el texto que aportaste. Revisa el banco antes de usarlo para evaluar a otras personas.' }));
+    const groups = [];
+    questions.forEach((question, index) => {
+      const section = element('fieldset', { class: 'quiz-question' });
+      section.style.minWidth = '0'; section.style.border = '0';
+      section.append(element('legend', { text: `${index + 1}. ${question.question}` }));
+      const inputs = [];
+      for (const [i, choice] of (question.choices || []).entries()) {
+        const radio = element('input', { type: 'radio', name: `question-${index}`, value: i }); inputs.push(radio);
+        const label = typeof choice === 'object' ? choice.label ?? choice.text ?? choice.value : choice;
+        section.append(element('label', {}, [radio, text(label)]));
+      }
+      const feedback = element('p', { class: 'subtle', role: 'status' }); section.append(feedback); host.append(section); groups.push({ question, inputs, feedback });
+    });
+    const grade = button('Comprobar mis respuestas', 'primary'); const gradeStatus = element('p', { role: 'status', 'aria-live': 'polite' });
+    grade.addEventListener('click', () => {
+      let score = 0, answered = 0;
+      for (const { question, inputs, feedback } of groups) {
+        const selected = inputs.findIndex(input => input.checked), key = Number(question.answerIndex);
+        if (!Number.isInteger(key) || key < 0 || key >= inputs.length) { feedback.textContent = 'Esta pregunta no tiene una clave válida; revísala antes de evaluar.'; continue; }
+        const source = question.source ? ` Fuente: ${question.source}` : '';
+        const answer = question.choices[key], label = typeof answer === 'object' ? answer.label ?? answer.text ?? answer.value : answer;
+        if (selected < 0) feedback.textContent = `Sin responder. Respuesta de referencia: ${label}.${source}`;
+        else { answered++; if (selected === key) score++; feedback.textContent = `${selected === key ? 'Correcta' : 'Revisa tu respuesta'}. Referencia: ${label}.${source}`; }
+      }
+      gradeStatus.textContent = `${score} aciertos de ${questions.length} preguntas. Respondiste ${answered}. Es una práctica, no una certificación.`;
+    });
+    host.append(element('div', { class: 'actions' }, [grade]), gradeStatus); return host;
+  }
+  function render() {
+    resultHost.replaceChildren(); svg = null; documentView = null; quizHost = null; diagramHost = null;
+    counter.textContent = `${result.rows.length} filas · ${result.columns.length} columnas`;
+    if (Array.isArray(result.quiz) && result.quiz.length) { quizHost = showQuiz(result.quiz); resultHost.append(quizHost); }
+    if (result.diagram) {
+      try { svg = svgDiagram(result.diagram); if (svg) { diagramHost = element('div', { class: 'diagram' }, svg); diagramHost.style.maxHeight = '620px'; resultHost.append(diagramHost); } }
+      catch (error) { resultHost.append(element('p', { class: 'notice', text: error.message })); }
+    }
+    const editHint = element('p', { class: 'subtle', text: 'Puedes corregir las celdas antes de descargar. Las ediciones afectan la tabla y sus archivos de salida.' });
+    const table = element('table', { 'aria-label': 'Resultado editable' });
+    const tr = element('tr'); result.columns.forEach(column => tr.append(element('th', { scope: 'col', text: column })));
+    table.append(element('thead', {}, tr)); const tbody = element('tbody');
+    result.rows.forEach((row, r) => {
+      const line = element('tr');
+      row.forEach((value, c) => {
+        const cell = element('td', { contenteditable: 'plaintext-only', role: 'textbox', 'aria-label': `${result.columns[c]}, fila ${r + 1}`, spellcheck: 'false', text: value });
+        cell.addEventListener('drop', event => event.preventDefault());
+        cell.addEventListener('paste', event => {
+          event.preventDefault(); const pasted = event.clipboardData?.getData('text/plain') || '';
+          const selection = window.getSelection();
+          if (selection?.rangeCount && cell.contains(selection.anchorNode)) { const range = selection.getRangeAt(0); range.deleteContents(); const node = document.createTextNode(pasted); range.insertNode(node); range.setStartAfter(node); range.collapse(true); selection.removeAllRanges(); selection.addRange(range); }
+          else cell.append(document.createTextNode(pasted));
+          cell.dispatchEvent(new Event('input', { bubbles: true }));
+        });
+        cell.addEventListener('input', () => {
+          if (!result) return;
+          result.rows[r][c] = cell.innerText || cell.textContent || ''; delete result.markdown;
+          if (documentView) { documentView.hidden = true; documentView = null; }
+          if (diagramHost) { diagramHost.remove(); diagramHost = null; svg = null; delete result.diagram; }
+          if (quizHost) { quizHost.remove(); quizHost = null; delete result.quiz; }
+          enable(); say('Tabla actualizada. Las descargas usarán tus cambios; vuelve a generar si necesitas reconstruir el documento, diagrama o cuestionario.');
+        });
+        line.append(cell);
+      }); tbody.append(line);
+    }); table.append(tbody);
+    const scroll = element('div', { class: 'scroll', tabindex: '0', 'aria-label': 'Desliza para revisar todas las columnas' }, table);
+    if (result.quiz?.length) {
+      const details = element('details'); details.append(element('summary', { text: 'Ver banco y fuentes (puede incluir las respuestas)' }), editHint, scroll); resultHost.append(details);
+    } else resultHost.append(editHint, scroll);
+    if (result.markdown) {
+      documentView = element('details'); documentView.append(element('summary', { text: 'Ver documento de salida' }), element('pre', { class: 'document', text: result.markdown })); resultHost.append(documentView);
+    }
+    for (const note of result.notes || []) resultHost.append(element('p', { class: 'notice', text: note }));
+    enable();
+  }
+  function execute() {
+    if (busy) return;
+    try {
+      result = null; stale = false; enable();
+      const opts = Object.fromEntries([...optionInputs].map(([key, control]) => [key, control.value]));
+      const next = validResult(spec.run(input.value, opts));
+      result = { ...next, columns: next.columns.map(text), rows: next.rows.map(row => row.map(text)) };
+      render(); say(`Listo: ${result.rows.length} filas generadas en esta pestaña. Revisa los datos antes de usarlos.`);
+    } catch (error) { empty(); fail(error); }
+  }
+  function requireCurrent() { if (!result || stale) throw new Error('Genera de nuevo el resultado antes de descargar.'); return result; }
+  sample.addEventListener('click', () => {
+    try {
+      for (const option of spec.options || []) optionInputs.get(option.key).value = text(option.value);
+      if (spec.id === 'R15') {
+        const examples = JSON.parse(document.getElementById('file-examples')?.textContent || '[]');
+        if (!Array.isArray(examples) || !examples.length) throw new Error('No hay archivos de ejemplo incluidos en esta página. Selecciona tus copias para probar el ZIP.');
+        selectFiles(examples.map(file => { if (!file.name || typeof file.text !== 'string') throw new Error('Un archivo de ejemplo no tiene nombre o contenido válido.');
+          return new File([file.text], safeFilename(file.name), { type: 'text/plain;charset=utf-8' }); }));
+      }
+      input.value = spec.sample || ''; execute();
+    } catch (error) { empty(); fail(error); }
+  });
+  run.addEventListener('click', execute); input.addEventListener('input', dirty);
+  optionInputs.forEach(control => { control.addEventListener('input', dirty); control.addEventListener('change', dirty); });
+  upload.addEventListener('change', async () => {
+    try {
+      const file = upload.files?.[0]; if (!file) return;
+      if (!/\.(txt|csv|md)$/i.test(file.name)) throw new Error('Abre un archivo TXT, CSV o MD.');
+      if (file.size > 2 * 1024 * 1024) throw new Error('El archivo supera 2 MB. Usa un bloque más pequeño.');
+      const content = await file.text(); input.value = content; dirty(); say(`Se abrió ${file.name} solo en esta pestaña. Revisa los datos y genera el resultado.`);
+    } catch (error) { fail(error); }
+  });
+  reset.addEventListener('click', () => { if (busy) return; input.value = ''; upload.value = ''; files = new Map(); const batch = document.getElementById('batch-files'); if (batch) batch.value = ''; fileStatus.textContent = ''; empty(); say('Datos y resultados borrados de esta pestaña.'); input.focus(); });
+  copy.addEventListener('click', async () => {
+    try { const current = requireCurrent(), content = csvText(current.columns, current.rows);
+      let copied = false;
+      if (navigator.clipboard?.writeText) { try { await navigator.clipboard.writeText(content); copied = true; } catch { /* El archivo sin conexión puede no tener acceso al portapapeles moderno. */ } }
+      if (!copied) {
+        const temporary = element('textarea', { 'aria-label': 'Resultado para copiar' }); temporary.value = content;
+        temporary.style.position = 'fixed'; temporary.style.left = '-10000px'; document.body.append(temporary); temporary.select();
+        try { copied = document.execCommand('copy'); } finally { temporary.remove(); }
+      }
+      if (!copied) throw new Error('No se pudo copiar automáticamente. Descarga el CSV o selecciona la tabla y copia con Ctrl+C.');
+      say('Resultado copiado como CSV. Puedes pegarlo en tu hoja de cálculo.');
+    } catch (error) { fail(error); }
+  });
+  saveCSV.addEventListener('click', () => { try { const r = requireCurrent(); downloadText(csvText(r.columns, r.rows), `${spec.id}-resultado.csv`, 'text/csv;charset=utf-8'); say('CSV preparado con el resultado actual.'); } catch (error) { fail(error); } });
+  saveMD.addEventListener('click', () => { try { const r = requireCurrent(); downloadText(markdownText(r, spec.title), `${spec.id}-resultado.md`, 'text/markdown;charset=utf-8'); say('Documento de texto preparado con el resultado actual.'); } catch (error) { fail(error); } });
+  saveHTML.addEventListener('click', () => { try { const r = requireCurrent(); downloadText(printableHTML(r, spec.title), `${spec.id}-resultado.html`, 'text/html;charset=utf-8'); say('HTML preparado. Ábrelo y usa Imprimir para guardarlo como PDF si tu navegador lo permite.'); } catch (error) { fail(error); } });
+  saveSVG.addEventListener('click', () => { try { requireCurrent(); if (!svg) throw new Error('Vuelve a generar un diagrama válido antes de descargarlo.'); downloadText(new XMLSerializer().serializeToString(svg), `${spec.id}-diagrama.svg`, 'image/svg+xml;charset=utf-8'); say('Diagrama SVG preparado.'); } catch (error) { fail(error); } });
+  zip.addEventListener('click', async () => {
+    try {
+      const current = requireCurrent();
+      const entries = validateRenamePlan(current, files);
+      busy = true; enable(); say('Preparando el ZIP con copias de los archivos, sin cambiar los originales…');
+      const blob = await makeZIP(entries); download(blob, 'Atajo-IA-archivos-renombrados.zip');
+      say(`ZIP preparado con ${entries.length} copias renombradas. Extráelo en una carpeta nueva; los originales permanecen intactos.`);
+    } catch (error) { fail(error); }
+    finally { busy = false; enable(); }
+  });
+  empty();
+}
+
+if (root) {
+  const shell = scaffold();
+  if (!id) gallery(shell);
+  else if (tools[id]) toolPage(shell, tools[id]);
+  else { shell.append(element('section', { class: 'hero' }, [element('h1', { text: 'No encontramos esta herramienta.' }), anchor('Ver todas las herramientas', `${base}herramientas/`, 'button primary')])); footer(shell); }
+}
+</script></body></html>

@@ -1,0 +1,6 @@
+cliente: Taller Horizonte
+alcance: Una hoja de registro de solicitudes, una guía de dos páginas y una revisión de 30 minutos.
+precio: 3200 MXN
+entrega: Por confirmar
+exclusiones: Integraciones, carga de historial y mantenimiento.
+pago: Por confirmar

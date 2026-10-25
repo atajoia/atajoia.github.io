@@ -1,32 +1,103 @@
 {
   "reel_id": "R18",
-  "title": "Comparador de Cotizaciones y Matriz de Decisión de Compras",
+  "title": "Calcula y revisa cinco o más cotizaciones",
   "keyword": "COTIZA",
-  "slug": "comparador-de-cotizaciones-y-matriz-de-decision-de-compras",
+  "slug": "r18",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "c5885064aa0530d0bfe94896a04f931d3d6d43cd133a27460def813948ca944d",
+      "bytes": 6574
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "bc2be0c90a08af95e0cce33f15714c49f9b19d8c6e27528fbea3c574968f1e58",
+      "bytes": 281
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "14d07d01f9a85ad0b5c2c778d3be2c5bd8765d901c3627b1fc69a940bb2b849f",
+      "bytes": 835
     },
     {
       "name": "plantilla_cotiza.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (PROVEEDOR, ENTREGA, COSTO NETO, DECISIÓN); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "cd48f8789abb31cd133c5b07fcaa32e31643346ca67b00f44958d17164da8af4",
+      "bytes": 74
     },
     {
-      "name": "extraer_cotizaciones_pdf.py",
-      "kind": "script",
-      "description": "Extrae el texto y las tablas de todos los archivos PDF de cotizaciones en una carpeta local y los une en un archivo de texto o Excel para facilitar su revisión y comparación."
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "7d3a7a0dce346844aedde610e754d0bf33060a78aee9bc95c446b2fba15ab284",
+      "bytes": 534
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "14b6eb814f7e01d4f47755a8a224cac23f7c53cee3e7f0e79f2d0d3402e44360",
+      "bytes": 528
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "52a63b51e9d44e6dbd603f08029100c36f11b4ca1d9c3adc66f305ed587a93c8",
+      "bytes": 1410
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "343c79714be6c477d133e924b870a7dceb9bf3167c23ac448e317b6a0978df99",
+      "bytes": 1023
     }
   ],
-  "has_code": true,
-  "resource_label": "Prompt maestro + plantilla CSV + script de Python",
-  "created_at": "2026-10-19T00:16:37",
-  "model": "gemini:gemini-4-argon"
+  "has_code": false,
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "d08f5950619bef9205c0d87550ee38ded8dfb82673ab5c5b94db55da1a03b17d",
+  "resource_source_hash": "aa450451e9248dcc99c15c28d9e33f14a1bc847b",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R18 de Atajo IA",
+      "url": "https://atajoia.github.io/R18/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: usar Gemini Apps mediante preguntas de texto",
+      "url": "https://support.google.com/gemini/answer/13275745?hl=es"
+    },
+    {
+      "title": "Google: crear y editar hojas de cálculo",
+      "url": "https://support.google.com/docs/answer/6000292?hl=es"
+    },
+    {
+      "title": "Google: configuración regional para números y moneda en Sheets",
+      "url": "https://support.google.com/docs/answer/58515?hl=es"
+    }
+  ],
+  "expected_rows": 5,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r18.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

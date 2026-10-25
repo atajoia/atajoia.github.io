@@ -1,27 +1,103 @@
 {
   "reel_id": "R08",
-  "title": "Guía de entrenamiento de voz comercial con estructura de 5 pasos",
+  "title": "Propuesta comercial con datos controlados",
   "keyword": "ESTILO",
-  "slug": "guia-de-entrenamiento-de-voz-comercial-con-estructura-de-5-p",
+  "slug": "r08",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.",
+      "sha256": "1c6e3aa6045824c04682b2e720464ffa5444a5ba02b0bb242e8fce5feb4dd0b8",
+      "bytes": 6222
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Datos ficticios completos para practicar sin preparar archivos adicionales.",
+      "sha256": "0302cd19ad58559153fb50c38e10cffda2379eda85ff9257f44e6e386161a969",
+      "bytes": 259
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Instrucción completa; se usa junto con los datos de práctica incluidos.",
+      "sha256": "69950693d8fde4782c34810900a7b4e3989f15cc0f84a0a3730e1784bb291ca4",
+      "bytes": 834
     },
     {
       "name": "plantilla_estilo.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (SECCIÓN, TONO APLICADO, INVERSIÓN, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía para usar con tus propios datos.",
+      "sha256": "b2915029fc179fad6b3b613b8d10082e873bb4588c27e2acd25b22f10b88fb42",
+      "bytes": 41
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.",
+      "sha256": "6a7f4471b333ccbaf527ee44255708c3945661fbe3e520f0d64c844a94eb6f17",
+      "bytes": 593
+    },
+    {
+      "name": "OPCIONES_EJEMPLO.txt",
+      "kind": "guide",
+      "description": "Configuración exacta utilizada para obtener la referencia descargable.",
+      "sha256": "254105771a5670e3fe8eedcf1b1d35a2e7831789f86958a60cfa8e9740e2b94d",
+      "bytes": 307
+    },
+    {
+      "name": "RESULTADO_EJEMPLO.md",
+      "kind": "example",
+      "description": "Documento calculado por la miniaplicación con su muestra y opciones actuales.",
+      "sha256": "39a54267528017e563b2b2e0f370be5a495e78967e8e101c8b8e76429338addd",
+      "bytes": 485
+    },
+    {
+      "name": "COMPROBACIONES.md",
+      "kind": "guide",
+      "description": "Uso, opciones y límites reales de la salida actual.",
+      "sha256": "d17796d7a54b2655ef446daf1c6f967193ed2fe1dea67057ef57d9afeccf0459",
+      "bytes": 799
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-17T16:49:44",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Mini aplicación web + guía + archivos de práctica",
+  "created_at": "2026-10-25T11:53:35",
+  "model": "editorial:sin-llm",
+  "resource_revision": "2026-10-25",
+  "library_hash": "9e7a1b08cdaedf0d1b16b8f1c528efcb83dbe261caa515086ebbab6e7467ed8c",
+  "resource_source_hash": "f1ab04b468bce457d7423a1721e9f926c201a534",
+  "relation_to_video": "guía ampliada con ejercicio de práctica",
+  "sources": [
+    {
+      "title": "Mini aplicación web R08 de Atajo IA",
+      "url": "https://atajoia.github.io/R08/app/"
+    },
+    {
+      "title": "Código público y descargas de Atajo IA en GitHub",
+      "url": "https://github.com/atajoia/atajoia.github.io"
+    },
+    {
+      "title": "Google: acceso a Gemini web",
+      "url": "https://support.google.com/gemini/answer/13278668?hl=es"
+    },
+    {
+      "title": "Google: crear y descargar documentos",
+      "url": "https://support.google.com/docs/answer/49114?hl=es"
+    },
+    {
+      "title": "Google: privacidad de Gemini",
+      "url": "https://support.google.com/gemini/answer/13594961?hl=es"
+    }
+  ],
+  "expected_rows": 5,
+  "web_app": {
+    "url": "app/",
+    "download": "app/atajo-r08.html",
+    "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
+    "version": "177ebc42cc7c",
+    "execution": "browser",
+    "requires_paid_api": false
+  }
 }

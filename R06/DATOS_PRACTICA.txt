@@ -1,0 +1,5 @@
+nombre,calificacion,resena
+Persona A,5,Me gustó el café
+Persona B,2,Esperé demasiado
+Persona C,3,Quiero un descuento
+Persona D,1,Aparecen dos cargos en mi tarjeta

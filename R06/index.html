@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="atajo-publish-site">
-<title>Reseñas: responder con empatía · Recurso gratis #R06 · Atajo IA</title>
-<meta name="description" content="Preparar respuestas breves sin prometer descuentos, reembolsos ni soluciones no aprobadas."><meta name="theme-color" content="#000000">
+<title>Prepara respuestas a reseñas · Recurso gratis #R06 · Atajo IA</title>
+<meta name="description" content="Genera borradores por reglas y escala situaciones sensibles. No publica ni ofrece compensaciones. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales."><meta name="theme-color" content="#000000">
 <style>
 :root{color-scheme:dark;--bg:#000;--soft:#0a0a0c;--card:#111114;--card-hi:#17171b;--line:rgba(255,255,255,.08);
  --line-hi:rgba(255,255,255,.16);--fg:#f5f5f7;--mut:#a1a1a6;--dim:#8e8e93;--cyan:#5ee7ff;--cyan-ink:#001a22;
@@ -169,97 +169,93 @@ details.guide pre{font-size:15px;line-height:1.7}
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
 <span>#R06</span><span>RESPONDE</span></p>
-<h1>Reseñas: responder con empatía</h1>
-<p class="lede">Preparar respuestas breves sin prometer descuentos, reembolsos ni soluciones no aprobadas.</p><p class="incl">Incluye: Prompt maestro + plantilla CSV</p>
+<h1>Prepara respuestas a reseñas</h1>
+<p class="lede">Genera borradores por reglas y escala situaciones sensibles. No publica ni ofrece compensaciones. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.</p><p class="incl">Incluye: Mini aplicación web + guía + archivos de práctica</p>
 </header>
-<section class="start" aria-labelledby="R06-start-t"><h2 id="R06-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R06-inicio">Ir al prompt</a><a href="#R06-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
-<section id="R06-inicio" class="panel app" data-app aria-labelledby="R06-app-t"><div class="panel-head"><h2 id="R06-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R06-campo-1">Tipo de negocio</label><input id="R06-campo-1" type="text" data-marker="TIPO DE NEGOCIO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R06-campo-2">Tono</label><input id="R06-campo-2" type="text" data-marker="TONO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R06-campo-3">Paso aprobado</label><input id="R06-campo-3" type="text" data-marker="PASO APROBADO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R06-campo-4">Texto</label><textarea id="R06-campo-4" data-marker="TEXTO" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R06-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Redacta 3 respuestas posibles a esta reseña de <mark data-marker="TIPO DE NEGOCIO">[TIPO DE NEGOCIO]</mark>. Mantén un tono <mark data-marker="TONO">[TONO]</mark>, reconoce el punto concreto y ofrece un siguiente paso que sí puedo cumplir: <mark data-marker="PASO APROBADO">[PASO APROBADO]</mark>. No discutas, no reveles datos del cliente y no prometas compensaciones, reembolsos o resultados. Si la reseña plantea una disputa o un tema legal, recomienda que una persona responsable la revise. Reseña anonimizada: <mark data-marker="TEXTO">[TEXTO]</mark>.</pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
-var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
-function setup(app){
-var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
-if(!pre||!btn||!out){return;}
-var parts=[],n,k;
-for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
-var inputs=box?box.querySelectorAll("[data-marker]"):[];
-function render(){var v=Object.create(null),j,p,el,x;
-for(j=0;j<inputs.length;j++){x=inputs[j].value.trim();if(x){v[inputs[j].getAttribute("data-marker")]=x;}}
-while(pre.firstChild){pre.removeChild(pre.firstChild);}
-for(j=0;j<parts.length;j++){p=parts[j];
-if(p.m===undefined){pre.appendChild(document.createTextNode(p.t));}
-else if(v[p.m]){el=document.createElement("span");el.className="filled";el.textContent=v[p.m];pre.appendChild(el);}
-else{el=document.createElement("mark");el.setAttribute("data-marker",p.m);el.textContent="["+p.m+"]";pre.appendChild(el);}}}
-for(k=0;k<inputs.length;k++){inputs[k].addEventListener("input",render);}
-function say(msg){out.textContent=(out.textContent===msg)?msg+String.fromCharCode(160):msg;}
-function pick(){var r=document.createRange(),s=window.getSelection();r.selectNodeContents(pre);if(s){s.removeAllRanges();s.addRange(r);}}
-function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
-ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
-try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function copy(text,button){var label=button.textContent;
-function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
-window.setTimeout(function(){button.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}}
-btn.addEventListener("click",function(){copy(pre.textContent,btn);});
-var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
-if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
-if(box){box.hidden=false;}btn.hidden=false;}
-})();</script>
+<section class="start"><h2>Usa la mini aplicación</h2><p>Procesa tus datos en el navegador y descarga el resultado. Gratis y sin registro.</p><p><a class="btn big" href="app/">Abrir herramienta →</a> <a class="btn ghost" href="app/atajo-r06.html" download>Descargar herramienta HTML</a></p><p class="fine">Puedes abrir el archivo HTML descargado en tu navegador. Los originales no se modifican.</p></section>
 
-<section id="R06-descargas" class="panel" aria-labelledby="R06-dl-t"><div class="panel-head"><h2 id="R06-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_responde.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_responde.csv · 383 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (CLIENTE, RESEÑA, RESPUESTA, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 3.6 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 2.9 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li></ul></section>
+
+<section class="panel" id="R06-resultado" aria-labelledby="R06-result-t"><h2 id="R06-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios de la guía. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">Nombre</th><th scope="col">Calificación</th><th scope="col">Reseña</th><th scope="col">Borrador</th><th scope="col">Estado</th></tr></thead><tbody><tr><td>Persona A</td><td>5</td><td>Me gustó el café</td><td>Gracias por compartir tu opinión. Apreciamos conocer tu experiencia.</td><td>BORRADOR PARA REVISAR</td></tr><tr><td>Persona B</td><td>2</td><td>Esperé demasiado</td><td>Gracias por describir tu experiencia. Lamentamos que no haya cubierto tus expectativas. Tus comentarios requieren revisión de la persona responsable.</td><td>BORRADOR PARA REVISAR</td></tr><tr><td>Persona C</td><td>3</td><td>Quiero un descuento</td><td>Gracias por compartir tu inquietud. Este borrador no confirma descuentos ni compensaciones. La persona responsable debe revisar tu solicitud.</td><td>BORRADOR PARA REVISAR</td></tr><tr><td>Persona D</td><td>1</td><td>Aparecen dos cargos en mi tarjeta</td><td>Lamentamos la experiencia que describes. Tu reporte requiere revisión privada de la persona responsable. Evita publicar aquí datos personales o de pago.</td><td>ESCALAR ANTES DE PUBLICAR</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R06-descargas" class="panel" aria-labelledby="R06-dl-t"><div class="panel-head"><h2 id="R06-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_responde.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_responde.csv · 49 B</small></span></a><p class="dl-desc">Plantilla vacía para usar con tus propios datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 6.1 KB</small></span></a><p class="dl-desc">Guía completa con requisitos, pasos, comprobaciones y soluciones a problemas frecuentes.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 822 B</small></span></a><p class="dl-desc">Instrucción completa; se usa junto con los datos de práctica incluidos.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 171 B</small></span></a><p class="dl-desc">Datos ficticios completos para practicar sin preparar archivos adicionales.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 802 B</small></span></a><p class="dl-desc">Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.</p></li><li><a class="dl" href="OPCIONES_EJEMPLO.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar OPCIONES_EJEMPLO.txt</b><small>OPCIONES_EJEMPLO.txt · 408 B</small></span></a><p class="dl-desc">Configuración exacta utilizada para obtener la referencia descargable.</p></li><li><a class="dl" href="COMPROBACIONES.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar COMPROBACIONES.md</b><small>COMPROBACIONES.md · 1.1 KB</small></span></a><p class="dl-desc">Uso, opciones y límites reales de la salida actual.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
-<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Reseñas: responder con empatía
+<details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Prepara respuestas a reseñas
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R06 · Responde 30 Reseñas de Google en 5 Minutos con IA** (palabra clave: RESPONDE).
-
-&gt; **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R06 · RESPONDE
 
 ## Qué es
 
-Esta guía ayuda a dueños de negocio y encargados de atención a clientes a preparar borradores de respuesta para reseñas públicas de forma ordenada. Facilita mantener un tono empático sin prometer descuentos, reembolsos ni soluciones fuera de tus políticas. No publica respuestas de forma automática ni sustituye el criterio humano ante quejas graves o temas legales.
+Genera borradores por reglas y escala situaciones sensibles. No publica ni ofrece compensaciones. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
 
-**Para qué sirve:** Preparar respuestas breves sin prometer descuentos, reembolsos ni soluciones no aprobadas.
+## Herramienta y preparación
+
+Mini aplicación web R06 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_responde.csv`: Plantilla con las columnas de la demo (CLIENTE, RESEÑA, RESPUESTA, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Acceso a un asistente de IA aprobado por tu organización.
-- Excel, Google Sheets o cualquier lector de hojas de cálculo para abrir la plantilla CSV.
-- Políticas claras de tu negocio sobre qué pasos de seguimiento sí puedes ofrecer.
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_responde.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Abre la plantilla CSV incluida y copia tus reseñas pendientes en la columna correspondiente.
-2. Revisa el texto de cada comentario y elimina datos personales como teléfonos, correos, números de pedido o apellidos completos antes de usar la IA.
-3. Abre el archivo PROMPT_MAESTRO.md, copia el prompt principal y reemplaza los marcadores con el giro de tu negocio, el tono deseado y el paso de seguimiento autorizado.
-4. Pega la reseña anonimizada en tu asistente de IA junto con el prompt para obtener tres opciones de borrador.
-5. Elige la opción más adecuada, pégala en la columna de respuesta de tu plantilla CSV y ajústala para que suene natural.
-6. Verifica cada borrador contra la reseña original para confirmar que atiende el comentario real sin inventar políticas ni prometer compensaciones no autorizadas.
-7. Cambia el estado en tu tabla a medida que publiques manualmente cada respuesta en tu plataforma de reseñas.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R06/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** nombre,calificacion,resena. Son plantillas editables; no un chatbot conectado. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Preparar borradores». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 4 filas y 5 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Personaliza la respuesta y elimina datos privados.
-- Confirma que el negocio puede cumplir el siguiente paso.
-- Escala disputas, amenazas, lesiones o asuntos legales.
-- Personaliza la respuesta final y elimina cualquier dato privado del cliente o de tu personal antes de enviarla a la IA o publicarla.
-- Confirma siempre que tu negocio realmente puede cumplir el siguiente paso ofrecido en el borrador (evita que la IA invente descuentos o garantías).
-- Escala de inmediato a una persona responsable cualquier reseña que mencione disputas de cobro, amenazas, riesgos a la salud o asuntos legales; no las respondas con plantillas automáticas.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R06 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega &quot;tal cual&quot;, sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-16. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 4 filas y 5 columnas en este orden: Nombre | Calificación | Reseña | Borrador | Estado.
+- La primera fila de referencia es: Persona A | 5 | Me gustó el café | Gracias por compartir tu opinión. Apreciamos conocer tu experiencia. | BORRADOR PARA REVISAR.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Redacción con plantillas por reglas; no conecta con Google ni envía respuestas. Personaliza cada borrador antes de usarlo.
+- Nunca concede descuentos, reembolsos, cambios ya realizados o investigaciones concluidas. No pide modificar la reseña ni ofrece incentivos.
+- No se añadió un contacto: no se inventa teléfono, correo o enlace.
+- Casos de cobro, salud, trato o amenazas se escalan; la calificación no sustituye una investigación. No hay traducción automática: elige el idioma del borrador.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R06 de Atajo IA](https://atajoia.github.io/R06/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: leer y responder reseñas de un Perfil de Empresa](https://support.google.com/business/answer/3474050?hl=es-es)
+- [Google: buenas prácticas y prohibición de incentivos por reseñas](https://support.google.com/business/answer/3474122?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
 </pre></details>
-<section class="stack" aria-labelledby="R06-stack-t"><h2 id="R06-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">ChatGPT</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Para subir tu archivo de reseñas y generar todas las respuestas en lote usando el prompt maestro.</p><a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Microsoft Excel</span><code class="tool-cat">Hojas de cálculo</code></div><p class="tool-why">Para organizar las reseñas pendientes antes de procesarlas y guardar el historial de respuestas.</p><a class="tool-link" href="https://www.microsoft.com/microsoft-365/excel" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

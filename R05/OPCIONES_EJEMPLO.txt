@@ -1,0 +1,13 @@
+Opciones usadas para el resultado de referencia · R05
+Edición: 2026-10-25
+
+Catálogo CSV: sku,costo_unitario (catalog):
+sku,costo_unitario
+A100,80
+A200,120
+B100,45
+
+Revisar margen de línea menor que (threshold):
+100
+
+Para reproducir RESULTADO_ESPERADO.csv usa exactamente DATOS_PRACTICA.txt y estas opciones. Si cambias la fecha de referencia, los umbrales o el catálogo, el resultado puede cambiar de forma válida.

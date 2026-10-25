@@ -1,44 +1,76 @@
-# Guía: Limpiador Automático de Bases en Excel
+# Limpia y revisa una base sin perder registros
 
-Recurso gratuito de **Atajo IA** que acompaña al reel **R14 · Limpiador Automático de Bases en Excel** (palabra clave: LIMPIEZA).
-
-> **Material educativo.** Úsalo como borrador: revisa cada resultado antes de usarlo o compartirlo. No sustituye la revisión de una persona ni la asesoría profesional.
+Recurso gratuito de Atajo IA · R14 · LIMPIEZA
 
 ## Qué es
 
-Este recurso ayuda a oficinistas, vendedores y administradores a estandarizar nombres, dar formato a teléfonos de 10 dígitos y agrupar registros duplicados sumando sus saldos en tablas de Excel o CSV. No reemplaza la validación contable ni garantiza exactitud absoluta: el archivo generado es un borrador que siempre debe revisarse contra la fuente original.
+Normaliza espacios y teléfonos como propuesta, conserva cada fila y señala IDs repetidos o conflictivos. No suma saldos ni decide identidades por nombre. Funciona gratis en la web con reglas locales; los complementos de texto son opcionales.
+
+## Herramienta y preparación
+
+Mini aplicación web R14 de Atajo IA, en tu navegador
+
+- Un navegador moderno con JavaScript habilitado. No se requiere cuenta, tarjeta, API ni suscripción para usar esta miniaplicación.
+- Usa el ejemplo ficticio incluido o una copia autorizada de tus propios datos. Conserva el original antes de cambiar o descargar resultados.
+
+Este ejercicio usa datos ficticios incluidos. La referencia es ilustrativa; no acredita una ejecución de la herramienta. La guía amplía el tema del video y sus datos de práctica pueden ser diferentes de los de la pieza original.
 
 ## Qué incluye
 
-- `README.md`: Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.
-- `PROMPT_MAESTRO.md`: Prompts listos para copiar en tu asistente de IA.
-- `plantilla_limpieza.csv`: Plantilla con las columnas de la demo (CLIENTE, TELÉFONO, SALDO, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.
-
-## Requisitos
-
-- Excel, Google Sheets o cualquier programa de hojas de cálculo para abrir la plantilla CSV y tus archivos.
-- Un asistente de IA aprobado por tu organización que permita subir archivos (o bien copiar y pegar fragmentos de tabla).
+- `DATOS_PRACTICA.txt`: Datos ficticios completos para practicar sin preparar archivos adicionales.
+- `PROMPT_MAESTRO.md`: Instrucción completa; se usa junto con los datos de práctica incluidos.
+- `plantilla_limpieza.csv`: Plantilla vacía para usar con tus propios datos.
+- `RESULTADO_ESPERADO.csv`: Referencia ilustrativa resuelta con los datos de práctica; comprueba cada dato.
+- `OPCIONES_EJEMPLO.txt`: Configuración exacta utilizada para obtener la referencia descargable.
+- `RESULTADO_EJEMPLO.md`: Documento calculado por la miniaplicación con su muestra y opciones actuales.
+- `COMPROBACIONES.md`: Uso, opciones y límites reales de la salida actual.
 
 ## Cómo usarlo paso a paso
 
-1. Haz una copia de respaldo de tu archivo original antes de empezar y nunca trabajes sobre tu única versión.
-2. Revisa la estructura de la plantilla CSV incluida para ubicar las columnas requeridas: CLIENTE, TELÉFONO, SALDO y ESTADO.
-3. Si usarás un asistente de IA en la nube, elimina primero columnas sensibles (RFC, direcciones, cuentas bancarias) o usa datos anonimizados.
-4. Abre el archivo PROMPT_MAESTRO.md, copia la instrucción principal, pégala en tu asistente de IA junto con tu tabla y llena los [MARCADORES] con los nombres reales de tus columnas.
-5. Descarga o abre el archivo resultante y compara la suma total de la columna SALDO antes y después de la limpieza para confirmar que no se perdieron montos.
-6. Revisa manualmente las filas marcadas como UNIFICADO o REVISION_MANUAL contra tu archivo original antes de usar la base en tu operación diaria.
+1. **Abre la miniaplicación:** Abre https://atajoia.github.io/R14/app/ y pulsa Usar ejemplo. No necesitas iniciar sesión ni abrir un servicio de IA.
+2. **Pega tus datos y revisa opciones:** Incluye id_cliente (o id); nombre, teléfono y saldo son opcionales. Hasta 1000 filas. Las columnas originales se conservan. Para reproducir la referencia, pega exactamente DATOS_PRACTICA.txt. Configura los campos con OPCIONES_EJEMPLO.txt; allí se incluyen las opciones y entradas auxiliares completas.
+3. **Ejecuta la herramienta:** Pulsa «Revisar y preparar propuesta». La función procesa la entrada en el navegador con reglas locales. No consulta un modelo ni opera servicios externos.
+4. **Revisa la tabla editable:** Contrasta la tabla con tus datos originales y con las comprobaciones de esta guía. El ejemplo produce 7 filas y 8 columnas. Edita el resultado si hace falta; un borrador o una advertencia no equivale a una acción ejecutada.
+5. **Descarga o conserva tu trabajo:** Usa Descargar CSV para la tabla revisada. También puedes guardar el documento Markdown o reporte HTML que ofrezca la app. Usa la descarga de la aplicación para conservar su versión local; verifica el archivo descargado antes de depender de él. No hace falta abrir un asistente externo ni pegar un prompt.
 
-## Privacidad y advertencias
+## Prompt completo
 
-- Anonimiza datos personales y confidenciales antes de usar cualquier herramienta de IA.
-- Verifica cifras, nombres, fechas y compromisos contra la fuente original.
-- Revisa el resultado antes de compartirlo: es un borrador, no una respuesta final.
-- No subas bases con datos personales sensibles o fiscales (RFC, CURP, domicilios particulares, cuentas bancarias) a herramientas de IA públicas; usa solo herramientas autorizadas por tu organización.
-- La agrupación automática por similitud de nombres puede juntar a dos personas distintas (homónimos o familiares con el mismo teléfono). Revisa siempre cada fila marcada como UNIFICADO antes de tomar decisiones de cobro o facturación.
-- No subas documentos con datos personales, financieros o confidenciales a herramientas de IA que tu organización no haya aprobado.
+```text
+REVISIÓN OPCIONAL. Esta instrucción no es necesaria para usar la miniaplicación y no activa una API. Revisa manualmente, o con un asistente que ya tengas autorizado, la entrada de R14 que aparece debajo y la configuración de OPCIONES_EJEMPLO.txt. Contrasta el resultado con RESULTADO_ESPERADO.csv: conserva los valores explícitos, identifica datos ausentes o ambiguos y no inventes responsables, fechas, importes, envíos, aprobaciones o funciones. Explica cualquier diferencia y pide confirmación antes de convertir un borrador en una acción. No afirmes haber ejecutado un SaaS, publicado, cobrado o enviado algo. Los datos completos de práctica están debajo.
+```
 
-## Licencia
+Añade debajo DATOS_PRACTICA.txt. Para tu caso, reemplaza los datos del ejemplo por información anonimizada.
 
-Licencia sugerida: **MIT**. Puedes usar, copiar, modificar y compartir este material, incluso con fines comerciales, siempre que conserves este aviso. Se entrega "tal cual", sin garantías de ningún tipo: es material educativo de Atajo IA y no constituye asesoría profesional.
+## Cómo comprobar tu resultado
 
-_Borrador preparado con ayuda de IA el 2026-10-17. Revísalo antes de usarlo._
+- Con DATOS_PRACTICA.txt y OPCIONES_EJEMPLO.txt, el resultado tiene 7 filas y 8 columnas en este orden: Fila de origen | id_cliente | nombre | telefono | saldo | Nombre propuesto | Teléfono propuesto | Revisión.
+- La primera fila de referencia es: 1 | C001 |  ana  lopez  | 55 1000 1001 | 1200.00 | ana lopez | 5510001001 | Repetición por ID en filas 1, 3: conservar, no sumar.
+- Las filas descargadas corresponden a la tabla revisada; los valores ausentes no se completan con datos inventados.
+- Se conservan 7 filas y todas las columnas originales. Las propuestas no sobrescriben los datos.
+- Los IDs se comparan después de quitar espacios externos, respetando mayúsculas. Nombres parecidos no prueban identidad.
+- No se ha sumado, sustituido ni consolidado ningún saldo. La coincidencia de reglas no certifica que los datos sean correctos.
+
+Abre RESULTADO_ESPERADO.csv para comparar. Las respuestas pueden variar en redacción, no en los datos de origen.
+
+## Si algo no funciona
+
+- Si la app no muestra resultados, revisa el mensaje de error, los encabezados, separadores y opciones; vuelve a cargar el ejemplo para comprobar la estructura.
+- Si cambiaste una fecha de corte, umbral o tabla auxiliar, el resultado puede diferir de la referencia. Restaura las opciones documentadas para reproducir la muestra.
+- Si una entrada supera el límite de la herramienta, trabaja por bloques conservando el original. No envíes datos privados a un tercero para solucionar el formato.
+- Los prompts y ejercicios antiguos son complementos opcionales: la miniaplicación funciona sin Gemini u otro servicio externo.
+
+## Fuentes oficiales
+
+- [Mini aplicación web R14 de Atajo IA](https://atajoia.github.io/R14/app/)
+- [Código público y descargas de Atajo IA en GitHub](https://github.com/atajoia/atajoia.github.io)
+- [Google: usar Gemini Apps mediante preguntas de texto](https://support.google.com/gemini/answer/13275745?hl=es)
+- [Google: crear y editar hojas de cálculo](https://support.google.com/docs/answer/6000292?hl=es)
+- [Google: separar texto, quitar duplicados y recortar espacios; límites de la función](https://support.google.com/docs/answer/6325535?hl=es)
+
+## Uso responsable
+
+Trabaja con copias y datos ficticios. Revisa cada cifra, fecha y compromiso antes de usarlo. No pegues datos personales o confidenciales en herramientas que tu organización no haya aprobado. El recurso es gratuito y no exige comentar, registrarte ni comprar.
+
+Licencia MIT. Material educativo de Atajo IA, sin garantías.
+
+Edición revisada: 2026-10-25. Las opciones de una herramienta pueden variar según cuenta, idioma y disponibilidad.
