@@ -1,27 +1,38 @@
 {
   "reel_id": "R03",
-  "title": "Minuta: acuerdos, responsables y fechas",
+  "title": "Minuta en Gemini sin inventar responsables",
   "keyword": "MINUTA",
-  "slug": "minuta-acuerdos-responsables-y-fechas",
+  "slug": "r03",
   "files": [
     {
       "name": "README.md",
       "kind": "readme",
-      "description": "Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad."
+      "description": "Pasos completos, requisitos, fuente y comprobación del video."
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Entrada del video: datos ficticios para repetir el ejercicio."
     },
     {
       "name": "PROMPT_MAESTRO.md",
       "kind": "prompt",
-      "description": "Prompts listos para copiar en tu asistente de IA."
+      "description": "Texto completo del prompt mostrado en la guía."
     },
     {
       "name": "plantilla_minuta.csv",
       "kind": "template",
-      "description": "Plantilla con las columnas de la demo (ACUERDO, RESPONSABLE, FECHA, ESTADO); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos."
+      "description": "Plantilla vacía con los encabezados del video."
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa para comparar; no acredita ejecución de la herramienta."
     }
   ],
   "has_code": false,
-  "resource_label": "Prompt maestro + plantilla CSV",
-  "created_at": "2026-10-16T12:49:18",
-  "model": "gemini:gemini-4-argon"
+  "resource_label": "Guía + prompt + archivos de práctica",
+  "created_at": "2026-10-25T00:40:39",
+  "model": "tutorial:sin-llm",
+  "tutorial_hash": "ad19b7529fbb5b30676e1b3dc51e01a44f42f3f2"
 }
