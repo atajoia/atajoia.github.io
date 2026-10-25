@@ -143,6 +143,28 @@ html:has(.vault-bar){scroll-padding-top:60px}
 .legal a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:4px}
 @media (max-width:560px){.vb-tag{display:none}.panel{padding:18px}.wrap{padding-top:28px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Lectura cómoda y un recorrido explícito para quien llega desde el video. */
+body{font-size:17px}.res-label,.incl,.finder-note,.finder-status,.dl-desc{font-size:15px}
+.field label{font-size:15px}.field input,.field textarea{font-size:16px;min-height:48px}
+.prompt{font-size:16px;line-height:1.65}.fine,.dl-txt small{font-size:14px}
+.start{margin:0 0 24px;padding:20px 22px;border:1px solid var(--line-hi);border-radius:var(--r);background:#0b1519}
+.start h2{font-size:21px}.start ol{padding-left:22px;margin-top:12px}.start li{padding:5px 0;font-size:16px;line-height:1.55}
+.start p{font-size:15px;color:var(--mut);margin-top:12px}.start a{font-weight:600}
+.quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.quick-links a{display:inline-flex;align-items:center;
+ min-height:44px;padding:8px 12px;border:1px solid var(--line-hi);border-radius:999px;text-decoration:none;font-size:15px}
+.app.has-practice [data-copy]{background:transparent;color:var(--fg);border-color:var(--line-hi);margin-top:10px}
+.copy-note{color:var(--mut);font-size:15px;line-height:1.5;margin:0 0 14px}
+.practice-data{white-space:pre-wrap;overflow-wrap:anywhere;font:16px/1.6 var(--font);margin:14px 0;color:var(--fg)}
+.reference{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:16px;font-size:16px}
+.reference th,.reference td{padding:12px 9px;border-bottom:1px solid var(--line-hi);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.reference th{background:var(--soft);font-size:14px;color:var(--mut);font-weight:600}
+.result-note{font-size:15px;color:var(--mut);margin-top:14px}
+.task-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.task-chips button{min-height:44px;padding:8px 13px;
+ background:var(--soft);color:var(--fg);border:1px solid var(--line-hi);border-radius:999px;font:600 15px/1.3 var(--font);cursor:pointer}
+.task-chips button[aria-pressed="true"]{border-color:var(--cyan);color:var(--cyan)}
+details.guide pre{font-size:15px;line-height:1.7}
+@media(max-width:560px){.wrap{padding-left:18px;padding-right:18px}.head{margin-bottom:22px}.start{padding:18px}
+ .prompt,details.guide pre{font-size:16px}.reference th,.reference td{padding:10px 7px}.btn.big{min-height:58px}}
 </style></head><body><main class="wrap" style="--a:#a855f7">
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
@@ -150,12 +172,15 @@ html:has(.vault-bar){scroll-padding-top:60px}
 <h1>Minuta en Gemini sin inventar responsables</h1>
 <p class="incl">Incluye: Guía + prompt + archivos de práctica</p>
 </header>
-<section class="panel app" data-app aria-labelledby="R03-app-t"><div class="panel-head"><h2 id="R03-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><pre class="prompt" id="R03-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Convierte estas notas en una tabla: tarea, responsable y fecha. Usa solo datos explícitos. Si falta algo, escribe Por confirmar.</pre><div class="copy-row"><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
+<section class="start" aria-labelledby="R03-start-t"><h2 id="R03-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt + ejemplo para probar con los datos del video.</li><li>Pégalo en la herramienta de la guía: Gemini web gratuito + Documentos de Google.</li><li>Compara la respuesta con la referencia de abajo y revisa los datos.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R03-inicio">Ir al prompt</a><a href="#R03-descargas">Descargar archivos</a><a href="#R03-resultado">Ver resultado de referencia</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
+<section id="R03-inicio" class="panel app has-practice" data-app aria-labelledby="R03-app-t"><div class="panel-head"><h2 id="R03-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><p class="copy-note">Para probar el video, copia el prompt junto con los datos ficticios. Para tu propio caso, copia solo el prompt.</p><pre data-practice-source hidden>Laura: cotización, 27 de octubre.
+Carlos: demo, 28 de octubre.
+Inventario pendiente; sin responsable ni fecha.</pre><pre class="prompt" id="R03-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Convierte estas notas en una tabla: tarea, responsable y fecha. Usa solo datos explícitos. Si falta algo, escribe Por confirmar.</pre><div class="copy-row"><button type="button" class="btn big" data-copy-practice hidden>Copiar prompt + ejemplo</button><button type="button" class="btn big" data-copy hidden>📋 Copiar Prompt en 1 Clic</button><p class="status" data-status role="status" aria-live="polite"></p></div><noscript><p class="fine">Para copiarlo, selecciona el texto del prompt y usa Ctrl+C (⌘+C en Mac).</p></noscript></section><script>(function(){"use strict";
 var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){setup(apps[i]);}
 function setup(app){
 var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
 if(!pre||!btn||!out){return;}
-var parts=[],n,k,label=btn.textContent,timer=null;
+var parts=[],n,k;
 for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
 var inputs=box?box.querySelectorAll("[data-marker]"):[];
 function render(){var v=Object.create(null),j,p,el,x;
@@ -171,15 +196,19 @@ function pick(){var r=document.createRange(),s=window.getSelection();r.selectNod
 function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
 ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
 try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function done(ok){if(ok){btn.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓");
-if(timer){window.clearTimeout(timer);}timer=window.setTimeout(function(){btn.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado, cópialo con Ctrl+C (⌘+C en Mac).");}}
-btn.addEventListener("click",function(){var text=pre.textContent;
+function copy(text,button){var label=button.textContent;
+function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
+window.setTimeout(function(){button.textContent=label;},2000);}
+else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}});
+else{done(legacy(text));}}
+btn.addEventListener("click",function(){copy(pre.textContent,btn);});
+var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
+if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
 if(box){box.hidden=false;}btn.hidden=false;}
 })();</script>
-<section class="panel" aria-labelledby="R03-dl-t"><div class="panel-head"><h2 id="R03-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_minuta.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_minuta.csv · 28 B</small></span></a><p class="dl-desc">Plantilla vacía con los encabezados del video.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 1.6 KB</small></span></a><p class="dl-desc">Pasos completos, requisitos, fuente y comprobación del video.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 258 B</small></span></a><p class="dl-desc">Texto completo del prompt mostrado en la guía.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar DATOS_PRACTICA.txt</b><small>DATOS_PRACTICA.txt · 115 B</small></span></a><p class="dl-desc">Entrada del video: datos ficticios para repetir el ejercicio.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar RESULTADO_ESPERADO.csv</b><small>RESULTADO_ESPERADO.csv · 128 B</small></span></a><p class="dl-desc">Referencia ilustrativa para comparar; no acredita ejecución de la herramienta.</p></li></ul></section>
+<section class="panel" id="R03-resultado" aria-labelledby="R03-result-t"><h2 id="R03-result-t">Así puedes comprobar tu resultado</h2><p class="result-note">Esta referencia usa los datos ficticios del video. La respuesta de la IA puede variar: compara los datos, no solo el formato.</p><table class="reference"><thead><tr><th scope="col">TAREA</th><th scope="col">RESPONSABLE</th><th scope="col">FECHA</th></tr></thead><tbody><tr><td>Cotización</td><td>Laura</td><td>27 de octubre</td></tr><tr><td>Demo</td><td>Carlos</td><td>28 de octubre</td></tr><tr><td>Inventario</td><td>Por confirmar</td><td>Por confirmar</td></tr></tbody></table><p class="result-note"><a href="RESULTADO_ESPERADO.csv" download>Descargar esta referencia</a></p></section>
+<section id="R03-descargas" class="panel" aria-labelledby="R03-dl-t"><div class="panel-head"><h2 id="R03-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_minuta.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_minuta.csv · 28 B</small></span></a><p class="dl-desc">Plantilla vacía con los encabezados del video.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 1.6 KB</small></span></a><p class="dl-desc">Pasos completos, requisitos, fuente y comprobación del video.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 258 B</small></span></a><p class="dl-desc">Texto completo del prompt mostrado en la guía.</p></li><li><a class="dl" href="DATOS_PRACTICA.txt" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar datos para practicar</b><small>DATOS_PRACTICA.txt · 115 B</small></span></a><p class="dl-desc">Entrada del video: datos ficticios para repetir el ejercicio.</p></li><li><a class="dl" href="RESULTADO_ESPERADO.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar resultado de referencia</b><small>RESULTADO_ESPERADO.csv · 128 B</small></span></a><p class="dl-desc">Referencia ilustrativa para comparar; no acredita ejecución de la herramienta.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
 <details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Minuta en Gemini sin inventar responsables
@@ -225,7 +254,7 @@ Trabaja con copias y datos ficticios. No pegues información personal o confiden
 
 Licencia MIT. Material educativo de Atajo IA, sin garantías.
 </pre></details>
-<section class="stack" aria-labelledby="R03-stack-t"><h2 id="R03-stack-t">⚙️ Stack Recomendado para este Flujo</h2><p class="stack-sub">Herramientas que complementan este flujo.</p><ul class="tools"><li class="tool"><div class="tool-top"><span class="tool-name">Claude</span><code class="tool-cat">Asistente de IA</code></div><p class="tool-why">Para procesar la transcripción de tu junta con el prompt maestro y extraer los acuerdos.</p><a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li><li class="tool"><div class="tool-top"><span class="tool-name">Notion</span><code class="tool-cat">Documentos y bases de conocimiento</code></div><p class="tool-why">Para importar la plantilla CSV y dar seguimiento a los responsables y fechas de entrega.</p><a class="tool-link" href="https://www.notion.com/" target="_blank" rel="noopener">Enlace oficial <span aria-hidden="true">↗</span></a></li></ul><p class="disclosure">Algunos enlaces son de afiliado: si contratas, Atajo IA puede recibir una comisión sin costo extra para ti.</p></section>
+
 
 <p class="foot">Atajo IA · recursos gratuitos de los videos.</p>
 <footer class="legal"><nav aria-label="Información legal"><ul><li><a href="../privacidad/">Aviso de privacidad</a></li><li><a href="../terminos/">Condiciones de uso</a></li><li><a href="../eliminar-datos/">Eliminar mis datos</a></li></ul></nav></footer>

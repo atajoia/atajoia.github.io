@@ -143,6 +143,28 @@ html:has(.vault-bar){scroll-padding-top:60px}
 .legal a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:4px}
 @media (max-width:560px){.vb-tag{display:none}.panel{padding:18px}.wrap{padding-top:28px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Lectura cómoda y un recorrido explícito para quien llega desde el video. */
+body{font-size:17px}.res-label,.incl,.finder-note,.finder-status,.dl-desc{font-size:15px}
+.field label{font-size:15px}.field input,.field textarea{font-size:16px;min-height:48px}
+.prompt{font-size:16px;line-height:1.65}.fine,.dl-txt small{font-size:14px}
+.start{margin:0 0 24px;padding:20px 22px;border:1px solid var(--line-hi);border-radius:var(--r);background:#0b1519}
+.start h2{font-size:21px}.start ol{padding-left:22px;margin-top:12px}.start li{padding:5px 0;font-size:16px;line-height:1.55}
+.start p{font-size:15px;color:var(--mut);margin-top:12px}.start a{font-weight:600}
+.quick-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.quick-links a{display:inline-flex;align-items:center;
+ min-height:44px;padding:8px 12px;border:1px solid var(--line-hi);border-radius:999px;text-decoration:none;font-size:15px}
+.app.has-practice [data-copy]{background:transparent;color:var(--fg);border-color:var(--line-hi);margin-top:10px}
+.copy-note{color:var(--mut);font-size:15px;line-height:1.5;margin:0 0 14px}
+.practice-data{white-space:pre-wrap;overflow-wrap:anywhere;font:16px/1.6 var(--font);margin:14px 0;color:var(--fg)}
+.reference{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:16px;font-size:16px}
+.reference th,.reference td{padding:12px 9px;border-bottom:1px solid var(--line-hi);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.reference th{background:var(--soft);font-size:14px;color:var(--mut);font-weight:600}
+.result-note{font-size:15px;color:var(--mut);margin-top:14px}
+.task-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.task-chips button{min-height:44px;padding:8px 13px;
+ background:var(--soft);color:var(--fg);border:1px solid var(--line-hi);border-radius:999px;font:600 15px/1.3 var(--font);cursor:pointer}
+.task-chips button[aria-pressed="true"]{border-color:var(--cyan);color:var(--cyan)}
+details.guide pre{font-size:15px;line-height:1.7}
+@media(max-width:560px){.wrap{padding-left:18px;padding-right:18px}.head{margin-bottom:22px}.start{padding:18px}
+ .prompt,details.guide pre{font-size:16px}.reference th,.reference td{padding:10px 7px}.btn.big{min-height:58px}}
 </style></head><body><main class="wrap" style="--a:#f97316">
 <nav class="top" aria-label="Navegación"><a class="back" href="../">← Todos los recursos</a></nav>
 <header class="head"><p class="meta"><span class="free">GRATIS</span><span class="dot" aria-hidden="true"></span>
@@ -150,7 +172,8 @@ html:has(.vault-bar){scroll-padding-top:60px}
 <h1>Generador de Manuales Paso a Paso y Control de Capturas</h1>
 <p class="lede">Este recurso ayuda a encargados de operaciones, recursos humanos y líderes de equipo a estructurar guías operativas claras a partir de sus bitácoras de clics o grabadores de procesos (como la Grabadora de acciones de Windows, Scribe o…</p><p class="incl">Incluye: Prompt maestro + plantilla CSV + script de Python</p>
 </header>
-<section class="panel app" data-app aria-labelledby="R12-app-t"><div class="panel-head"><h2 id="R12-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R12-campo-1">Nombre del proceso</label><input id="R12-campo-1" type="text" data-marker="NOMBRE DEL PROCESO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-2">Perfil del usuario nuevo</label><input id="R12-campo-2" type="text" data-marker="PERFIL DEL USUARIO NUEVO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-3">Qué se logra al terminar</label><input id="R12-campo-3" type="text" data-marker="QUÉ SE LOGRA AL TERMINAR" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-4">Pega aquí la lista de clics, notas o salida de tu grabador de pasos</label><textarea id="R12-campo-4" data-marker="PEGA AQUÍ LA LISTA DE CLICS, NOTAS O SALIDA DE TU GRABADOR DE PASOS" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R12-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como especialista en documentación de procesos y capacitación operativa. A continuación te comparto el registro en bruto de los clics y acciones que realicé para completar una tarea en nuestro sistema.
+<section class="start" aria-labelledby="R12-start-t"><h2 id="R12-start-t">Empieza en 3 pasos</h2><ol><li>Copia el prompt y añade la información de tu caso.</li><li>Pégalo en tu herramienta de IA y sigue los pasos de la guía.</li><li>Revisa la respuesta antes de usarla en tu trabajo.</li></ol><nav class="quick-links" aria-label="Acceso al recurso"><a href="#R12-inicio">Ir al prompt</a><a href="#R12-descargas">Descargar archivos</a></nav><p>Todo es gratis. No necesitas registrarte en Atajo IA.</p></section>
+<section id="R12-inicio" class="panel app" data-app aria-labelledby="R12-app-t"><div class="panel-head"><h2 id="R12-app-t">Personaliza tu prompt</h2><span class="badge">Listo para usar</span></div><div class="fields" data-fields hidden><p class="fields-note">Rellena los campos que quieras y el prompt se actualiza al instante. Lo que escribes se queda en tu navegador.</p><div class="field"><label for="R12-campo-1">Nombre del proceso</label><input id="R12-campo-1" type="text" data-marker="NOMBRE DEL PROCESO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-2">Perfil del usuario nuevo</label><input id="R12-campo-2" type="text" data-marker="PERFIL DEL USUARIO NUEVO" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-3">Qué se logra al terminar</label><input id="R12-campo-3" type="text" data-marker="QUÉ SE LOGRA AL TERMINAR" autocomplete="off" placeholder="Opcional"></div><div class="field"><label for="R12-campo-4">Pega aquí la lista de clics, notas o salida de tu grabador de pasos</label><textarea id="R12-campo-4" data-marker="PEGA AQUÍ LA LISTA DE CLICS, NOTAS O SALIDA DE TU GRABADOR DE PASOS" rows="3" placeholder="Opcional"></textarea></div></div><pre class="prompt" id="R12-prompt" data-prompt tabindex="0" role="region" aria-label="Prompt maestro listo para copiar">Actúa como especialista en documentación de procesos y capacitación operativa. A continuación te comparto el registro en bruto de los clics y acciones que realicé para completar una tarea en nuestro sistema.
 
 Nombre del proceso: <mark data-marker="NOMBRE DEL PROCESO">[NOMBRE DEL PROCESO]</mark>
 Puesto o perfil que usará la guía: <mark data-marker="PERFIL DEL USUARIO NUEVO">[PERFIL DEL USUARIO NUEVO]</mark>
@@ -168,7 +191,7 @@ var apps=document.querySelectorAll("[data-app]");for(var i=0;i<apps.length;i++){
 function setup(app){
 var pre=app.querySelector("[data-prompt]"),btn=app.querySelector("[data-copy]"),out=app.querySelector("[data-status]"),box=app.querySelector("[data-fields]");
 if(!pre||!btn||!out){return;}
-var parts=[],n,k,label=btn.textContent,timer=null;
+var parts=[],n,k;
 for(n=pre.firstChild;n;n=n.nextSibling){if(n.nodeType===1&&n.hasAttribute("data-marker")){parts.push({m:n.getAttribute("data-marker")});}else{parts.push({t:n.textContent});}}
 var inputs=box?box.querySelectorAll("[data-marker]"):[];
 function render(){var v=Object.create(null),j,p,el,x;
@@ -184,15 +207,19 @@ function pick(){var r=document.createRange(),s=window.getSelection();r.selectNod
 function legacy(text){var ta=document.createElement("textarea"),ok=false;ta.value=text;ta.setAttribute("readonly","");
 ta.style.position="fixed";ta.style.top="0";ta.style.left="0";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
 try{ok=document.execCommand("copy");}catch(e){ok=false;}document.body.removeChild(ta);return ok;}
-function done(ok){if(ok){btn.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓");
-if(timer){window.clearTimeout(timer);}timer=window.setTimeout(function(){btn.textContent=label;},2000);}
-else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado, cópialo con Ctrl+C (⌘+C en Mac).");}}
-btn.addEventListener("click",function(){var text=pre.textContent;
+function copy(text,button){var label=button.textContent;
+function done(ok){if(ok){button.textContent="Copiado ✓";say("Prompt copiado al portapapeles ✓. Pégalo en tu herramienta de IA para continuar.");
+window.setTimeout(function(){button.textContent=label;},2000);}
+else{pick();say("No se pudo copiar solo: el prompt quedó seleccionado. Mantén pulsado el texto para copiarlo o usa Ctrl+C (⌘+C en Mac).");}}
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true);},function(){done(legacy(text));});}
-else{done(legacy(text));}});
+else{done(legacy(text));}}
+btn.addEventListener("click",function(){copy(pre.textContent,btn);});
+var sample=app.querySelector("[data-practice-source]"),practice=app.querySelector("[data-copy-practice]");
+if(sample&&practice){practice.hidden=false;practice.addEventListener("click",function(){copy(pre.textContent+"\n\nDATOS DE PRÁCTICA:\n"+sample.textContent,practice);});}
 if(box){box.hidden=false;}btn.hidden=false;}
 })();</script>
-<section class="panel" aria-labelledby="R12-dl-t"><div class="panel-head"><h2 id="R12-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_manual.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_manual.csv · 464 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, CAPTURA, PRIVACIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.8 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 4.0 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="armar_manual_word.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>armar_manual_word.py · 3.9 KB</small></span></a><p class="dl-desc">Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF.</p></li></ul></section>
+
+<section id="R12-descargas" class="panel" aria-labelledby="R12-dl-t"><div class="panel-head"><h2 id="R12-dl-t">Descarga directa</h2><span class="badge">Gratis · sin registro</span></div><ul class="dl-list"><li><a class="dl" href="plantilla_manual.csv" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la plantilla CSV</b><small>plantilla_manual.csv · 464 B</small></span></a><p class="dl-desc">Plantilla con las columnas de la demo (PASO, ACCIÓN DETECTADA, CAPTURA, PRIVACIDAD); las filas EJEMPLO son ilustrativas: bórralas y pega tus datos.</p></li><li><a class="dl" href="README.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar la guía</b><small>README.md · 4.8 KB</small></span></a><p class="dl-desc">Guía: qué es, cómo usarlo paso a paso, requisitos y privacidad.</p></li><li><a class="dl" href="PROMPT_MAESTRO.md" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar los prompts</b><small>PROMPT_MAESTRO.md · 4.0 KB</small></span></a><p class="dl-desc">Prompts listos para copiar en tu asistente de IA.</p></li><li><a class="dl" href="armar_manual_word.py" download><span class="dl-ico" aria-hidden="true">↓</span><span class="dl-txt"><b>Descargar el script de Python</b><small>armar_manual_word.py · 3.9 KB</small></span></a><p class="dl-desc">Convierte la plantilla CSV de pasos y una carpeta local de capturas en un borrador de manual en formato Word (.docx) listo para revisar y exportar a PDF.</p></li></ul></section>
 <p class="fine">Úsalo como borrador: revisa cada resultado antes de usarlo y no compartas datos personales ni
 confidenciales con herramientas de IA.</p>
 <details class="guide"><summary>Guía completa: cómo usarlo</summary><pre># Generador de Manuales Paso a Paso y Control de Capturas
