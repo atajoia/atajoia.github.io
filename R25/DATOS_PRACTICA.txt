@@ -1,0 +1,1 @@
+Hoja1 A2: 'SKU-104 ' (8 caracteres) | Hoja2 A2: 'SKU-104' | B2: $420.00
