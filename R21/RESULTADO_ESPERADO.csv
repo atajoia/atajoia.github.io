@@ -1,0 +1,5 @@
+﻿CASO,PROMPT USADO,RESULTADO ESPERADO
+Sin reglas,Responde amable,Promete reembolso
+Regla 1,Sin reembolso efectivo,Cero devolución
+Regla 2,Dar guía de rastreo,Incluye rastreo
+Regla 3,Tope: envío gratis,Cupón próximo envío

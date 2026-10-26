@@ -1,0 +1,38 @@
+{
+  "reel_id": "R21",
+  "title": "ChatGPT: evita que regale reembolsos",
+  "keyword": "POLITICAS",
+  "slug": "r21",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Pasos completos, requisitos, fuente y comprobación del video."
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Entrada del video: datos ficticios para repetir el ejercicio."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Texto completo del prompt mostrado en la guía."
+    },
+    {
+      "name": "plantilla_politicas.csv",
+      "kind": "template",
+      "description": "Plantilla vacía con los encabezados del video."
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa para comparar; no acredita ejecución de la herramienta."
+    }
+  ],
+  "has_code": false,
+  "resource_label": "Guía + prompt + archivos de práctica",
+  "created_at": "2026-10-26T03:00:08",
+  "model": "tutorial:sin-llm",
+  "tutorial_hash": "d653b844c77fc2a55419a9d3fe0a115ae0cd4d41"
+}
