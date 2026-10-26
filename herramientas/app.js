@@ -1,7 +1,7 @@
-import { toolsA } from './tools_a.js?v=ed5c8ef34c96';
-import { toolsB } from './tools_b.js?v=ed5c8ef34c96';
-import { toolsC } from './tools_c.js?v=ed5c8ef34c96';
-import { csvText, markdownText, printableHTML, escapeHTML, validResult, makeZIP, safeFilename } from './core.js?v=ed5c8ef34c96';
+import { toolsA } from './tools_a.js?v=0a7b0f4db272';
+import { toolsB } from './tools_b.js?v=0a7b0f4db272';
+import { toolsC } from './tools_c.js?v=0a7b0f4db272';
+import { csvText, markdownText, printableHTML, escapeHTML, validResult, makeZIP, safeFilename } from './core.js?v=0a7b0f4db272';
 
 const tools = { ...toolsA, ...toolsB, ...toolsC };
 const root = document.getElementById('app');
@@ -356,7 +356,7 @@ function toolPage(shell, spec) {
   function requireCurrent() { if (!result || stale) throw new Error('Genera de nuevo el resultado antes de descargar.'); return result; }
   sample.addEventListener('click', () => {
     try {
-      for (const option of spec.options || []) optionInputs.get(option.key).value = text(option.value);
+      for (const option of spec.options || []) optionInputs.get(option.key).value = text(spec.sampleOptions?.[option.key] ?? option.value);
       if (spec.id === 'R15') {
         const examples = JSON.parse(document.getElementById('file-examples')?.textContent || '[]');
         if (!Array.isArray(examples) || !examples.length) throw new Error('No hay archivos de ejemplo incluidos en esta página. Selecciona tus copias para probar el ZIP.');

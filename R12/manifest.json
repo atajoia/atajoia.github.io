@@ -96,7 +96,7 @@
     "url": "app/",
     "download": "app/atajo-r12.html",
     "source": "https://github.com/atajoia/atajoia.github.io/tree/main/herramientas",
-    "version": "ed5c8ef34c96",
+    "version": "0a7b0f4db272",
     "execution": "browser",
     "requires_paid_api": false
   }
