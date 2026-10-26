@@ -1,0 +1,38 @@
+{
+  "reel_id": "R24",
+  "title": "ChatGPT: arma tus bloques de horario en minutos",
+  "keyword": "BLOQUES",
+  "slug": "r24",
+  "files": [
+    {
+      "name": "README.md",
+      "kind": "readme",
+      "description": "Pasos completos, requisitos, fuente y comprobación del video."
+    },
+    {
+      "name": "DATOS_PRACTICA.txt",
+      "kind": "example",
+      "description": "Entrada del video: datos ficticios para repetir el ejercicio."
+    },
+    {
+      "name": "PROMPT_MAESTRO.md",
+      "kind": "prompt",
+      "description": "Texto completo del prompt mostrado en la guía."
+    },
+    {
+      "name": "plantilla_bloques.csv",
+      "kind": "template",
+      "description": "Plantilla vacía con los encabezados del video."
+    },
+    {
+      "name": "RESULTADO_ESPERADO.csv",
+      "kind": "example",
+      "description": "Referencia ilustrativa para comparar; no acredita ejecución de la herramienta."
+    }
+  ],
+  "has_code": false,
+  "resource_label": "Guía + prompt + archivos de práctica",
+  "created_at": "2026-10-26T13:01:06",
+  "model": "tutorial:sin-llm",
+  "tutorial_hash": "9b177da24a3d6fa436f2e2e88e56ce38d6e731cc"
+}
