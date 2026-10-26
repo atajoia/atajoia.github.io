@@ -1,7 +1,7 @@
-import { toolsA } from './tools_a.js?v=177ebc42cc7c';
-import { toolsB } from './tools_b.js?v=177ebc42cc7c';
-import { toolsC } from './tools_c.js?v=177ebc42cc7c';
-import { csvText, markdownText, printableHTML, escapeHTML, validResult, makeZIP, safeFilename } from './core.js?v=177ebc42cc7c';
+import { toolsA } from './tools_a.js?v=ed5c8ef34c96';
+import { toolsB } from './tools_b.js?v=ed5c8ef34c96';
+import { toolsC } from './tools_c.js?v=ed5c8ef34c96';
+import { csvText, markdownText, printableHTML, escapeHTML, validResult, makeZIP, safeFilename } from './core.js?v=ed5c8ef34c96';
 
 const tools = { ...toolsA, ...toolsB, ...toolsC };
 const root = document.getElementById('app');
@@ -70,7 +70,10 @@ export function validateRenamePlan(current, files) {
 
 function scaffold() {
   const shell = element('main', { class: 'shell' });
-  const brand = anchor('Atajo ', base, 'brand'); brand.append(element('span', { text: 'IA' }));
+  const brand = anchor('', base, 'brand');
+  const icon = document.body.dataset.brandIcon || (document.body.dataset.offline === 'true' ? '' : `${base}marca/atajo-ia-icono-1024.png`);
+  if (icon) brand.append(element('img', { src: icon, alt: '', width: '44', height: '44', class: 'brand-icon' }));
+  brand.append(document.createTextNode('Atajo '), element('span', { text: 'IA' }));
   const nav = element('nav', { 'aria-label': 'Navegación principal' }, [
     anchor('Todas las herramientas', `${base}herramientas/`),
     anchor(id ? 'Guía y archivos' : 'Recursos', id ? '../' : base),
