@@ -1,0 +1,5 @@
+﻿PASO,ACCIÓN EN OUTLOOK,RESULTADO ESPERADO
+1. Abrir,Tres puntos > Plantillas,Panel lateral derecho
+2. Crear,+ Plantilla > Guardar,Título: Facturación
+3. Usar,Clic en Facturación,4 requisitos + correo
+4. Revisar,Verificar cuerpo,pagos@ejemplo.mx listo
