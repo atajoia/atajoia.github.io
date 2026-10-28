@@ -6,26 +6,25 @@ Recurso gratuito de Atajo IA · R24 · BLOQUES
 
 ChatGPT versión web gratuita (requiere cuenta gratuita iniciada)
 
-- Cuenta gratuita en ChatGPT versión web.
-- Lista en texto con 8 tareas, tiempos estimados en minutos y horario de junta fija.
+- ChatGPT web gratuito y ocho tareas ficticias con tiempos.
 
 Usa DATOS_PRACTICA.txt como entrada. Son datos ficticios, no una transcripción real.
 
 ## Pasos del video
 
-1. **Escribe las reglas del horario:** En el cuadro de mensaje de ChatGPT web, pega la instrucción indicando el horario de 09:00 a 14:00, la junta fija de 11:00 a 12:00 y la regla de agrupar tareas cortas e Imprevistos.
-2. **Agrega la lista y envía:** En el mismo mensaje, pega las 8 tareas con sus tiempos en minutos y haz clic en el botón Enviar.
-3. **Comprueba la suma y guarda:** Verifica en la tabla resultante que Propuesta Alfa esté de 09:00 a 10:30, la junta de 11:00 a 12:00 y que los bloques sumen 300 minutos sin traslapes. Copia el texto y guárdalo como Agenda_Lunes.txt.
+1. **Abre el chat:** Abre un chat nuevo para planear de 09:00 a 14:00.
+2. **Envía el plan:** Pega el prompt completo y pulsa Enviar.
+3. **Comprueba y guarda:** Verifica Propuesta Alfa 09:00–10:30, junta 11:00–12:00 y 300 minutos sin traslapes; copia a Agenda_Lunes.txt.
 
 ## Prompt completo
 
 ```text
-Organiza esta lista de pendientes en una tabla de bloques de horario de 09:00 a 14:00. Reglas: 1) Respeta la junta fija de 11:00 a 12:00. 2) Asigna primero las tareas de 60 minutos o más como Trabajo Profundo. 3) Agrupa las tareas de 15 minutos e Imprevistos (30m) en bloques continuos de Tareas Rápidas. 4) Verifica que la suma total no rebase las 5 horas (300 minutos). Lista: Propuesta Alfa (90m), Correos (15m), Junta de seguimiento (11:00-12:00, 60m), Presupuesto Q2 (60m), Facturas (15m), Imprevistos (30m), Llamada (15m), Tickets (15m).
+Tabla 09:00–14:00; Propuesta Alfa 09:00–10:30; junta fija 11:00–12:00. ≥60 min: Trabajo Profundo. Agrupa tareas de 15 min e Imprevistos: Tareas Rápidas. Sin traslapes, total 300 min. Lista: Propuesta Alfa 90m; Correos 15m; Junta 60m; Presupuesto Q2 60m; Facturas 15m; Imprevistos 30m; Llamada 15m; Tickets 15m.
 ```
 
 ## Comprobación
 
-Una agenda estructurada de 09:00 a 14:00 donde Propuesta Alfa ocupa de 09:00 a 10:30, las tareas cortas e imprevistos quedan agrupados y el tiempo total suma exactamente 300 minutos.
+Agenda de 300 minutos con trabajo profundo y tareas rápidas agrupadas.
 
 RESULTADO_ESPERADO.csv es una referencia ilustrativa; compara cada dato con la entrada. La respuesta de una IA puede variar y requiere revisión.
 

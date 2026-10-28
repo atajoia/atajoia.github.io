@@ -6,26 +6,25 @@ Recurso gratuito de Atajo IA · R21 · POLITICAS
 
 ChatGPT versión web gratuita (requiere cuenta gratuita)
 
-- Cuenta gratuita en ChatGPT versión web.
-- Texto del reclamo ficticio y reglas de devolución del negocio.
+- Cuenta gratuita de ChatGPT web y reclamo ficticio.
 
 Usa DATOS_PRACTICA.txt como entrada. Son datos ficticios, no una transcripción real.
 
 ## Pasos del video
 
-1. **Identifica el fallo:** En un chat nuevo, nota cómo un prompt vago como 'Responde amable a este cliente' ante el reclamo del pedido #100 suele prometer devoluciones de dinero no autorizadas.
-2. **Aplica las 3 restricciones:** En el cuadro de mensaje inferior, pega el prompt completo con las tres reglas explícitas (prohibido reembolsos en efectivo, ofrecer guía de rastreo, compensar máximo con envío gratis) junto al reclamo y pulsa el botón Enviar.
-3. **Verifica antes de usar:** Lee el borrador generado y comprueba que mencione la guía de rastreo y el envío gratis, sin prometer dinero, antes de copiarlo a tu archivo Respuesta_Cliente.txt.
+1. **Reconoce el fallo:** Abre un chat nuevo. Compara el fallo ilustrativo: «Responde amable a este cliente» puede prometer dinero sin autorización.
+2. **Aplica las tres reglas:** En el cuadro de mensaje, pega el prompt completo y pulsa Enviar.
+3. **Verifica y guarda:** Comprueba guía de rastreo, envío gratis y ninguna promesa de dinero; copia a Respuesta_Cliente.txt.
 
 ## Prompt completo
 
 ```text
-Actúa como soporte de mi tienda. Responde al siguiente reclamo aplicando estrictamente estas 3 reglas: 1. Prohibido ofrecer reembolsos en efectivo. 2. Ofrecer guía de rastreo del pedido. 3. Máximo compensar con envío gratis en siguiente compra. Reclamo: Mi pedido #100 lleva 3 días de retraso, quiero mi dinero.
+Soporte de tienda: responde al reclamo ficticio «Mi pedido #100 lleva 3 días de retraso; quiero mi dinero». Reglas: no ofrezcas reembolsos en efectivo; ofrece guía de rastreo; compensa como máximo con envío gratis en la siguiente compra.
 ```
 
 ## Comprobación
 
-Un borrador de respuesta para el pedido #100 que ofrece seguimiento por guía y envío gratis en la próxima compra, omitiendo cualquier promesa de reembolso en efectivo.
+Borrador para el pedido #100 con rastreo y envío gratis; sin reembolso en efectivo.
 
 RESULTADO_ESPERADO.csv es una referencia ilustrativa; compara cada dato con la entrada. La respuesta de una IA puede variar y requiere revisión.
 
