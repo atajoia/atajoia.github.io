@@ -1,0 +1,3 @@
+Revisar presupuesto
+Enviar cotización
+Llamar a cliente X
